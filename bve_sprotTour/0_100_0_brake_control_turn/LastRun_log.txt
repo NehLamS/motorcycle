@@ -1,0 +1,151 @@
+Run made by BikeSim 2025.0 at 16:41 on June 24, 2025.
+Revision 244248, January 16, 2025
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_d45457b6-5edf-47cc-9dae-b64407019c64\Run_all.par"
+Installed keywords into VS Solver for MODEL_LAYOUT VARIABLE_CASTER
+Used Dataset: Animator: Reference Frame; { Bike Tracking } Bike X-Y-Z
+Used Dataset: Animator: Camera Setup; { Bike Reference } 90 Azm, 5 El, 15 m
+Used Dataset: Suspension: Shock Absorber; { Linear Constant } Linear Coef: 2.0 N-s/mm
+Used Dataset: Suspension: Spring; 25 N/mm, Strk. 120 mm, Preload 933 N
+Used Dataset: Suspension: Dive Angle (Caster Change); Spline: Zero at Zero mm
+Used Dataset: Suspension: Longitudinal Movement; Spline: -7.7 mm at -24 mm
+Used Dataset: Suspension: Longitudinal Stiffness; 2D Linear: 250 N at 1mm
+Used Dataset: Suspension: Longitudinal Damping; 2D Linear: 0.8 N at 1 mm/sec
+Used Dataset: Suspension: Fork; { Touring Bikes } Sport Touring: Wishbone
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Wheel (Front)
+Used Dataset: External Parsfile; Front Tire (v.1.02)
+Used Dataset: Tire; { Touring Bikes } Sport Touring: Front
+Used Dataset: Suspension: Lever Compression; Initial Lever Ratio = 0.54
+Used Dataset: Suspension: Shock Absorber; { Linear Constant } Linear Coef: 10 N-s/mm
+Used Dataset: Suspension: Spring; 40 N/mm, Strk. 200 mm, Preload 1182 N
+Used Dataset: Suspension: Dive Angle (Caster Change); Spline: 2.15 deg at 160 mm
+Used Dataset: Suspension: Longitudinal Movement; { Rear Link Suspension } Spline: -1 mm at 30 mm
+Used Dataset: Suspension: Swing Arm; { Touring Bikes } Sport Touring: Parallel Link
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Wheel (Rear)
+Used Dataset: External Parsfile; Rear Tire (v.1.02)
+Used Dataset: Tire; { Touring Bikes } Sport Touring: Rear
+Used Dataset: Vehicle: Sprung Mass; { Touring Bikes } Sport Touring
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Body
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Details (Electric)
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Windshield
+Used Dataset: Animator: Shape Assembly; { Sport Touring } Sport Touring: Body (Electrified)
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Fork
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Front Fender
+Used Dataset: Animator: Shape Assembly; { Sport Touring } Sport Touring: Fork
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Handle Bars
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Rear Wheel Hub
+Used Dataset: Custom Forces and Reference Points; { Sport Touring } Sport Tour: SWA Attachment (Pt. 10)
+Used Dataset: Animator: Reference Frame; { Suspension Linkage } Ref. Pt. 10: Rear SWA Attachment
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Mid Arm
+Used Dataset: Animator: Group; { Suspension Linkage } Multi-Link Swing Arm
+Used Dataset: Generic Data Group (More); { Manual Reference Frames } Rearview Mirror: Sport Touring (Left)
+Used Dataset: Generic Data Group (More); { Manual Reference Frames } Rearview Mirror: Sport Touring (Right)
+Used Dataset: Generic Data Group; { Manual Camera Setup } VsV Rearview Camera: Sport Touring
+Used Dataset: Animator: Bike Shape Assembly; { Sports Bikes } Sport Touring (Link Sus., Electrified)
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring (Rider): Body
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring (Rider): Right Arm
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring (Rider): Left Arm
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring (Rider): Right Leg
+Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring (Rider): Left Leg
+Used Dataset: Animator: Rider Shape Assembly; { Touring Bikes } Sport Touring: Rider
+Used Dataset: Vehicle: Rider Body Mass; { Touring Bikes } Sport Touring
+Used Dataset: Brakes: Proportioning / Limiting Valve; Linear: 1.00 MPa / MPa
+Used Dataset: Brakes: Proportioning / Limiting Valve; No brake
+Used Dataset: Brake System; No Rear Brake
+Used Dataset: Steering Stiffness; Steer Stiffness (60 deg. Limit)
+Used Dataset: Steering System; { Touring Bikes } Sport Touring
+Used Dataset: Generic Table; { Powertrain (HEV / EV) } Motor efficiency
+Used Dataset: Powertrain: Electric Motor Torque; Max. Output 200 N-m
+Used Dataset: Generic Table; { Powertrain (HEV / EV) } Batt. charged resis. (15 milliohms)
+Used Dataset: Generic Table; { Powertrain (HEV / EV) } Batt. discharged resis. (18 milliohms)
+Used Dataset: Generic Table; { Powertrain (HEV / EV) } Battery Open-Circuit Voltage
+Used Dataset: Generic Table; { Powertrain (HEV / EV) } Battery Max Capacity (34 A-h)
+Used Dataset: Powertrain: Hybrid/Electric System; Full Electric Powertrain Assembly
+Used Dataset: Generic Table; { Powertrain (HEV / EV) } Driver Demand Power: Full Load 90 kW
+Used Dataset: Powertrain: Hybrid/Electric Power Management Control; Electric Power Manage.: Full Load 90 kW
+Used Dataset: Powertrain: Shaft Drive; { Electrified Powertrain } Electric 40 kW, 1.53/2.5
+Used Dataset: Vehicle: Assembly; { Electrified } Sport Tour, WB: Shaft Drv., Batt. Electric
+Used Dataset: Control: Steering Preview Time for the Rider Model; Ramp: 0.5 sec to 1.5 sec over 144 km/h
+Used Dataset: Control: Steering by the Closed-loop Rider Model; { Constant Position } No Offset @  Variable Preview Time
+Used Dataset: Control: Braking Lever Force (Open Loop); { Constant } Constant: Zero
+Used Dataset: Control: Shifting (Closed Loop); AT 7th mode
+Used Dataset: Control: Speed (Closed Loop) Using Target Speed; { Ramp } Ramp: 0 to 100 to 0
+Used Dataset: Path/Road: Segment Builder (Simple 3D); { Looped Roads } 500 ft Radius Circle (Loop)
+Used Dataset: Road: Friction Map, S-L Grid; { Constant Mu } Constant: 0.85
+Used Dataset: Road: Animator Surface Shapes; { Roads } Looped Road + 200 m Light Grass
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle Reference)
+Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
+Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
+Used Dataset: Road: 3D Surface (All Properties); { Circle } 500-ft Circle (Flat)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (X-Axis, XY-Plane)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (X-Axis, XZ-Plane)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fx Double (Tail Origin)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (X-Axis, XY-Plane)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (X-Axis, XZ-Plane)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fx Double (Tail Origin)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (X-Axis, XY-Plane)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (X-Axis, XZ-Plane)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fx Double (Tail Origin)
+Used Dataset: Animator: Wheel Arrows and Other Indicators; { CGC Force Arrows } Fx - CGC Force Arrows
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Y-Axis, XY-Plane)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Y-Axis, YZ-Plane)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fy Double: (Tail Origin 2)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Y-Axis, XY-Plane)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Y-Axis, YZ-Plane)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fy Double: (Tail Origin 2)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Y-Axis, XY-Plane)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Y-Axis, YZ-Plane)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fy Double: (Tail Origin 2)
+Used Dataset: Animator: Wheel Arrows and Other Indicators; { CGC Force Arrows } Fy - CGC Force Arrows
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Z-Axis, XZ-Plane)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Z-Axis, YZ-Plane)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fz Double: (Tail Origin, F)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Z-Axis, XZ-Plane)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Z-Axis, YZ-Plane)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fz Double: (Tail Origin, F)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Z-Axis, XZ-Plane)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Z-Axis, YZ-Plane)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fz Double: (Tail Origin, F)
+Used Dataset: Animator: Wheel Arrows and Other Indicators; { CGC Force Arrows } Fz - CGC Force Arrows
+Used Dataset: Generic Data Group; { Tire Force Arrows } CGC - Fx, Fy, Fz
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Bike Motion } Vx -- Longitudinal Speed
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Suspension } Suspension Deflections
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Bike Motion } Pitch -- Sprung Masses
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Bike Motion } Roll -- Sprung Masses
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain } Spin Rates in Powertrain
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain } Torques in Powertrain
+Used Dataset: Procedures; { Accel. and Brake Testing } 0 - 100 - 0 km/h w/ Brake Control (Turn)
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Braking } Wheel Speed (All)
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Bike Motion } Ax -- Long. Acceleration
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain } Drive Torque
+ Electric Shaft Drv.: O-L, Regen. Brk. <Powertrain: Electric>
+Used Dataset: BikeSim Run Control; { Powertrain: Electric } Electric Shaft Drv.: O-L, Regen. Brk.
+
+Time to read input = 0.0437948
+Function ROAD_ZS_TABLE(1) extrapolated (out of range HIGH) for X = 957.557 m at T = 0
+Function F_AXLE_VX_CARPET extrapolated (out of range HIGH) for XCOL = 620 mm at T = 0
+Function F_AXLE_X_CARPET extrapolated (out of range HIGH) for XCOL = 620 mm at T = 0
+Function VOC_BATTERY_CARPET extrapolated (out of range HIGH) for XCOL = 40 C at T = 0
+
+Run started: VS output file = Results\Run_d45457b6-5edf-47cc-9dae-b64407019c64\LastRun.vsb
+Function RIDER_LEGS_CG_Y_TABLE extrapolated (out of range HIGH) for X = 1.00003 mm at T = 6.093
+Function MZ_STR_TABLE extrapolated (out of range HIGH) for X = 31.0066 deg at T = 30.329
+Function SUSP_X_TABLE(1) extrapolated (out of range LOW) for X = -30.0664 mm at T = 31.2005
+Function SUSP_DIVE_TABLE(1) extrapolated (out of range LOW) for X = -30.0664 mm at T = 31.2005
+Function CMP_STRUT_LEVER_TABLE(2) extrapolated (out of range LOW) for X = -20.0991 mm at T = 31.2045
+
+Run stopped at t = 31.694. Fall-down stopper touched the ground
+
+Computational time ratio: RTIME = 0.025157 (real time)/(simulation time)
+

@@ -1,0 +1,3702 @@
+BikeSim 2025.0
+Vehicle Configuration: VARIABLE_CASTER
+MODEL_LAYOUT VARIABLE_CASTER
+
+DATASET_TITLE Electric Shaft Drv.: O-L, Regen. Brk.
+CATEGORY Powertrain: Electric
+TITLE Electric Shaft Drv.: O-L, Regen. Brk. <Powertrain: Electric>
+This file was generated 17:24 on June 24, 2025.
+
+For this run, the BikeSim 2025.0 math model has 512 available output variables.
+
+AAx (rad/s2)
+Full Name: Roll accel. vehicle, body-fixed
+Type: Roll acceleration
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Dyn
+More details: The [sx] component of the angular acceleration of the main frame.
+
+AAy (rad/s2)
+Full Name: Pitch accel. vehicle, body-fixed
+Type: Pitch acceleration
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Dyn
+More details: The [sy] component of the angular acceleration of the main frame.
+
+AAy_W1 (rad/s2)
+Full Name: Front wheel angular acceleration
+Type: Wheel angular acceleration
+Legend: Front Wheel
+Component: Wheels
+Where calculated: Dyn
+
+AAy_W2 (rad/s2)
+Full Name: Rear wheel angular acceleration
+Type: Wheel angular acceleration
+Legend: Rear Wheel
+Component: Wheels
+Where calculated: Dyn
+
+AAz (rad/s2)
+Full Name: Yaw accel. vehicle, body-fixed
+Type: Yaw acceleration
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Dyn
+More details: The [sz] component of the angular acceleration of the main frame.
+
+AA_P (rad/s2)
+Full Name: Pitch (Euler) 2nd deriv, vehicle
+Type: Pitch acceleration
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Dyn
+More details: The second time derivative of the Euler pitch angle of the main frame
+
+AA_R (rad/s2)
+Full Name: Roll (Euler) 2nd deriv, vehicle
+Type: Roll acceleration
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Dyn
+More details: The second time derivative of the Euler roll angle of the main frame
+
+AA_Steer (deg/s2)
+Full Name: Steer acceleration
+Type: Angular acceleration
+Legend: Front frame steer body
+Component: Steering
+Where calculated: Dyn
+
+AA_Y (rad/s2)
+Full Name: Yaw (Euler) 2nd deriv, vehicle
+Type: Yaw acceleration
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Dyn
+More details: The second time derivative of the Euler yaw angle of the main frame
+
+Alpha_1 (deg)
+Full Name: Lateral slip angle, tire 1
+Type: Angle
+Legend: Tire 1 lateral slip
+Component: Tires
+Where calculated: Dyn
+
+Alpha_2 (deg)
+Full Name: Lateral slip angle, tire 2
+Type: Angle
+Legend: Tire 2 lateral slip
+Component: Tires
+Where calculated: Dyn
+
+AlphL_1 (deg)
+Full Name: Lateral slip (lagged), tire 1
+Type: Angle
+Legend: Tire 1 slip (lagged)
+Component: Tires
+Where calculated: State
+
+AlphL_2 (deg)
+Full Name: Lateral slip (lagged), tire 2
+Type: Angle
+Legend: Tire 2 slip (lagged)
+Component: Tires
+Where calculated: State
+
+AVTC_In (rpm)
+Full Name: TC input shaft ang. speed
+Type: Driveline speed
+Legend: Torque converter input shaft
+Component: Powertrain
+Where calculated: Dyn
+
+AVTC_Out (rpm)
+Full Name: TC output shaft ang. speed
+Type: Driveline speed
+Legend: Torque converter output shaft
+Component: Powertrain
+Where calculated: Dyn
+
+AVx (deg/s)
+Full Name: Roll rate, vehicle (body-fixed)
+Type: Roll rate
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: State
+More details: The [sx] component of the angular velocity of the main frame
+
+AVx_1 (deg/s)
+Full Name: Roll rate, wheel 1
+Type: Angular rate
+Legend: Roll rate, wheel 1
+Component: Wheels
+Where calculated: Kin
+
+AVx_2 (deg/s)
+Full Name: Roll rate, wheel 2
+Type: Angular rate
+Legend: Roll rate, wheel 2
+Component: Wheels
+Where calculated: Kin
+
+AVy (deg/s)
+Full Name: Pitch rate, vehicle (body-fixed)
+Type: Pitch rate
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: State
+More details: The [sy] component of the angular velocity of the main frame
+
+AVy_W1 (rpm)
+Full Name: Front wheel angular velocity
+Type: Wheel angular velocity
+Legend: Front wheel
+Component: Wheels
+Where calculated: State
+
+AVy_W2 (rpm)
+Full Name: Rear wheel angular velocity
+Type: Wheel angular velocity
+Legend: Rear wheel
+Component: Wheels
+Where calculated: State
+
+AVy_Wf1 (deg/s)
+Full Name: Pitch rate, wheel 1
+Type: Angular rate
+Legend: Pitch rate, wheel 1
+Component: Wheels
+Where calculated: Kin
+
+AVy_Wf2 (deg/s)
+Full Name: Pitch rate, wheel 2
+Type: Angular rate
+Legend: Pitch rate, wheel 2
+Component: Wheels
+Where calculated: Kin
+
+AVz (deg/s)
+Full Name: Yaw rate, vehicle (body-fixed)
+Type: Yaw rate
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: State
+More details: The [sz] component of the angular velocity of the main frame
+
+AVz_1 (deg/s)
+Full Name: Yaw rate, wheel 1
+Type: Angular rate
+Legend: Yaw rate, wheel 1
+Component: Wheels
+Where calculated: Kin
+
+AVz_2 (deg/s)
+Full Name: Yaw rate, wheel 2
+Type: Angular rate
+Legend: Yaw rate, wheel 2
+Component: Wheels
+Where calculated: Kin
+
+AV_Motor (rpm)
+Full Name: Electric motor ring gear spin
+Type: Driveline speed
+Legend: Electric motor (ring gear)
+Component: Powertrain
+Where calculated: Dyn
+
+AV_P (deg/s)
+Full Name: Pitch derivative, vehicle
+Type: Pitch rate
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Kin
+More details: The time derivative of the pitch angle of the main frame
+
+AV_R (deg/s)
+Full Name: Roll deriv (Euler), vehicle
+Type: Pitch rate
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Kin
+More details: The time derivative of the Euler roll angle of the main frame
+
+AV_Spkt (rpm)
+Full Name: Gearbox sprocket angular speed
+Type: Driveline speed
+Legend: Gearbox sprocket
+Component: Powertrain
+Where calculated: State
+
+AV_Steer (deg/s)
+Full Name: Steer angular rate
+Type: Angular rate
+Legend: Front frame steer body
+Component: Steering
+Where calculated: State
+
+AV_Trans (rpm)
+Full Name: Trans. output shaft ang. speed
+Type: Driveline speed
+Legend: Transmission output shaft
+Component: Powertrain
+Where calculated: Dyn
+
+AV_Y (deg/s)
+Full Name: Yaw derivative, vehicle
+Type: Yaw rate
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Kin
+More details: The time derivative of the yaw angle of the main frame
+
+AxBf_SM (g)
+Full Name: SM CG long. accel, body-fixed
+Type: Longitudinal acceleration
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Dyn
+More details: The [sx] component of the acceleration of the CG of the main frame.
+
+Ax_SCcmd (g)
+Full Name: Ax command for SC
+Type: Longitudinal acceleration
+Legend: Ax command for speed controller
+Component: Speed controller
+Where calculated: Ctl
+
+Ax_SCrq (g)
+Full Name: Ax request from SC
+Type: Longitudinal acceleration
+Legend: Ax request from speed controller
+Component: Speed controller
+Where calculated: Ctl
+
+Ax_SM (g)
+Full Name: Sprung mass CG long. accel
+Type: Longitudinal acceleration
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Dyn
+More details: The [x] component of the acceleration of the CG of the main frame.
+
+Ax_WC1 (g)
+Full Name: Front wheel longitudinal accel
+Type: Longitudinal acceleration
+Legend: Front Wheel
+Component: Wheels
+Where calculated: Dyn
+More details: The [x] component of the acceleration of the center of front wheel.
+
+Ax_WC2 (g)
+Full Name: Rear wheel longitudinal accel
+Type: Longitudinal acceleration
+Legend: Rear Wheel
+Component: Wheels
+Where calculated: Dyn
+More details: The [x] component of the acceleration of the center of rear wheel.
+
+AyBf_SM (g)
+Full Name: SM CG lat. accel, body-fixed
+Type: Lateral acceleration
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Dyn
+More details: The [sy] component of the acceleration of the CG of the main frame.
+
+Ay_Rd_Mv (g)
+Full Name: Rider hip Y acceleration
+Type: Lateral acceleration
+Legend: Rider hip
+Component: Rider motion
+Where calculated: Dyn
+More details: Lateral acceleration of rider legs relative to the main frame. The direction is [sy]
+
+Ay_SM (g)
+Full Name: Sprung mass CG lateral accel
+Type: Lateral acceleration
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Dyn
+More details: The [y] component of the acceleration of the CG of the main frame.
+
+Ay_WC1 (g)
+Full Name: Front wheel lateral accel
+Type: Lateral acceleration
+Legend: Front Wheel
+Component: Wheels
+Where calculated: Dyn
+More details: The [y] component of the acceleration of the center of front wheel.
+
+Ay_WC2 (g)
+Full Name: Rear wheel lateral accel
+Type: Lateral acceleration
+Legend: Rear Wheel
+Component: Wheels
+Where calculated: Dyn
+More details: The [y] component of the acceleration of the center of rear wheel.
+
+AzBf_SM (g)
+Full Name: SM CG vert. accel, body-fixed
+Type: Vertical acceleration
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Dyn
+More details: The [sz] component of the acceleration of the CG of the main frame.
+
+Az_Rd_Mv (g)
+Full Name: Rider hip Z acceleration
+Type: Vertical acceleration
+Legend: Rider hip
+Component: Rider motion
+Where calculated: Dyn
+More details: Vertical acceleration of rider legs relative to the seat point (nominal rider) attachment to the main frame.The direction is [sz]
+
+Az_SM (g)
+Full Name: Sprung mass CG vertical accel
+Type: Vertical acceleration
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Dyn
+More details: The [z] component of the acceleration of the CG of the main frame.
+
+Az_WC1 (g)
+Full Name: Front wheel vertical accel
+Type: Vertical acceleration
+Legend: Front Wheel
+Component: Wheels
+Where calculated: Dyn
+More details: The [z] component of the acceleration of the center of front wheel.
+
+Az_WC2 (g)
+Full Name: Rear wheel vertical accel
+Type: Vertical acceleration
+Legend: Rear Wheel
+Component: Wheels
+Where calculated: Dyn
+More details: The [z] component of the acceleration of the center of rear wheel.
+
+A_Bttry (W/V)
+Full Name: Battery output current
+Type: Ampere
+Legend: Electric battery output
+Component: Powertrain
+Where calculated: Dyn
+
+A_Cha_L (deg)
+Full Name: Lower chain angle
+Type: Chain angle
+Legend: Lower chain
+Component: Powertrain
+Where calculated: Kin
+More details: Lower chain angle relative to [sx].
+
+A_Cha_U (deg)
+Full Name: Upper chain angle
+Type: Chain angle
+Legend: Upper chain
+Component: Powertrain
+Where calculated: Kin
+More details: Upper chain angle relative to [sx].
+
+BetaAir (deg)
+Full Name: Main frame aero. slip angle
+Type: Angle
+Legend: Main frame aerodynamic slip
+Component: Aerodynamics
+Where calculated: Kin
+More details: Angle of relative air speed in the vehicle reference frame.Head - on = 0. 90 - deg is in the [sy] direction
+
+Bk_Stat (-)
+Full Name: Brake apply status
+Type: Boolean
+Legend: Brake Control
+Component: Brakes
+Where calculated: Dyn
+More details: This is 0 (brake control not applied; sum of wheel cylinder pressures <= 0.01 MPa) or 1 (brake control applied; sum of wheel cylinder pressures > 0.01 MPa).
+
+CapBtrDs (A-h)
+Full Name: Battery discharged capacity
+Type: Capacity
+Legend: Battery discharged
+Component: Powertrain
+Where calculated: Dyn
+
+ClutchTr (-)
+Full Name: Transmission clutch control
+Type: Dimensionless ratio
+Legend: Transmission clutch
+Component: Powertrain
+Where calculated: Dyn
+
+CL_Stat (-)
+Full Name: Clutch locked status
+Type: Clutch locked status
+Legend: Clutch
+Component: Powertrain
+Where calculated: Dyn
+More details: Clutch locked status, 0: slip, 1: locked
+
+CmpRS_1 (mm/s)
+Full Name: Front spring comp. rate
+Type: Comp. speed
+Legend: Front spring
+Component: Suspensions
+Where calculated: Kin
+
+CmpRS_2 (mm/s)
+Full Name: Rear spring comp. rate
+Type: Comp. speed
+Legend: Rear spring
+Component: Suspensions
+Where calculated: Kin
+
+CmpS_1 (mm)
+Full Name: Front spring deflection
+Type: Deflection
+Legend: Front spring
+Component: Suspensions
+Where calculated: Kin
+
+CmpS_2 (mm)
+Full Name: Rear spring deflection
+Type: Deflection
+Legend: Rear spring
+Component: Suspensions
+Where calculated: Kin
+
+CmpT_1 (mm)
+Full Name: Compression, tire 1
+Type: Compression
+Legend: tire 1
+Component: Tires
+Where calculated: Kin
+
+CmpT_2 (mm)
+Full Name: Compression, tire 2
+Type: Compression
+Legend: tire 2
+Component: Tires
+Where calculated: Kin
+
+DxSprk_L (mm)
+Full Name: Lower sprockets distance change
+Type: Sprockets distance from nominal
+Legend: Lower sprocket
+Component: Powertrain
+Where calculated: Dyn
+
+DxSprk_U (mm)
+Full Name: Upper sprockets distance change
+Type: Sprockets distance from nominal
+Legend: Upper sprockets
+Component: Powertrain
+Where calculated: Dyn
+
+dZdX_1 (-)
+Full Name: Ground X slope under tire 1
+Type: Ground slope
+Legend: X slope under tire 1
+Component: Ground and road
+Where calculated: Kin
+
+dZdX_2 (-)
+Full Name: Ground X slope under tire 2
+Type: Ground slope
+Legend: X slope under tire 2
+Component: Ground and road
+Where calculated: Kin
+
+dZdY_1 (-)
+Full Name: Ground Y slope under tire 1
+Type: Ground slope
+Legend: Y slope under tire 1
+Component: Ground and road
+Where calculated: Kin
+
+dZdY_2 (-)
+Full Name: Ground Y slope under tire 2
+Type: Ground slope
+Legend: Y slope under tire 2
+Component: Ground and road
+Where calculated: Kin
+
+EffBttry (-)
+Full Name: Electric battery efficiency
+Type: Dimensionless ratio
+Legend: Battery efficiency
+Component: Powertrain
+Where calculated: Dyn
+
+EffMotor (-)
+Full Name: Electric motor efficiency
+Type: Dimensionless ratio
+Legend: Motor efficiency
+Component: Powertrain
+Where calculated: Dyn
+
+Event (-)
+Full Name: Running count of events
+Type: Count
+Legend: Event
+Component: Time
+Where calculated: Dyn
+More details: This output is initially set to 0, and is incremented every time a VS Event is triggered.
+
+ExRCha_L (mm/s)
+Full Name: Lower chain extension rate
+Type: Chain extension rate
+Legend: Lower chain
+Component: Powertrain
+Where calculated: Dyn
+
+ExRCha_U (mm/s)
+Full Name: Upper chain extension rate
+Type: Chain extension rate
+Legend: Upper chain
+Component: Powertrain
+Where calculated: Dyn
+
+ExtCha_L (mm)
+Full Name: Lower chain extension
+Type: Chain extension
+Legend: Lower chain
+Component: Powertrain
+Where calculated: Dyn
+
+ExtCha_U (mm)
+Full Name: Upper chain extension
+Type: Chain extension
+Legend: Upper chain
+Component: Powertrain
+Where calculated: Dyn
+
+FbkBin_1 (N)
+Full Name: Front brake booster input force
+Type: Force
+Legend: Front brake booster input
+Component: Brakes
+Where calculated: Ctl
+
+FbkBin_2 (N)
+Full Name: Rear brake booster input force
+Type: Force
+Legend: Rear brake booster input
+Component: Brakes
+Where calculated: Ctl
+
+FbkLvr_1 (N)
+Full Name: Front brake lever/pedal force
+Type: Force
+Legend: Front brake lever (or pedal)
+Component: Brakes
+Where calculated: Ctl
+
+FbkLvr_2 (N)
+Full Name: Rear brake lever/pedal force
+Type: Force
+Legend: Rear brake lever (or pedal)
+Component: Brakes
+Where calculated: Ctl
+
+Fd_1 (N)
+Full Name: Front damper force
+Type: Force
+Legend: Front damper
+Component: Suspensions
+Where calculated: Dyn
+
+Fd_2 (N)
+Full Name: Rear damper force
+Type: Force
+Legend: Rear damper
+Component: Suspensions
+Where calculated: Dyn
+
+Fsus_1 (N)
+Full Name: Front suspension force
+Type: Suspension force
+Legend: Front suspension
+Component: Suspensions
+Where calculated: Dyn
+More details: Total of spring and damper force after lever ratio.
+
+Fsus_2 (N)
+Full Name: Rear suspension force
+Type: Suspension force
+Legend: Rear suspension
+Component: Suspensions
+Where calculated: Dyn
+
+Fs_1 (N)
+Full Name: Front spring force
+Type: Force
+Legend: Front spring
+Component: Suspensions
+Where calculated: Dyn
+
+Fs_2 (N)
+Full Name: Rear spring force
+Type: Force
+Legend: Rear spring
+Component: Suspensions
+Where calculated: Dyn
+
+FullStep (-)
+Full Name: Integrator full-step status
+Type: Boolean
+Legend: Integrator full-step status
+Component: Time
+Where calculated: State
+More details: Boolean that indicates whether the integrator is at a full step (1) or not (0). Be aware that changes to state variables from external equations that are not made at the full step are discarded. Also, events are processed only at the full step.
+
+Fx_1 (N)
+Full Name: Longitudinal force, wheel 1
+Type: Force
+Legend: Wheel 1 longitudinal
+Component: Tires
+Where calculated: Dyn
+
+Fx_2 (N)
+Full Name: Longitudinal force, wheel 2
+Type: Force
+Legend: Wheel 2 longitudinal
+Component: Tires
+Where calculated: Dyn
+
+Fx_Air (N)
+Full Name: Main frame long. aero. force
+Type: Force
+Legend: Main frame aerodynamic X
+Component: Aerodynamics
+Where calculated: Dyn
+More details: Speed of wind, independent of motorcycle.
+
+Fx_RP1 (N)
+Full Name: Fx, reference point 1
+Type: Force
+Legend: Ref. point 1 Fx
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+More details: User-defined force in X direction applied to reference point from the inertial reference N. The direction is either fixed in the body or [nx], depending on the parameter OPT_RP_FORCE_N for the reference point.
+
+Fx_RP10 (N)
+Full Name: Fx, reference point 10
+Type: Force
+Legend: Ref. point 10 Fx
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fx_RP2 (N)
+Full Name: Fx, reference point 2
+Type: Force
+Legend: Ref. point 2 Fx
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fx_RP3 (N)
+Full Name: Fx, reference point 3
+Type: Force
+Legend: Ref. point 3 Fx
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fx_RP4 (N)
+Full Name: Fx, reference point 4
+Type: Force
+Legend: Ref. point 4 Fx
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fx_RP5 (N)
+Full Name: Fx, reference point 5
+Type: Force
+Legend: Ref. point 5 Fx
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fx_RP6 (N)
+Full Name: Fx, reference point 6
+Type: Force
+Legend: Ref. point 6 Fx
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fx_RP7 (N)
+Full Name: Fx, reference point 7
+Type: Force
+Legend: Ref. point 7 Fx
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fx_RP8 (N)
+Full Name: Fx, reference point 8
+Type: Force
+Legend: Ref. point 8 Fx
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fx_RP9 (N)
+Full Name: Fx, reference point 9
+Type: Force
+Legend: Ref. point 9 Fx
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fx_StrFr (N)
+Full Name: Steer head force, main frame X
+Type: Force
+Legend: Main frame X axis
+Component: Steering
+Where calculated: Dyn
+More details: [sx] component of the steering head attachment reaction force acting on the steering head.
+
+Fx_StrHd (N)
+Full Name: Steer head X reaction force
+Type: Force
+Legend: Steer head X axis
+Component: Steering
+Where calculated: Dyn
+More details: [strx] component of the steering head attachment reaction force acting on the steering head.
+
+Fx_Wc_1 (N)
+Full Name: Tire Fx acting at wheel center 1
+Type: Force
+Legend: Tire Fx acting at wheel center 1
+Component: Wheels
+Where calculated: Dyn
+
+Fx_Wc_2 (N)
+Full Name: Tire Fx acting at wheel center 2
+Type: Force
+Legend: Tire Fx acting at wheel center 2
+Component: Wheels
+Where calculated: Dyn
+
+Fy_1 (N)
+Full Name: Lateral force, wheel 1
+Type: Force
+Legend: Wheel 1 lateral
+Component: Tires
+Where calculated: Dyn
+
+Fy_2 (N)
+Full Name: Lateral force, wheel 2
+Type: Force
+Legend: Wheel 2 lateral
+Component: Tires
+Where calculated: Dyn
+
+Fy_Air (N)
+Full Name: Main frame lat. aero. force
+Type: Force
+Legend: Main frame aerodynamic Y
+Component: Aerodynamics
+Where calculated: Dyn
+
+Fy_Rider (N)
+Full Name: Rider legs lateral force
+Type: Rider legs force
+Legend: Rider legs
+Component: Rider model
+Where calculated: Dyn
+More details: Lateral force acting at the hip joint of rider lower body in [rdr_legsy] direction. The reaction force is applied to the main frame.
+
+Fy_RP1 (N)
+Full Name: Fy, reference point 1
+Type: Force
+Legend: Ref. point 1 Fy
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+More details: User-defined force in Y direction applied to reference point from the inertial reference N. The direction is either fixed in the body or [ny], depending on the parameter OPT_RP_FORCE_N for the reference point.
+
+Fy_RP10 (N)
+Full Name: Fy, reference point 10
+Type: Force
+Legend: Ref. point 10 Fy
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fy_RP2 (N)
+Full Name: Fy, reference point 2
+Type: Force
+Legend: Ref. point 2 Fy
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fy_RP3 (N)
+Full Name: Fy, reference point 3
+Type: Force
+Legend: Ref. point 3 Fy
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fy_RP4 (N)
+Full Name: Fy, reference point 4
+Type: Force
+Legend: Ref. point 4 Fy
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fy_RP5 (N)
+Full Name: Fy, reference point 5
+Type: Force
+Legend: Ref. point 5 Fy
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fy_RP6 (N)
+Full Name: Fy, reference point 6
+Type: Force
+Legend: Ref. point 6 Fy
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fy_RP7 (N)
+Full Name: Fy, reference point 7
+Type: Force
+Legend: Ref. point 7 Fy
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fy_RP8 (N)
+Full Name: Fy, reference point 8
+Type: Force
+Legend: Ref. point 8 Fy
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fy_RP9 (N)
+Full Name: Fy, reference point 9
+Type: Force
+Legend: Ref. point 9 Fy
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fy_StrFr (N)
+Full Name: Steer head force, main frame Y
+Type: Force
+Legend: Main frame Y axis
+Component: Steering
+Where calculated: Dyn
+More details: [sy] component of the steering head attachment reaction force acting on the steering head.
+
+Fy_StrHd (N)
+Full Name: Steer head Y reaction force
+Type: Force
+Legend: Steer head Y axis
+Component: Steering
+Where calculated: Dyn
+More details: [stry] component of the steering head attachment reaction force acting on the steering head.
+
+Fy_Wc_1 (N)
+Full Name: Tire Fy acting at wheel center 1
+Type: Force
+Legend: Tire Fy acting at wheel center 1
+Component: Wheels
+Where calculated: Dyn
+
+Fy_Wc_2 (N)
+Full Name: Tire Fy acting at wheel center 2
+Type: Force
+Legend: Tire Fy acting at wheel center 2
+Component: Wheels
+Where calculated: Dyn
+
+Fz_1 (N)
+Full Name: Vertical force, wheel 1
+Type: Force
+Legend: Wheel 1 vertical
+Component: Tires
+Where calculated: Dyn
+
+Fz_2 (N)
+Full Name: Vertical force, wheel 2
+Type: Force
+Legend: Wheel 2 vertical
+Component: Tires
+Where calculated: Dyn
+
+Fz_Air (N)
+Full Name: Main frame vert. aero. force
+Type: Force
+Legend: Main frame aerodynamic Z
+Component: Aerodynamics
+Where calculated: Dyn
+
+Fz_RP1 (N)
+Full Name: Fz, reference point 1
+Type: Force
+Legend: Ref. point 1 Fz
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+More details: User-defined force in Z direction applied to reference point from the inertial reference N. The direction is either fixed in the body or [nz], depending on the parameter OPT_RP_FORCE_N for the reference point.
+
+Fz_RP10 (N)
+Full Name: Fz, reference point 10
+Type: Force
+Legend: Ref. point 10 Fz
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fz_RP2 (N)
+Full Name: Fz, reference point 2
+Type: Force
+Legend: Ref. point 2 Fz
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fz_RP3 (N)
+Full Name: Fz, reference point 3
+Type: Force
+Legend: Ref. point 3 Fz
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fz_RP4 (N)
+Full Name: Fz, reference point 4
+Type: Force
+Legend: Ref. point 4 Fz
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fz_RP5 (N)
+Full Name: Fz, reference point 5
+Type: Force
+Legend: Ref. point 5 Fz
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fz_RP6 (N)
+Full Name: Fz, reference point 6
+Type: Force
+Legend: Ref. point 6 Fz
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fz_RP7 (N)
+Full Name: Fz, reference point 7
+Type: Force
+Legend: Ref. point 7 Fz
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fz_RP8 (N)
+Full Name: Fz, reference point 8
+Type: Force
+Legend: Ref. point 8 Fz
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fz_RP9 (N)
+Full Name: Fz, reference point 9
+Type: Force
+Legend: Ref. point 9 Fz
+Component: Custom Forces and Reference Points
+Where calculated: Dyn
+
+Fz_StrFr (N)
+Full Name: Steer head force, main frame Z
+Type: Force
+Legend: Main frame Z axis
+Component: Steering
+Where calculated: Dyn
+More details: [sz] component of the steering head attachment reaction force acting on the steering head.
+
+Fz_StrHd (N)
+Full Name: Steer head Z reaction force
+Type: Force
+Legend: Steer head Z axis
+Component: Steering
+Where calculated: Dyn
+More details: [strz] component of the steering head attachment reaction force acting on the steering head.
+
+Fz_ST_L (N)
+Full Name: Left fall stop force
+Type: Fall stop force
+Legend: Left stopper
+Component: Fall stopper
+Where calculated: Dyn
+
+Fz_ST_R (N)
+Full Name: Right fall stop force
+Type: Fall stop force
+Legend: Right stopper
+Component: Fall stopper
+Where calculated: Dyn
+
+Fz_Wc_1 (N)
+Full Name: Tire Fz acting at wheel center 1
+Type: Force
+Legend: Tire Fz acting at wheel center 1
+Component: Wheels
+Where calculated: Dyn
+
+Fz_Wc_2 (N)
+Full Name: Tire Fz acting at wheel center 2
+Type: Force
+Legend: Tire Fz acting at wheel center 2
+Component: Wheels
+Where calculated: Dyn
+
+F_Cha_L (N)
+Full Name: Lower chain force
+Type: Force
+Legend: Lower chain
+Component: Powertrain
+Where calculated: Dyn
+
+F_Cha_U (N)
+Full Name: Upper chain force
+Type: Chain force
+Legend: Upper chain
+Component: Powertrain
+Where calculated: Dyn
+
+Gamma_1 (deg)
+Full Name: Inclination angle, tire 1
+Type: Angle
+Legend: Tire 1 inclination
+Component: Tires
+Where calculated: Kin
+
+Gamma_2 (deg)
+Full Name: Inclination angle, tire 2
+Type: Angle
+Legend: Tire 2 inclination
+Component: Tires
+Where calculated: Kin
+
+Gam_DErr (rad/s)
+Full Name: Gamma error (differential)
+Type: D error
+Legend: Steer controller
+Component: Rider model
+Where calculated: Dyn
+More details: Differential of the error between the actual and target lean angles of main frame body.
+
+Gam_IErr (rad-s)
+Full Name: Gamma error (integral)
+Type: I error
+Legend: Steer controller
+Component: Rider model
+Where calculated: Dyn
+More details: Integration of the error between the actual and target lean angles of main frame body.
+
+Gam_PErr (rad)
+Full Name: Gamma error (proportional)
+Type: P error
+Legend: Steer controller
+Component: Rider model
+Where calculated: Dyn
+More details: Error between the actual and target lean angles of main frame body.
+
+Gam_Targ (deg)
+Full Name: Target lean angle
+Type: Target lean angle
+Legend: Steer controller
+Component: Rider model
+Where calculated: Dyn
+
+GearAuto (-)
+Full Name: Automatic transmission gear
+Type: Dimensionless ratio
+Legend: Automatic transmission gear
+Component: Powertrain
+Where calculated: Dyn
+
+Gear_Man (-)
+Full Name: Manual transmission gear
+Type: Dimensionless ratio
+Legend: Manual transmission gear
+Component: Powertrain
+Where calculated: Dyn
+
+GPSlongA (deg)
+Full Name: GPS absolute longitude, veh 1
+Type: GPS longitude
+Legend: Vehicle
+Component: Chassis motion
+Where calculated: State
+
+GPS_Altitude (m)
+8-Char Alias: GPSAlitd
+Full Name: Altitude (Zo+GPS_REF_ALT), veh 1
+Type: GPS altitude
+Legend: Vehicle
+Component: Chassis motion
+Where calculated: State
+
+GPS_Lat (deg)
+Full Name: GPS relative latitude, veh 1
+Type: GPS latitude
+Legend: Vehicle
+Component: Chassis motion
+Where calculated: State
+
+GPS_LatA (deg)
+Full Name: GPS absolute latitude, veh 1
+Type: GPS latitude
+Legend: Vehicle
+Component: Chassis motion
+Where calculated: State
+
+GPS_Long (deg)
+Full Name: GPS relative longitude, veh 1
+Type: GPS longitude
+Legend: Vehicle
+Component: Chassis motion
+Where calculated: State
+
+ID_Event (-)
+Full Name: ID number of event
+Type: ID number
+Legend: ID of event
+Component: Database
+Where calculated: State
+More details: This output gives the value of the system parameter ID_EVENT. The parameter will keep its default value of 0 unless it is changed by a VS Event or other VS Command.
+
+ID_Run (-)
+Full Name: ID number of run
+Type: ID number
+Legend: ID of run
+Component: Database
+Where calculated: State
+More details: This output gives the value of the system parameter ID_RUN. The parameter will keep its default value of 0 unless it is changed by a VS Event or other VS Command.
+
+Ispin_Pr (kg-m2)
+Full Name: Primary (or CVT) spin inertia
+Type: inertia
+Legend: Primary (or CVT) gear
+Component: Powertrain
+Where calculated: Dyn
+
+JncR_1 (mm/s)
+Full Name: Front sus. comp. speed
+Type: Comp. speed
+Legend: Front suspension
+Component: Suspensions
+Where calculated: State
+
+JncR_2 (mm/s)
+Full Name: Rear sus. comp. speed
+Type: Comp. speed
+Legend: Rear suspension
+Component: Suspensions
+Where calculated: State
+
+Jounce1 (mm)
+Full Name: Front suspension compression
+Type: Compression
+Legend: Front suspension
+Component: Suspensions
+Where calculated: State
+
+Jounce2 (mm)
+Full Name: Rear suspension compression
+Type: Compression
+Legend: Rear suspension
+Component: Suspensions
+Where calculated: State
+
+Kappa_1 (-)
+Full Name: Longitudinal slip, tire 1
+Type: Dimensionless ratio
+Legend: Tire 1 long. slip
+Component: Tires
+Where calculated: Dyn
+
+Kappa_2 (-)
+Full Name: Longitudinal slip, tire 2
+Type: Dimensionless ratio
+Legend: Tire 2 long. slip
+Component: Tires
+Where calculated: Dyn
+
+KappL_1 (-)
+Full Name: Long. slip (lagged), tire 1
+Type: Dimensionless ratio
+Legend: Tire 1 long. slip (lagged)
+Component: Tires
+Where calculated: State
+
+KappL_2 (-)
+Full Name: Long. slip (lagged), tire 2
+Type: Dimensionless ratio
+Legend: Tire 2 long. slip (lagged)
+Component: Tires
+Where calculated: State
+
+Kstr_D (N-m-s/rad)
+Full Name: Steer control D gain
+Type: D gain
+Legend: Steer controller
+Component: Rider model
+Where calculated: Dyn
+
+Kstr_I (N-m/rad/s)
+Full Name: Steer control I gain
+Type: I gain
+Legend: Steer controller
+Component: Rider model
+Where calculated: Dyn
+
+Kstr_P (N-m/rad)
+Full Name: Steer control P gain
+Type: P gain
+Legend: Steer controller
+Component: Rider model
+Where calculated: Dyn
+
+K_TC (Kinv)
+Full Name: TC inverse capacity
+Type: Inverse capacity
+Legend: Torque converter
+Component: Powertrain
+Where calculated: Dyn
+
+Lat_prev (m)
+Full Name: Preview lateral distance to path
+Type: Lateral distance to path
+Legend: Preview point
+Component: Rider model path
+Where calculated: Kin
+
+Lat_Targ (m)
+Full Name: Target lateral offset from path
+Type: Lateral distance to path
+Legend: Target
+Component: Rider model path
+Where calculated: Kin
+
+Lat_Veh (m)
+Full Name: Vehicle lateral distance to path
+Type: Lateral distance to path
+Legend: Vehicle
+Component: Rider model path
+Where calculated: Kin
+
+L_Mx_1 (mm)
+Full Name: Overturning moment arm, tire 1
+Type: Mx moment arm
+Legend: Tire 1, Mx moment arm
+Component: Tires
+Where calculated: Dyn
+
+L_Mx_2 (mm)
+Full Name: Overturning moment arm, tire 2
+Type: Mx moment arm
+Legend: Tire 2, Mx moment arm
+Component: Tires
+Where calculated: Dyn
+
+ModeHybr (-)
+Full Name: Hybrid powertrain control mode
+Type: Hybrid/electric control mode
+Legend: Hybrid/electric control mode
+Component: Powertrain
+Where calculated: Dyn
+
+ModeTran (-)
+Full Name: Transmission drive mode
+Type: Dimensionless ratio
+Legend: Transmission drive mode
+Component: Powertrain
+Where calculated: Dyn
+
+MuX_1 (-)
+Full Name: Ground X friction, tire 1
+Type: Friction coefficient
+Legend: Tire/Ground MuX 1
+Component: Ground and road
+Where calculated: Kin
+
+MuX_2 (-)
+Full Name: Ground X friction, tire 2
+Type: Friction coefficient
+Legend: Tire/Ground MuX 2
+Component: Ground and road
+Where calculated: Kin
+
+MuY_1 (-)
+Full Name: Ground Y friction, tire 1
+Type: Friction coefficient
+Legend: Tire/Ground MuY 1
+Component: Ground and road
+Where calculated: Kin
+
+MuY_2 (-)
+Full Name: Ground Y friction, tire 2
+Type: Friction coefficient
+Legend: Tire/Ground MuY 2
+Component: Ground and road
+Where calculated: Kin
+
+MxExt (N-m)
+Full Name: External Mx on main frame
+Type: Moment
+Legend: Ext. moment on main frame
+Component: External actions
+Where calculated: Dyn
+
+MxExtSTR (N-m)
+Full Name: External Mx on steer frame
+Type: Moment
+Legend: Ext. moment on steer frame
+Component: External actions
+Where calculated: Dyn
+
+MxExtW1 (N-m)
+Full Name: External Mx on front whl. frame
+Type: Moment
+Legend: Ext. moment on front whl. frame
+Component: External actions
+Where calculated: Dyn
+
+MxExtW2 (N-m)
+Full Name: External Mx on rear whl. frame
+Type: Moment
+Legend: Ext. moment on rear whl. frame
+Component: External actions
+Where calculated: Dyn
+
+Mx_1 (N-m)
+Full Name: Tire 1 overturning moment at CTC
+Type: Moment
+Legend: Tire 1 central tire contact
+Component: Tires
+Where calculated: Dyn
+
+Mx_2 (N-m)
+Full Name: Tire 2 overturning moment at CTC
+Type: Moment
+Legend: Tire 2 central tire contact
+Component: Tires
+Where calculated: Dyn
+
+Mx_Air (N-m)
+Full Name: Main frame aero. roll moment
+Type: Moment
+Legend: Main frame aerodynamic X
+Component: Aerodynamics
+Where calculated: Dyn
+
+Mx_Rider (N-m)
+Full Name: Rider upper body lean torque
+Type: Rider lean torque
+Legend: Rider upper body
+Component: Rider motion
+Where calculated: Dyn
+More details: Roll moment acting on the rider upper body in [rdr_leanx] direction. The reaction moment is applied to the rider lower body.
+
+Mx_Wc_1 (N-m)
+Full Name: Tire Mx acting at wheel center 1
+Type: Moment
+Legend: Tire Mx acting at wheel center 1
+Component: Wheels
+Where calculated: Dyn
+
+Mx_Wc_2 (N-m)
+Full Name: Tire Mx acting at wheel center 2
+Type: Moment
+Legend: Tire Mx acting at wheel center 2
+Component: Wheels
+Where calculated: Dyn
+
+MyExt (N-m)
+Full Name: External My main frame
+Type: Moment
+Legend: Ext. moment on main frame
+Component: External actions
+Where calculated: Dyn
+
+MyExtSTR (N-m)
+Full Name: External My steer frame
+Type: Moment
+Legend: Ext. moment on steer frame
+Component: External actions
+Where calculated: Dyn
+
+MyExtW1 (N-m)
+Full Name: External My front whl. frame
+Type: Moment
+Legend: Ext. moment on front whl. frame
+Component: External actions
+Where calculated: Dyn
+
+MyExtW2 (N-m)
+Full Name: External My rear whl. frame
+Type: Moment
+Legend: Ext. moment on rear whl. frame
+Component: External actions
+Where calculated: Dyn
+
+My_Air (N-m)
+Full Name: Main frame aero. pitch moment
+Type: Moment
+Legend: Main frame aerodynamic Y
+Component: Aerodynamics
+Where calculated: Dyn
+
+My_Bk_1 (N-m)
+Full Name: Brake torque at Front 
+Type: Moment
+Legend: Brake torque at Front
+Component: Brakes
+Where calculated: Dyn
+
+My_Bk_2 (N-m)
+Full Name: Brake torque at Rear 
+Type: Moment
+Legend: Brake torque at Rear
+Component: Brakes
+Where calculated: Dyn
+
+My_DR_1 (N-m)
+Full Name: Front wheel drive torque
+Type: Moment
+Legend: Front wheel drive
+Component: Powertrain
+Where calculated: Dyn
+
+My_DR_2 (N-m)
+Full Name: Rear wheel drive torque
+Type: Moment
+Legend: Rear wheel drive
+Component: Powertrain
+Where calculated: Dyn
+
+My_RR_1 (N-m)
+Full Name: Tire 1 roll resist moment at CTC
+Type: Moment
+Legend: Tire 1 central tire contact
+Component: Tires
+Where calculated: Dyn
+
+My_RR_2 (N-m)
+Full Name: Tire 2 roll resist moment at CTC
+Type: Moment
+Legend: Tire 2 central tire contact
+Component: Tires
+Where calculated: Dyn
+
+My_Wc_1 (N-m)
+Full Name: Tire My acting at wheel center 1
+Type: Moment
+Legend: Tire My acting at wheel center 1
+Component: Wheels
+Where calculated: Dyn
+
+My_Wc_2 (N-m)
+Full Name: Tire My acting at wheel center 2
+Type: Moment
+Legend: Tire My acting at wheel center 2
+Component: Wheels
+Where calculated: Dyn
+
+MzCGC_1 (N-m)
+Full Name: Tire 1 aligning moment at CGC
+Type: Moment
+Legend: Tire 1 crown ground contact
+Component: Tires
+Where calculated: Dyn
+
+MzCGC_2 (N-m)
+Full Name: Tire 2 aligning moment at CGC
+Type: Moment
+Legend: Tire 2 crown ground contact
+Component: Tires
+Where calculated: Dyn
+
+MzExt (N-m)
+Full Name: External Mz main frame
+Type: Moment
+Legend: Ext. moment on main frame
+Component: External actions
+Where calculated: Dyn
+
+MzExtSTR (N-m)
+Full Name: External Mz steer frame
+Type: Moment
+Legend: Ext. moment on steer frame
+Component: External actions
+Where calculated: Dyn
+
+MzExtW1 (N-m)
+Full Name: External Mz front whl. frame
+Type: Moment
+Legend: Ext. moment on front whl. frame
+Component: External actions
+Where calculated: Dyn
+
+MzExtW2 (N-m)
+Full Name: External Mz rear whl. frame
+Type: Moment
+Legend: Ext. moment on rear whl. frame
+Component: External actions
+Where calculated: Dyn
+
+Mz_1 (N-m)
+Full Name: Tire 1 aligning moment at CTC
+Type: Moment
+Legend: Tire 1 central tire contact
+Component: Tires
+Where calculated: Dyn
+
+Mz_2 (N-m)
+Full Name: Tire 2 aligning moment at CTC
+Type: Moment
+Legend: Tire 2 central tire contact
+Component: Tires
+Where calculated: Dyn
+
+Mz_Air (N-m)
+Full Name: Main frame aero. yaw moment
+Type: Moment
+Legend: Main frame aerodynamic Z
+Component: Aerodynamics
+Where calculated: Dyn
+
+Mz_Stop (N-m)
+Full Name: Fall stop moment
+Type: Moment
+Legend: Fall stop
+Component: Fall stopper
+Where calculated: Dyn
+
+Mz_Wc_1 (N-m)
+Full Name: Tire Mz acting at wheel center 1
+Type: Moment
+Legend: Tire Mz acting at wheel center 1
+Component: Wheels
+Where calculated: Dyn
+
+Mz_Wc_2 (N-m)
+Full Name: Tire Mz acting at wheel center 2
+Type: Moment
+Legend: Tire Mz acting at wheel center 2
+Component: Wheels
+Where calculated: Dyn
+
+M_Bend (N-m)
+Full Name: Front frame bending torque
+Type: bending torque
+Legend: Front frame
+Component: Steering
+Where calculated: Dyn
+
+M_MotCmd (N-m)
+Full Name: Electric motor torque command
+Type: Torque
+Legend: Electric motor command
+Component: Powertrain
+Where calculated: Dyn
+
+M_Motor (N-m)
+Full Name: Electric motor output torque
+Type: Torque
+Legend: Electric motor
+Component: Powertrain
+Where calculated: Dyn
+
+M_Sprkt (N-m)
+Full Name: gearbox sprocket torque
+Type: sprocket torque
+Legend: Gearbox sprocket
+Component: Powertrain
+Where calculated: Dyn
+
+M_StrSys (N-m)
+Full Name: Steering spring/damper torque
+Type: Steer torque
+Legend: Steering system
+Component: Steering
+Where calculated: Dyn
+
+M_Str_In (N-m)
+Full Name: Steering control torque
+Type: Steer torque
+Legend: Steer controller
+Component: Steering
+Where calculated: Dyn
+
+M_STR_SP (N-m)
+Full Name: Steering spring torque
+Type: Torque
+Legend: Steer spring
+Component: Steering
+Where calculated: Dyn
+
+M_TC_In (N-m)
+Full Name: TC input shaft torque
+Type: Torque
+Legend: Torque converter input shaft
+Component: Powertrain
+Where calculated: Dyn
+
+M_TC_Out (N-m)
+Full Name: TC output shaft torque
+Type: Torque
+Legend: Torque converter output shaft
+Component: Powertrain
+Where calculated: Dyn
+
+M_Trans (N-m)
+Full Name: Trans. output shaft torque
+Type: Torque
+Legend: Transmission output shaft
+Component: Powertrain
+Where calculated: Dyn
+
+M_Twist (N-m)
+Full Name: Front frame twist torque
+Type: Twist torque
+Legend: Front frame
+Component: Steering
+Where calculated: Dyn
+
+PbkCh_1 (MPa)
+Full Name: Front brake chamber pressure
+Type: Pressure
+Legend: Front brake chamber/cylinder
+Component: Brakes
+Where calculated: Dyn
+
+PbkCh_2 (MPa)
+Full Name: Rear brake chamber pressure
+Type: Pressure
+Legend: Rear brake chamber/cylinder
+Component: Brakes
+Where calculated: Dyn
+
+PbkD_1 (MPa)
+Full Name: Front brake delivery pressure
+Type: Pressure
+Legend: Front brake (delivery)
+Component: Brakes
+Where calculated: Dyn
+
+PbkD_2 (MPa)
+Full Name: Rear brake delivery pressure
+Type: Pressure
+Legend: Rear brake (delivery)
+Component: Brakes
+Where calculated: Dyn
+
+PbkMs_1 (MPa)
+Full Name: Front brake master/cyl. pressure
+Type: Pressure
+Legend: Front brake master/cylinder
+Component: Brakes
+Where calculated: Ctl
+
+PbkMs_2 (MPa)
+Full Name: Rear brake master/cyl. pressure
+Type: Pressure
+Legend: Rear brake master/cylinder
+Component: Brakes
+Where calculated: Ctl
+
+Pitch (deg)
+Full Name: Pitch, vehicle
+Type: Angle
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: State
+
+PitchG1 (deg)
+Full Name: Pitch at ground, wheel 1
+Type: Angle
+Legend: Pitch at ground, wheel 1
+Component: Wheels
+Where calculated: Kin
+
+PitchG2 (deg)
+Full Name: Pitch at ground, wheel 2
+Type: Angle
+Legend: Pitch at ground, wheel 2
+Component: Wheels
+Where calculated: Kin
+
+Pitch_1 (deg)
+Full Name: Pitch (Euler), wheel plane 1
+Type: Angle
+Legend: Pitch (Euler), wheel plane 1
+Component: Wheels
+Where calculated: Kin
+
+Pitch_2 (deg)
+Full Name: Pitch (Euler), wheel plane 2
+Type: Angle
+Legend: Pitch (Euler), wheel plane 2
+Component: Wheels
+Where calculated: Kin
+
+Pitch_Fr (deg)
+Full Name: Pitch, fork (animation)
+Type: Angle
+Legend: Upper fork
+Component: Suspensions
+Where calculated: Kin
+
+Pitch_hb (deg)
+Full Name: Pitch, hub (animation)
+Type: Angle
+Legend: Rear un-sprung body
+Component: Suspensions
+Where calculated: Kin
+
+Pitch_RD (deg)
+Full Name: Rider pitch angle
+Type: Angle
+Legend: Rider's upper body
+Component: Rider motion
+Where calculated: Kin
+
+Pitch_St (deg)
+Full Name: Pitch, steering head
+Type: Angle
+Legend: Front frame steer body
+Component: Steering
+Where calculated: Kin
+
+Pit_ArmL (deg)
+Full Name: Pitch, left arm (animation)
+Type: Angle
+Legend: Left arm
+Component: Rider motion
+Where calculated: Kin
+More details: Pitch angle of left arm in the global coordinate system.This is used for animation.
+
+Pit_ArmR (deg)
+Full Name: Pitch, right arm (animation)
+Type: Angle
+Legend: Right arm
+Component: Rider motion
+Where calculated: Kin
+More details: Pitch angle of right arm in the global coordinate system. This is used for animation.
+
+Pit_Ch_L (deg)
+Full Name: Pitch, lower chain
+Type: Angle
+Legend: Lower chain
+Component: Powertrain
+Where calculated: Kin
+More details: Pitch angle of lower chain in the global coordinate system. This is used for animation.
+
+Pit_Ch_U (deg)
+Full Name: Pitch, upper chain
+Type: Angle
+Legend: Upper chain
+Component: Powertrain
+Where calculated: Kin
+More details: Pitch angle of upper chain in the global coordinate system. This is used for animation.
+
+Pit_LegL (deg)
+Full Name: Pitch, left leg (animation)
+Type: Angle
+Legend: Left leg
+Component: Rider motion
+Where calculated: State
+More details: Euler pitch angle of left leg, used for animation.
+
+Pit_LegR (deg)
+Full Name: Pitch, right leg (animation)
+Type: Angle
+Legend: Right leg
+Component: Rider motion
+Where calculated: State
+
+PtchGnd (deg)
+Full Name: Pitch angle of ground
+Type: Angle
+Legend: Road reference frame 1
+Component: Ground and road
+Where calculated: Kin
+
+PtchPath (deg)
+Full Name: Pitch at ground on rider path
+Type: Angle
+Legend: Ground at rider path
+Component: Rider model path
+Where calculated: Ctl
+More details: Global pitch of the ground is calculated by the closed-loop speed controller when using path preview. If OPT_SC is not set to 4, then this is not calculated.
+
+Ptch_Lfr (deg)
+Full Name: Pitch, lower fork (animation)
+Type: Angle
+Legend: Front lower fork body
+Component: Suspensions
+Where calculated: Kin
+
+ptch_swa (deg)
+Full Name: Pitch angle of swing arm
+Type: angle
+Legend: Swing arm
+Component: VS Commands
+Where calculated: Dyn
+
+PwrBtrCh (kW)
+Full Name: Battery charged power limit
+Type: Power
+Legend: Electric battery charge limit
+Component: Powertrain
+Where calculated: Dyn
+
+PwrBtrDs (kW)
+Full Name: Battery discharged power limit
+Type: Power
+Legend: Electric battery discharge limit
+Component: Powertrain
+Where calculated: Dyn
+
+PwrBttry (kW)
+Full Name: Electric battery required power
+Type: Power
+Legend: Electric battery required
+Component: Powertrain
+Where calculated: Dyn
+
+PwrDrHEV (kW)
+Full Name: Driver required power in HEV
+Type: Power
+Legend: Driver required in HEV/EV
+Component: Powertrain
+Where calculated: Dyn
+
+PwrEngAv (kW)
+Full Name: Engine available power
+Type: Power
+Legend: Engine available
+Component: Powertrain
+Where calculated: Ctl
+More details: Power available to the speed controller, assuming full throttle at the current crankshaft speed.
+
+PwrMotDm (kW)
+Full Name: Electric motor power demand
+Type: Power
+Legend: Electric motor demand
+Component: Powertrain
+Where calculated: Dyn
+
+PwrMotor (kW)
+Full Name: Electric motor output power
+Type: Power
+Legend: Electric motor
+Component: Powertrain
+Where calculated: Dyn
+
+PwrTrans (kW)
+Full Name: Transmission output shaft power
+Type: Power
+Legend: Transmission output shaft
+Component: Powertrain
+Where calculated: Dyn
+
+PwrWheel (kW)
+Full Name: Power to wheels from powertrain
+Type: Power
+Legend: Drive wheels
+Component: Powertrain
+Where calculated: Dyn
+
+Pwr_SC (kW)
+Full Name: Power from SC (no PT)
+Type: Power
+Legend: Speed controller (no powertrain)
+Component: Speed controller
+Where calculated: Ctl
+
+Pwr_SCrq (kW)
+Full Name: Power requested from SC
+Type: Power
+Legend: Speed controller requested power
+Component: Speed controller
+Where calculated: Ctl
+
+Pwr_TC (kW)
+Full Name: TC output shaft power
+Type: Power
+Legend: Torque converter output shaft
+Component: Powertrain
+Where calculated: Dyn
+
+RdID_1 (-)
+Full Name: Road ID for tire 1
+Type: Road ID Number
+Legend: Tire 1
+Component: Tires
+Where calculated: Kin
+
+RdID_2 (-)
+Full Name: Road ID for tire 2
+Type: Road ID Number
+Legend: Tire 2
+Component: Tires
+Where calculated: Kin
+
+ResBttry (V2/W)
+Full Name: Electric battery resistance
+Type: Resistance
+Legend: Electric battery
+Component: Powertrain
+Where calculated: Dyn
+
+Rgear_Pr (-)
+Full Name: Primary (or CVT) gear ratio
+Type: Dimensionless ratio
+Legend: Primary (or CVT) gear
+Component: Powertrain
+Where calculated: Dyn
+
+RhoPathY (1/m)
+Full Name: Curvature of path (road lateral)
+Type: Curvature
+Legend: Rider path (road lateral)
+Component: Rider model path
+Where calculated: Ctl
+More details: Lateral (parallel to ground) component of curvature of rider preview reference path. This is calculated by the closed-loop speed controller when using path preview. If OPT_SC is not set to 4, then this curvature is not calculated.
+
+RhoPathZ (1/m)
+Full Name: Curvature of path (road normal)
+Type: Curvature
+Legend: Rider path (road normal)
+Component: Rider model path
+Where calculated: Ctl
+More details: Normal (perpendicular to ground) component of curvature of rider preview reference path. This is calculated by the closed-loop speed controller when using path preview. If OPT_SC is not set to 4, then this curvature is not calculated.
+
+Rho_prev (1/m)
+Full Name: Curvature at rider preview
+Type: Curvature at path
+Legend: Preview point
+Component: Rider model path
+Where calculated: Kin
+
+Rho_Road (1/m)
+Full Name: Curvature of rider ref. path
+Type: Curvature
+Legend: Rider reference path
+Component: Rider model path
+Where calculated: State
+More details: Lateral (perpendicular to gravity) component of curvature of driver reference path (not the road path)
+
+Rho_SM (m)
+Full Name: Instant curvature from Vx and Ay
+Type: Instant curvature
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Dyn
+
+Roll (deg)
+Full Name: Roll, vehicle
+Type: Angle
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Kin
+
+RollE_1 (deg)
+Full Name: Roll (Euler), wheel plane 1
+Type: Angle
+Legend: Roll (Euler), wheel plane 1
+Component: Wheels
+Where calculated: Kin
+
+RollE_2 (deg)
+Full Name: Roll (Euler), wheel plane 2
+Type: Angle
+Legend: Roll (Euler), wheel plane 2
+Component: Wheels
+Where calculated: Kin
+
+RollE_Rd (deg)
+Full Name: Rider roll (animation)
+Type: Angle
+Legend: Rider's upper body
+Component: Rider motion
+Where calculated: Kin
+
+RollG1 (deg)
+Full Name: Roll at ground, wheel 1
+Type: Angle
+Legend: Roll at ground, wheel 1
+Component: Wheels
+Where calculated: Kin
+
+RollG2 (deg)
+Full Name: Roll at ground, wheel 2
+Type: Angle
+Legend: Roll at ground, wheel 2
+Component: Wheels
+Where calculated: Kin
+
+RollGnd (deg)
+Full Name: Roll angle of ground
+Type: Angle
+Legend: Road reference frame 
+Component: Ground and road
+Where calculated: Kin
+
+RollPath (deg)
+Full Name: Roll at ground on rider path
+Type: Angle
+Legend: Ground at rider path
+Component: Rider model path
+Where calculated: Ctl
+More details: Global roll of the ground is calculated by the closed-loop speed controller when using path preview. If OPT_SC is not set to 4, then this is not calculated.
+
+Roll_E (deg)
+Full Name: Roll, vehicle (euler)
+Type: Angle
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: State
+
+Roll_Frk (deg)
+Full Name: Roll, fork (animation)
+Type: Angle
+Legend: Upper fork
+Component: Suspensions
+Where calculated: Kin
+
+Roll_hub (deg)
+Full Name: Roll, hub (animation)
+Type: Angle
+Legend: Rear un-sprung body
+Component: Suspensions
+Where calculated: Kin
+
+Roll_Lfr (deg)
+Full Name: Roll, lower fork (animation)
+Type: Angle
+Legend: Front lower fork body
+Component: Suspensions
+Where calculated: Kin
+
+Roll_Rdr (deg)
+Full Name: Rider lean angle (relative)
+Type: Angle
+Legend: Rider's upper body
+Component: Rider motion
+Where calculated: Kin
+More details: Rider upper body lean angle relative to the lower body. The lean direction is [rdr_leanx].
+
+Roll_Str (deg)
+Full Name: Roll, steering head
+Type: Angle
+Legend: Front frame steer body
+Component: Steering
+Where calculated: Kin
+
+Roll_W1 (deg)
+Full Name: Roll, wheel 1
+Type: Angle
+Legend: Front Wheel
+Component: Wheels
+Where calculated: Kin
+
+Roll_W2 (deg)
+Full Name: Roll, wheel 2
+Type: Angle
+Legend: Rear Wheel
+Component: Wheels
+Where calculated: Kin
+
+Rol_ArmL (deg)
+Full Name: Roll, left arm (animation)
+Type: Angle
+Legend: Left arm
+Component: Rider motion
+Where calculated: Kin
+More details: Roll angle of left arm in the global coordinate system. This is used for animation.
+
+Rol_ArmR (deg)
+Full Name: Roll, right arm (animation)
+Type: Angle
+Legend: Right arm
+Component: Rider motion
+Where calculated: Kin
+More details: Roll angle of right arm in the global coordinate system. This is used for animation.
+
+Rol_Ch_L (deg)
+Full Name: Roll, lower chain
+Type: Angle
+Legend: Lower chain
+Component: Powertrain
+Where calculated: Kin
+More details: Roll angle of lower chain in the global coordinate system. This is provided for animation.
+
+Rol_Ch_U (deg)
+Full Name: Roll, upper chain
+Type: Angle
+Legend: Upper chain
+Component: Powertrain
+Where calculated: Kin
+More details: Roll angle of upper chain in the global coordinate system. This is provided for animation.
+
+Rol_LegL (deg)
+Full Name: Roll, left leg (animation)
+Type: Angle
+Legend: Left leg
+Component: Rider motion
+Where calculated: Kin
+More details: Roll angle of left leg in the global coordinate system. This is used for animation.
+
+Rol_LegR (deg)
+Full Name: Roll, right leg (animation)
+Type: Angle
+Legend: Right leg
+Component: Rider motion
+Where calculated: Kin
+More details: Roll angle of right leg in the global coordinate system. This is used for animation.
+
+RotTC_IN (rev)
+Full Name: TC input shaft rotation
+Type: Rotation
+Legend: Torque converter input shaft
+Component: Powertrain
+Where calculated: Dyn
+
+RotTC_OT (rev)
+Full Name: TC output shaft rotation
+Type: Rotation
+Legend: Torque converter output shaft
+Component: Powertrain
+Where calculated: State
+
+RotTrans (rev)
+Full Name: Trans. output shaft rotation
+Type: Rotation
+Legend: Transmission output shaft
+Component: Powertrain
+Where calculated: Dyn
+
+Rot_Bend (deg)
+Full Name: Front frame bending angle
+Type: Angle
+Legend: Front fork, bend
+Component: Steering
+Where calculated: State
+
+Rot_Spkt (rev)
+Full Name: Gearbox sprocket rotation
+Type: Rotation
+Legend: Gearbox sprocket
+Component: Powertrain
+Where calculated: State
+
+Rot_Twst (deg)
+Full Name: Front frame twist angle
+Type: Angle
+Legend: Front fork, twist
+Component: Steering
+Where calculated: State
+
+Rot_W1 (deg)
+Full Name: Rotation, wheel 1
+Type: Rotation
+Legend: Front Wheel
+Component: Wheels
+Where calculated: State
+
+Rot_W2 (deg)
+Full Name: Rotation, wheel 2
+Type: Rotation
+Legend: Rear Wheel
+Component: Wheels
+Where calculated: State
+
+RreCmb_1 (mm)
+Full Name: Effective rolling radius, tire 1
+Type: Effective radius
+Legend: Tire 1, eff. radius
+Component: Tires
+Where calculated: Kin
+
+RreCmb_2 (mm)
+Full Name: Effective rolling radius, tire 2
+Type: Effective radius
+Legend: Tire 2, eff. radius
+Component: Tires
+Where calculated: Kin
+
+R_AV_TC (-)
+Full Name: TC output/input speed ratio
+Type: Dimensionless ratio
+Legend: TC output/input speed
+Component: Powertrain
+Where calculated: Dyn
+
+R_Lev_1 (-)
+Full Name: Lever ratio, front
+Type: Ratio
+Legend: Front suspension
+Component: Suspensions
+Where calculated: Kin
+
+R_Lev_2 (-)
+Full Name: Lever ratio, rear
+Type: Ratio
+Legend: Rear suspension
+Component: Suspensions
+Where calculated: Kin
+
+R_M_TC (-)
+Full Name: TC out./input shaft torque ratio
+Type: Dimensionless ratio
+Legend: TC output/input shaft torque
+Component: Powertrain
+Where calculated: Dyn
+
+R_Sys (m)
+Full Name: Instant radius from Vx and Ay
+Type: Instant radius
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Dyn
+
+SocBttry (-)
+Full Name: Battery state of charge
+Type: Dimensionless ratio
+Legend: Battery state of charge
+Component: Powertrain
+Where calculated: Dyn
+
+Station (m)
+Full Name: Station (path) at vehicle origin
+Type: Longitudinal distance
+Legend: Path station at vehicle origin
+Component: Rider model path
+Where calculated: State
+
+Sta_Prof (m)
+Full Name: Station for road profiles
+Type: Longitudinal distance
+Legend: Road profile station
+Component: Ground and road
+Where calculated: State
+
+Sta_Road (m)
+Full Name: Station (road) at vehicle origin
+Type: Longitudinal distance
+Legend: Road station at vehicle origin
+Component: Ground and road
+Where calculated: State
+
+Steer (deg)
+Full Name: Steer angle
+Type: Angle
+Legend: Front frame steer body
+Component: Steering
+Where calculated: State
+
+S_Rd_1 (m)
+Full Name: Road station for tire 1
+Type: Road Station
+Legend: Tire 1
+Component: Tires
+Where calculated: Kin
+
+S_Rd_2 (m)
+Full Name: Road station for tire 2
+Type: Road Station
+Legend: Tire 2
+Component: Tires
+Where calculated: Kin
+
+TC_Lock (-)
+Full Name: Torque converter lockup signal
+Type: Control signal
+Legend: Torque converter lockup clutch
+Component: Powertrain
+Where calculated: Dyn
+More details: Torque converter lockup clutch control signal: 0 -> free, 1 -> lockup.
+
+TempBttry (C)
+8-Char Alias: TmpBttry
+Full Name: Battery Temperature
+Type: Temperature
+Legend: Battery Temperature
+Component: Powertrain
+Where calculated: Dyn
+
+Throttle (-)
+Full Name: Normalized throttle at Pedal
+Type: Dimensionless ratio
+Legend: Pedal
+Component: Powertrain
+Where calculated: Dyn
+More details: Sum of the specified open-loop throttle control (internal + imported) plus throttle due to closed-loop speed control.
+
+Thrtl_SC (-)
+Full Name: Throttle (speed controller)
+Type: Dimensionless ratio
+Legend: Pedal (speed controller)
+Component: Powertrain
+Where calculated: Ctl
+
+Thr_Eng (-)
+Full Name: Normalized throttle at Engine
+Type: Dimensionless ratio
+Legend: Engine
+Component: Powertrain
+Where calculated: Dyn
+More details: Normalized throttle applied to the engine. This includes a 1st-order time lag.
+
+Thr_HEV (-)
+Full Name: Engine throttle command from HEV
+Type: Dimensionless ratio
+Legend: Engine (HEV)
+Component: Powertrain
+Where calculated: Dyn
+
+Thr_Intl (-)
+Full Name: Normalized throttle (internal)
+Type: Dimensionless ratio
+Legend: Pedal (internal)
+Component: Powertrain
+Where calculated: Ctl
+More details: Sum of the specified open-loop throttle control plus throttle due to closed-loop speed control. This excludes the optional imported value.
+
+T_Event (s)
+Full Name: Time since event clock reset
+Type: Time
+Legend: Event
+Component: Time
+Where calculated: State
+More details: This output is calculated each time step with the formula T_EVENT = T - TSTART_T_EVENT, where TSTART_T_EVENT is a system parameter that may be set to T when a VS Event is triggered.
+
+T_Real_Elapsed (s)
+8-Char Alias: TReallpd
+Full Name: Real time since start of run
+Type: Time
+Legend: Real time since run start
+Component: Time
+Where calculated: State
+More details: This is a real time measurement of the time elapsed since the start of the run.
+
+T_Real_Last (s)
+8-Char Alias: TRealLst
+Full Name: Real time since last step
+Type: Time
+Legend: Real time since last step start
+Component: Time
+Where calculated: State
+More details: This is a real time delta from the start of the last time step to the prior. This will include time taken by the caller.
+
+T_Real_Step (s)
+8-Char Alias: TRealStp
+Full Name: Real time of last step
+Type: Time
+Legend: Real time for last step
+Component: Time
+Where calculated: State
+More details: This is a real time measurement of the last calculation step. This excludes any time taken by the caller.
+
+T_Record (s)
+Full Name: Recording time in output file
+Type: Time
+Legend: Recording time in file
+Component: Time
+Where calculated: State
+More details: This variable is incremented when outputs are written to file or saved to a buffer. This matches the time that is obtained in post-processing by multiplying the sample number by the sample interval.
+
+T_Stamp (s)
+Full Name: Simulation time stamp
+Type: Time
+Legend: Simulation time stamp
+Component: Time
+Where calculated: State
+More details: This is the simulation time. If writing to file is interupted by setting the system parameter OPT_WRITE to 0, then this variable will not match the recording time T_record.
+
+UTM_East (m)
+Full Name: UTM Easting Coordinate, veh 1
+Type: UTM Easting
+Legend: Vehicle
+Component: Chassis motion
+Where calculated: State
+
+UTM_North (m)
+8-Char Alias: UTMNorth
+Full Name: UTM Northing Coordinate, veh 1
+Type: UTM Northing
+Legend: Vehicle
+Component: Chassis motion
+Where calculated: State
+
+UTM_Zone (-)
+Full Name: UTM Zone (Pos: N Hemi, Neg: S Hemi, veh 1)
+Type: UTM Zone
+Legend: Vehicle
+Component: Chassis motion
+Where calculated: State
+
+Vair (km/h)
+Full Name: Air speed rel. to main frame
+Type: Speed
+Legend: Air relative to main frame
+Component: Aerodynamics
+Where calculated: Kin
+
+VocBttry (V)
+Full Name: Battery open-circuit voltage
+Type: Voltage
+Legend: Electric battery open-circuit
+Component: Powertrain
+Where calculated: Dyn
+
+Vwind (km/h)
+Full Name: Wind speed
+Type: Speed
+Legend: Wind
+Component: Aerodynamics
+Where calculated: State
+
+Vx (km/h)
+Full Name: Long. speed, main frame CG
+Type: Longitudinal speed
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Kin
+
+VxBf_SM (km/h)
+Full Name: SM CG long. vel., body-fixed
+Type: Longitudinal velocity
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: State
+More details: The [sx] component of the velocity of the CG of the main frame.
+
+VxCGC_1 (km/h)
+Full Name: Vx, tire 1 crown ground contact
+Type: Longitudinal speed
+Legend: Crown ground contact, tire 1
+Component: Tires
+Where calculated: Kin
+
+VxCGC_2 (km/h)
+Full Name: Vx, tire 2 crown ground contact
+Type: Longitudinal speed
+Legend: Crown ground contact, tire 2
+Component: Tires
+Where calculated: Kin
+
+VxSprk_L (mm/s)
+Full Name: Lower sprockets distance rate
+Type: Sprockets distance rate
+Legend: Lower sprockets
+Component: Powertrain
+Where calculated: Dyn
+
+VxSprk_U (mm/s)
+Full Name: Upper sprockets distance rate
+Type: Sprockets distance rate
+Legend: Upper sprockets
+Component: Powertrain
+Where calculated: Dyn
+
+VxTarget (km/h)
+Full Name: Target speed
+Type: Longitudinal speed
+Legend: Target speed
+Component: Speed controller
+Where calculated: Ctl
+
+VxW0_1 (km/h)
+Full Name: Vx at wheel center 1
+Type: Longitudinal speed
+Legend: Vx at wheel center 1
+Component: Wheels
+Where calculated: Kin
+
+VxW0_2 (km/h)
+Full Name: Vx at wheel center 2
+Type: Longitudinal speed
+Legend: Vx at wheel center 2
+Component: Wheels
+Where calculated: Kin
+
+VxWC_1 (km/h)
+Full Name: Vx at wheel cen. 1 (road plane)
+Type: Longitudinal speed
+Legend: Vx at Wheel center 1
+Component: Tires
+Where calculated: Kin
+
+VxWC_2 (km/h)
+Full Name: Vx at wheel cen. 2 (road plane)
+Type: Longitudinal speed
+Legend: Vx at Wheel center 2
+Component: Tires
+Where calculated: Kin
+
+Vxz_Fwd (km/h)
+Full Name: Longitudinal speed in XZ plane
+Type: Longitudinal speed
+Legend: Vehicle forward in XZ plane
+Component: Chassis motion
+Where calculated: State
+More details: This is the forward speed of the sprung mass CG, calculated as SQRT(VxBf_SM^2 + VzBf_SM^2), with the sign set to match VxBf_SM.
+
+Vx_1 (km/h)
+Full Name: Equivalent long. speed, tire 1
+Type: Longitudinal speed
+Legend: Tire 1 (equivalent speed)
+Component: Tires
+Where calculated: Kin
+
+Vx_2 (km/h)
+Full Name: Equivalent long. speed, tire 2
+Type: Longitudinal speed
+Legend: Tire 2 (equivalent speed)
+Component: Tires
+Where calculated: Kin
+
+Vx_Err (km/h)
+Full Name: Speed controller error
+Type: Longitudinal speed
+Legend: Controller error
+Component: Speed controller
+Where calculated: Ctl
+
+Vx_IErr (m)
+Full Name: Integrated SC error
+Type: Speed error integral
+Legend: Integrated speed error
+Component: Speed controller
+Where calculated: State
+
+Vx_RM (km/h)
+Full Name: Long. speed, Instant CG, rider mass
+Type: Longitudinal speed
+Legend: Rider CG
+Component: Rider motion
+Where calculated: Kin
+More details: This is the speed of the instant CG of the total rider mass in the ISO/SAE [x] direction. Be aware that the motion of the instant CG cannot be measured directly in physical rider with riding posture.
+
+Vx_TM (km/h)
+Full Name: Long. speed, Instant CG, total mass
+Type: Longitudinal speed
+Legend: Inst. CG
+Component: Chassis motion
+Where calculated: Kin
+More details: This is the speed of the instant CG of the total vehicle mass in the ISO/SAE [x] direction. Be aware that the motion of the instant CG cannot be measured directly in physical vehicles.
+
+Vx_TMR (km/h)
+Full Name: Long. speed, total CG mass w/ rider
+Type: Longitudinal speed
+Legend: Inst. CG w/ rider
+Component: Chassis motion
+Where calculated: Kin
+More details: This is the speed of the instant CG of the total vehicle and rider masses in the ISO/SAE [x] direction. Be aware that the motion of the instant CG cannot be measured directly in physical vehicle with rider.
+
+Vy (km/h)
+Full Name: Lateral speed, main frame CG
+Type: Lateral speed
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Kin
+
+VyBf_SM (km/h)
+Full Name: SM CG lat. vel., body-fixed
+Type: Lateral velocity
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: State
+More details: The [sy] component of the velocity of the CG of the main frame.
+
+VyCGC_1 (km/h)
+Full Name: Vy, tire 1 crown ground contact
+Type: Lateral speed
+Legend: Crown ground contact, tire 1
+Component: Tires
+Where calculated: Kin
+
+VyCGC_2 (km/h)
+Full Name: Vy, tire 2 crown ground contact
+Type: Lateral speed
+Legend: Crown ground contact, tire 2
+Component: Tires
+Where calculated: Kin
+
+VyW0_1 (km/h)
+Full Name: Vy at wheel center 1
+Type: Lateral speed
+Legend: Vy at wheel center 1
+Component: Wheels
+Where calculated: Kin
+
+VyW0_2 (km/h)
+Full Name: Vy at wheel center 2
+Type: Lateral speed
+Legend: Vy at wheel center 2
+Component: Wheels
+Where calculated: Kin
+
+VyWC_1 (km/h)
+Full Name: Vy at wheel cen. 1 (road plane)
+Type: Lateral speed
+Legend: Vy at Wheel center 1
+Component: Tires
+Where calculated: Kin
+
+VyWC_2 (km/h)
+Full Name: Vy at wheel cen. 2 (road plane)
+Type: Lateral speed
+Legend: Vy at Wheel center 2
+Component: Tires
+Where calculated: Kin
+
+VY_Rd_Mv (mm/s)
+Full Name: Rider hip Y speed
+Type: Y speed
+Legend: Rider hip
+Component: Rider motion
+Where calculated: State
+More details: Lateral speed of rider legs relative to the main frame; the direction is [sy]
+
+Vy_RM (km/h)
+Full Name: Lat. speed, Instant CG, rider mass
+Type: Lateral speed
+Legend: Rider CG
+Component: Rider motion
+Where calculated: Kin
+More details: This is the speed of the instant CG of the total rider mass in the ISO/SAE [y] direction. Be aware that the motion of the instant CG cannot be measured directly in physical rider with riding posture.
+
+Vy_TM (km/h)
+Full Name: Lat. speed, Instant CG, total mass
+Type: Lateral speed
+Legend: Inst. CG
+Component: Chassis motion
+Where calculated: Kin
+More details: This is the speed of the instant CG of the total vehicle mass in the ISO/SAE [y] direction. Be aware that the motion of the instant CG cannot be measured directly in physical vehicles.
+
+Vy_TMR (km/h)
+Full Name: Lat. speed, total CG mass w/ rider
+Type: Lateral speed
+Legend: Inst. CG w/ rider
+Component: Chassis motion
+Where calculated: Kin
+More details: This is the speed of the instant CG of the total vehicle and rider masses in the ISO/SAE [y] direction. Be aware that the motion of the instant CG cannot be measured directly in physical vehicle with rider.
+
+Vz (km/h)
+Full Name: Vertical speed, main frame CG
+Type: Vertical speed
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: Kin
+
+VzBf_SM (km/h)
+Full Name: SM CG vert. vel., body-fixed
+Type: Vertical velocity
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: State
+More details: The [sz] component of the velocity of the CG of the main frame.
+
+VzW0_1 (km/h)
+Full Name: Vz at wheel center 1
+Type: Vertical speed
+Legend: Vz at wheel center 1
+Component: Wheels
+Where calculated: Kin
+
+VzW0_2 (km/h)
+Full Name: Vz at wheel center 2
+Type: Vertical speed
+Legend: Vz at wheel center 2
+Component: Wheels
+Where calculated: Kin
+
+VZ_Rd_Mv (mm/s)
+Full Name: Rider hip Z speed
+Type: Z speed
+Legend: Rider hip
+Component: Rider motion
+Where calculated: Kin
+More details: Vertical velocity of rider legs relative to the seat point (nominal rider attachment to the main frame. The direction is [sz]
+
+Vz_RM (km/h)
+Full Name: Ver. speed, Instant CG, rider mass
+Type: Vertical speed
+Legend: Rider CG
+Component: Rider motion
+Where calculated: Kin
+More details: This is the speed of the instant CG of the total rider mass in the ISO/SAE [z] direction. Be aware that the motion of the instant CG cannot be measured directly in physical tests.
+
+Vz_TM (km/h)
+Full Name: Ver. speed, Instant CG, total mass
+Type: Vertical speed
+Legend: Inst. CG
+Component: Chassis motion
+Where calculated: Kin
+More details: This is the speed of the instant CG of the total vehicle mass in the ISO/SAE [z] direction. Be aware that the motion of the instant CG cannot be measured directly in physical vehicles.
+
+Vz_TMR (km/h)
+Full Name: Ver. speed, total CG mass w/ rider
+Type: Vertical speed
+Legend: Inst. CG w/ rider
+Component: Chassis motion
+Where calculated: Kin
+More details: This is the speed of the instant CG of the total vehicle and rider masses in the ISO/SAE [z] direction. Be aware that the motion of the instant CG cannot be measured directly in physical vehicle with rider.
+
+V_Bttry (V)
+Full Name: Battery output voltage
+Type: Voltage
+Legend: Electric battery output
+Component: Powertrain
+Where calculated: Dyn
+
+Xcg_RM (m)
+Full Name: X coordinate, Instant CG, rider mass
+Type: Global X coordinate
+Legend: Rider CG
+Component: Rider motion
+Where calculated: Kin
+
+Xcg_TM (m)
+Full Name: X coordinate, Instant CG, total mass
+Type: Global X coordinate
+Legend: Inst. CG
+Component: Chassis motion
+Where calculated: Kin
+
+Xcg_TMR (m)
+Full Name: X coord., total CG mass w/ rider
+Type: Global X coordinate
+Legend: Inst. CG w/ rider
+Component: Chassis motion
+Where calculated: Kin
+
+Xctc_1 (m)
+Full Name: X coordinate, tire CTC 1
+Type: Global X coordinate
+Legend: Center of tire contact 1
+Component: Tires
+Where calculated: Kin
+
+Xctc_2 (m)
+Full Name: X coordinate, tire CTC 2
+Type: Global X coordinate
+Legend: Center of tire contact 2
+Component: Tires
+Where calculated: Kin
+
+Xgnd_1 (m)
+Full Name: X coord. of ground under tire 1
+Type: Global X coordinate
+Legend: Crown ground contact, tire 1
+Component: Tires
+Where calculated: Kin
+
+Xgnd_2 (m)
+Full Name: X coord. of ground under tire 2
+Type: Global X coordinate
+Legend: Crown ground contact, tire 2
+Component: Tires
+Where calculated: Kin
+
+Xo (m)
+Full Name: X coordinate, vehicle
+Type: Global X coordinate
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: State
+
+X_Design (m)
+Full Name: X coordinate of reference path
+Type: Global X coordinate
+Legend: Rider reference path
+Component: Rider model path
+Where calculated: State
+
+X_Frk (m)
+Full Name: X coord., fork attach.
+Type: Global X coordinate
+Legend: Front lower fork body
+Component: Suspensions
+Where calculated: Kin
+
+X_Grip_L (m)
+Full Name: X coord., left grip.
+Type: Global X coordinate
+Legend: Left grip
+Component: Steering
+Where calculated: Kin
+
+X_Grip_R (m)
+Full Name: X coord., right grip.
+Type: Global X coordinate
+Legend: Right grip
+Component: Steering
+Where calculated: Kin
+
+X_Hip_L (m)
+Full Name: X coord., left hip
+Type: Global X coordinate
+Legend: Left hip
+Component: Rider motion
+Where calculated: Kin
+
+X_Hip_R (m)
+Full Name: X coord., right hip
+Type: Global X coordinate
+Legend: Right hip
+Component: Rider motion
+Where calculated: Kin
+
+X_leg_cm (m)
+Full Name: X coord., rider leg CG
+Type: Global X coordinate
+Legend: Rider legs
+Component: Rider motion
+Where calculated: Kin
+
+X_RDR (m)
+Full Name: X coord., rider hip
+Type: Global X coordinate
+Legend: Rider's upper body
+Component: Rider motion
+Where calculated: Kin
+
+X_RM (m)
+Full Name: X coordinate of preview point
+Type: Global X coordinate
+Legend: Rider model preview point
+Component: Rider model path
+Where calculated: Kin
+
+X_RP1 (m)
+Full Name: Global X, reference point 1
+Type: Global X coordinate
+Legend: Reference point 1 X
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+X_RP10 (m)
+Full Name: Global X, reference point 10
+Type: Global X coordinate
+Legend: Reference point 10 X
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+X_RP2 (m)
+Full Name: Global X, reference point 2
+Type: Global X coordinate
+Legend: Reference point 2 X
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+X_RP3 (m)
+Full Name: Global X, reference point 3
+Type: Global X coordinate
+Legend: Reference point 3 X
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+X_RP4 (m)
+Full Name: Global X, reference point 4
+Type: Global X coordinate
+Legend: Reference point 4 X
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+X_RP5 (m)
+Full Name: Global X, reference point 5
+Type: Global X coordinate
+Legend: Reference point 5 X
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+X_RP6 (m)
+Full Name: Global X, reference point 6
+Type: Global X coordinate
+Legend: Reference point 6 X
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+X_RP7 (m)
+Full Name: Global X, reference point 7
+Type: Global X coordinate
+Legend: Reference point 7 X
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+X_RP8 (m)
+Full Name: Global X, reference point 8
+Type: Global X coordinate
+Legend: Reference point 8 X
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+X_RP9 (m)
+Full Name: Global X, reference point 9
+Type: Global X coordinate
+Legend: Reference point 9 X
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+X_Rw_Lp (m)
+Full Name: X coord., wheel lower chain
+Type: Global X coordinate
+Legend: Wheel lower chain
+Component: Powertrain
+Where calculated: Kin
+
+X_Rw_Up (m)
+Full Name: X coord., wheel upper chain
+Type: Global X coordinate
+Legend: Wheel upper chain
+Component: Powertrain
+Where calculated: Kin
+
+X_Shol_L (m)
+Full Name: X coord., left shol.
+Type: Global X coordinate
+Legend: Left shoulder
+Component: Rider motion
+Where calculated: Kin
+
+X_Shol_R (m)
+Full Name: X coord., right shol.
+Type: Global X coordinate
+Legend: Right shoulder
+Component: Rider motion
+Where calculated: Kin
+
+X_Spk_Lp (m)
+Full Name: X coord., sprocket lower chain
+Type: Global X coordinate
+Legend: Sprocket lower chain
+Component: Powertrain
+Where calculated: Kin
+
+X_Spk_Up (m)
+Full Name: X coord., sprocket upper chain
+Type: Global X coordinate
+Legend: Sprocket upper chain
+Component: Powertrain
+Where calculated: Kin
+
+X_Step_L (m)
+Full Name: X coord., left step
+Type: Global X coordinate
+Legend: Left step
+Component: Rider motion
+Where calculated: Kin
+
+X_Step_R (m)
+Full Name: X coord., right step
+Type: Global X coordinate
+Legend: Right step
+Component: Rider motion
+Where calculated: Kin
+
+X_Str (m)
+Full Name: X coord., steer head
+Type: Global X coordinate
+Legend: Front frame steer body
+Component: Steering
+Where calculated: Kin
+
+X_Target (m)
+Full Name: X coordinate of target path
+Type: Global X coordinate
+Legend: Target
+Component: Rider model path
+Where calculated: Kin
+
+X_v_aero (m)
+Full Name: X coord., aero. vel. ref. pt.
+Type: Global X coordinate
+Legend: Aerodynamics vel. ref. point
+Component: Aerodynamics
+Where calculated: Kin
+
+X_WC1 (m)
+Full Name: X coord., Tire 1 whl. center
+Type: Global X coordinate
+Legend: Front Wheel
+Component: Wheels
+Where calculated: Kin
+
+X_WC2 (m)
+Full Name: X coord., Tire 2 whl. center
+Type: Global X coordinate
+Legend: Rear Wheel
+Component: Wheels
+Where calculated: Kin
+
+Yaw (deg)
+Full Name: Yaw, vehicle
+Type: Angle
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: State
+
+YawE_1 (deg)
+Full Name: Yaw (Euler), wheel plane 1
+Type: Angle
+Legend: Yaw (Euler), wheel plane 1
+Component: Wheels
+Where calculated: Kin
+
+YawE_2 (deg)
+Full Name: Yaw (Euler), wheel plane 2
+Type: Angle
+Legend: Yaw (Euler), wheel plane 2
+Component: Wheels
+Where calculated: Kin
+
+Yaw_ArmL (deg)
+Full Name: Yaw, left arm (animation)
+Type: Angle
+Legend: Left arm
+Component: Rider motion
+Where calculated: Kin
+More details: Yaw angle of left arm in the global coordinate system. This is used for animation.
+
+Yaw_ArmR (deg)
+Full Name: Yaw, right arm (animation)
+Type: Angle
+Legend: Right arm
+Component: Rider motion
+Where calculated: Kin
+More details: Yaw angle of right arm in the global coordinate system. This is used for animation.
+
+Yaw_Ch_L (deg)
+Full Name: Yaw, lower chain
+Type: Angle
+Legend: Lower chain
+Component: Powertrain
+Where calculated: Kin
+More details: Yaw angle of lower chain in the global coordinate system. This is used for animation.
+
+Yaw_Ch_U (deg)
+Full Name: Yaw, upper chain
+Type: Angle
+Legend: Upper chain
+Component: Powertrain
+Where calculated: Kin
+More details: Yaw angle of upper chain in the global coordinate system. This is used for animation.
+
+Yaw_Frk (deg)
+Full Name: Yaw, fork (animation)
+Type: Angle
+Legend: Upper fork
+Component: Suspensions
+Where calculated: Kin
+
+Yaw_hub (deg)
+Full Name: Yaw, hub (animation)
+Type: Angle
+Legend: Rear un-sprung body
+Component: Suspensions
+Where calculated: Kin
+
+Yaw_LegL (deg)
+Full Name: Yaw, left leg (animation)
+Type: Angle
+Legend: Left leg
+Component: Rider motion
+Where calculated: State
+More details: Euler yaw angle of left leg, used for animation.
+
+Yaw_LegR (deg)
+Full Name: Yaw, right leg (animation)
+Type: Angle
+Legend: Right leg
+Component: Rider motion
+Where calculated: State
+
+Yaw_Lfr (deg)
+Full Name: Yaw, lower fork (animation)
+Type: Angle
+Legend: Front lower fork body
+Component: Suspensions
+Where calculated: Kin
+
+Yaw_RDR (deg)
+Full Name: Rider yaw angle
+Type: Angle
+Legend: Rider's upper body
+Component: Rider motion
+Where calculated: Kin
+
+Yaw_Str (deg)
+Full Name: Yaw, steering head
+Type: Angle
+Legend: Front frame steer body
+Component: Steering
+Where calculated: Kin
+
+Yaw_W1 (deg)
+Full Name: Yaw, wheel 1
+Type: Angle
+Legend: Front Wheel
+Component: Wheels
+Where calculated: Kin
+
+Yaw_W2 (deg)
+Full Name: Yaw, wheel 2
+Type: Angle
+Legend: Rear Wheel
+Component: Wheels
+Where calculated: Kin
+
+Yaw_Wind (deg)
+Full Name: Global wind heading (yaw)
+Type: Angle
+Legend: Wind
+Component: Aerodynamics
+Where calculated: State
+
+Ycg_RM (m)
+Full Name: Y coordinate, Instant CG, rider mass
+Type: Global Y coordinate
+Legend: Rider CG
+Component: Rider motion
+Where calculated: Kin
+
+Ycg_TM (m)
+Full Name: Y coordinate, Instant CG, total mass
+Type: Global Y coordinate
+Legend: Inst. CG
+Component: Chassis motion
+Where calculated: Kin
+
+Ycg_TMR (m)
+Full Name: Y coord., total CG mass w/ rider
+Type: Global Y coordinate
+Legend: Inst. CG w/ rider
+Component: Chassis motion
+Where calculated: Kin
+
+Yctc_1 (m)
+Full Name: Y coordinate, tire CTC 1
+Type: Global Y coordinate
+Legend: Center of tire contact 1
+Component: Tires
+Where calculated: Kin
+
+Yctc_2 (m)
+Full Name: Y coordinate, tire CTC 2
+Type: Global Y coordinate
+Legend: Center of tire contact 2
+Component: Tires
+Where calculated: Kin
+
+Ygnd_1 (m)
+Full Name: Y coord. of ground under tire 1
+Type: Global Y coordinate
+Legend: Crown ground contact, tire 1
+Component: Tires
+Where calculated: Kin
+
+Ygnd_2 (m)
+Full Name: Y coord. of ground under tire 2
+Type: Global Y coordinate
+Legend: Crown ground contact, tire 2
+Component: Tires
+Where calculated: Kin
+
+Yo (m)
+Full Name: Y coordinate, vehicle
+Type: Global Y coordinate
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: State
+
+Y_Design (m)
+Full Name: Y coordinate of reference path
+Type: Global Y coordinate
+Legend: Rider reference path
+Component: Rider model path
+Where calculated: State
+
+Y_Fork (m)
+Full Name: Y coord., fork attach.
+Type: Global Y coordinate
+Legend: Front lower fork body
+Component: Suspensions
+Where calculated: Kin
+
+Y_Grip_L (m)
+Full Name: Y coord., left grip.
+Type: Global Y coordinate
+Legend: Left grip
+Component: Steering
+Where calculated: Kin
+
+Y_Grip_R (m)
+Full Name: Y coord., right grip.
+Type: Global Y coordinate
+Legend: Right grip
+Component: Steering
+Where calculated: Kin
+
+Y_Hip_L (m)
+Full Name: Y coord., left hip
+Type: Global Y coordinate
+Legend: Left hip
+Component: Rider motion
+Where calculated: Kin
+
+Y_Hip_R (m)
+Full Name: Y coord., right hip
+Type: Global Y coordinate
+Legend: Right hip
+Component: Rider motion
+Where calculated: Kin
+
+Y_leg_cm (m)
+Full Name: Y coord., rider leg CG
+Type: Global Y coordinate
+Legend: Rider legs
+Component: Rider motion
+Where calculated: Kin
+
+Y_RDR (m)
+Full Name: Y coord., rider hip
+Type: Global Y coordinate
+Legend: Rider's upper body
+Component: Rider motion
+Where calculated: Kin
+
+Y_Rd_Mov (mm)
+Full Name: Rider hip Y movement
+Type: Y movement
+Legend: Rider hip
+Component: Rider motion
+Where calculated: State
+More details: Lateral displacement of rider legs relative to the main frame. The direction is [sy]
+
+Y_RM (m)
+Full Name: Y coordinate of preview point
+Type: Global Y coordinate
+Legend: Rider model preview point
+Component: Rider model path
+Where calculated: Kin
+
+Y_RP1 (m)
+Full Name: Global Y, reference point 1
+Type: Global Y coordinate
+Legend: Reference point 1 Y
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Y_RP10 (m)
+Full Name: Global Y, reference point 10
+Type: Global Y coordinate
+Legend: Reference point 10 Y
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Y_RP2 (m)
+Full Name: Global Y, reference point 2
+Type: Global Y coordinate
+Legend: Reference point 2 Y
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Y_RP3 (m)
+Full Name: Global Y, reference point 3
+Type: Global Y coordinate
+Legend: Reference point 3 Y
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Y_RP4 (m)
+Full Name: Global Y, reference point 4
+Type: Global Y coordinate
+Legend: Reference point 4 Y
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Y_RP5 (m)
+Full Name: Global Y, reference point 5
+Type: Global Y coordinate
+Legend: Reference point 5 Y
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Y_RP6 (m)
+Full Name: Global Y, reference point 6
+Type: Global Y coordinate
+Legend: Reference point 6 Y
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Y_RP7 (m)
+Full Name: Global Y, reference point 7
+Type: Global Y coordinate
+Legend: Reference point 7 Y
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Y_RP8 (m)
+Full Name: Global Y, reference point 8
+Type: Global Y coordinate
+Legend: Reference point 8 Y
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Y_RP9 (m)
+Full Name: Global Y, reference point 9
+Type: Global Y coordinate
+Legend: Reference point 9 Y
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Y_Rw_Lp (m)
+Full Name: Y coord., wheel lower chain
+Type: Global Y coordinate
+Legend: Wheel lower chain
+Component: Powertrain
+Where calculated: Kin
+
+Y_Rw_Up (m)
+Full Name: Y coord., wheel upper chain
+Type: Global Y coordinate
+Legend: Wheel upper chain
+Component: Powertrain
+Where calculated: Kin
+
+Y_Shol_L (m)
+Full Name: Y coord., left shol.
+Type: Global Y coordinate
+Legend: Left shoulder
+Component: Rider motion
+Where calculated: Kin
+
+Y_Shol_R (m)
+Full Name: Y coord., right shol.
+Type: Global Y coordinate
+Legend: Right shoulder
+Component: Rider motion
+Where calculated: Kin
+
+Y_Spk_Lp (m)
+Full Name: Y coord., sprocket lower chain
+Type: Global Y coordinate
+Legend: Sprocket lower chain
+Component: Powertrain
+Where calculated: Kin
+
+Y_Spk_Up (m)
+Full Name: Y coord., sprocket upper chain
+Type: Global Y coordinate
+Legend: Sprocket upper chain
+Component: Powertrain
+Where calculated: Kin
+
+Y_Step_L (m)
+Full Name: Y coord., left step
+Type: Global Y coordinate
+Legend: Left step
+Component: Rider motion
+Where calculated: Kin
+
+Y_Step_R (m)
+Full Name: Y coord., right step
+Type: Global Y coordinate
+Legend: Right step
+Component: Rider motion
+Where calculated: Kin
+
+Y_Str (m)
+Full Name: Y coord., steer head
+Type: Global Y coordinate
+Legend: Front frame steer body
+Component: Steering
+Where calculated: Kin
+
+Y_Target (m)
+Full Name: Y coordinate of target path
+Type: Global Y coordinate
+Legend: Target
+Component: Rider model path
+Where calculated: Kin
+
+Y_v_aero (m)
+Full Name: Y coord., aero. vel. ref. pt.
+Type: Global Y coordinate
+Legend: Aerodynamics vel. ref. point
+Component: Aerodynamics
+Where calculated: Kin
+
+Y_WC1 (m)
+Full Name: Y coord., Tire 1 whl. center
+Type: Global Y coordinate
+Legend: Front Wheel
+Component: Wheels
+Where calculated: Kin
+
+Y_WC2 (m)
+Full Name: Y coord., Tire 2 whl. center
+Type: Global Y coordinate
+Legend: Rear Wheel
+Component: Wheels
+Where calculated: Kin
+
+Zcg_RM (m)
+Full Name: Z coordinate, Instant CG, rider mass
+Type: Global Z coordinate
+Legend: Rider CG
+Component: Rider motion
+Where calculated: Kin
+
+Zcg_TM (m)
+Full Name: Z coordinate, Instant CG, total mass
+Type: Global Z coordinate
+Legend: Inst. CG
+Component: Chassis motion
+Where calculated: Kin
+
+Zcg_TMR (m)
+Full Name: Z coord., total CG mass w/ rider
+Type: Global Z coordinate
+Legend: Inst. CG w/ rider
+Component: Chassis motion
+Where calculated: Kin
+
+Zgnd_1 (m)
+Full Name: Z coord. of ground under tire 1
+Type: Global Z coordinate
+Legend: Crown ground contact, tire 1
+Component: Tires
+Where calculated: Kin
+
+Zgnd_2 (m)
+Full Name: Z coord. of ground under tire 2
+Type: Global Z coordinate
+Legend: Crown ground contact, tire 2
+Component: Tires
+Where calculated: Kin
+
+Zo (m)
+Full Name: Z coordinate, vehicle
+Type: Global Z coordinate
+Legend: Main Frame
+Component: Chassis motion
+Where calculated: State
+
+Z_Fork (m)
+Full Name: Z coord., fork attach.
+Type: Global Z coordinate
+Legend: Front lower fork body
+Component: Suspensions
+Where calculated: Kin
+
+Z_Grip_L (m)
+Full Name: Z coord., left grip.
+Type: Global Z coordinate
+Legend: Left grip
+Component: Steering
+Where calculated: Kin
+
+Z_Grip_R (m)
+Full Name: Z coord., right grip.
+Type: Global Z coordinate
+Legend: Right grip
+Component: Steering
+Where calculated: Kin
+
+Z_Hip_L (m)
+Full Name: Z coord., left hip
+Type: Global Z coordinate
+Legend: Left hip
+Component: Rider motion
+Where calculated: Kin
+
+Z_Hip_R (m)
+Full Name: Z coord., right hip
+Type: Global Z coordinate
+Legend: Right hip
+Component: Rider motion
+Where calculated: Kin
+
+Z_leg_cm (m)
+Full Name: Z coord., rider leg CG
+Type: Global Z coordinate
+Legend: Rider legs
+Component: Rider motion
+Where calculated: Kin
+
+Z_RDR (m)
+Full Name: Z coord., rider hip
+Type: Global Z coordinate
+Legend: Rider's upper body
+Component: Rider motion
+Where calculated: Kin
+
+Z_Rd_Mov (mm)
+Full Name: Rider hip Z movement
+Type: Z movement
+Legend: Rider hip
+Component: Rider motion
+Where calculated: State
+More details: Vertical displacement of rider legs relative to the seat point (nominal riderattachment to the main frame.The direction is [sz]
+
+Z_RM (m)
+Full Name: Z coordinate of preview point
+Type: Global Z coordinate
+Legend: Rider model preview point
+Component: Rider model path
+Where calculated: Kin
+
+Z_RP1 (m)
+Full Name: Global Z, reference point 1
+Type: Global Z coordinate
+Legend: Reference point 1 Z
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Z_RP10 (m)
+Full Name: Global Z, reference point 10
+Type: Global Z coordinate
+Legend: Reference point 10 Z
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Z_RP2 (m)
+Full Name: Global Z, reference point 2
+Type: Global Z coordinate
+Legend: Reference point 2 Z
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Z_RP3 (m)
+Full Name: Global Z, reference point 3
+Type: Global Z coordinate
+Legend: Reference point 3 Z
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Z_RP4 (m)
+Full Name: Global Z, reference point 4
+Type: Global Z coordinate
+Legend: Reference point 4 Z
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Z_RP5 (m)
+Full Name: Global Z, reference point 5
+Type: Global Z coordinate
+Legend: Reference point 5 Z
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Z_RP6 (m)
+Full Name: Global Z, reference point 6
+Type: Global Z coordinate
+Legend: Reference point 6 Z
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Z_RP7 (m)
+Full Name: Global Z, reference point 7
+Type: Global Z coordinate
+Legend: Reference point 7 Z
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Z_RP8 (m)
+Full Name: Global Z, reference point 8
+Type: Global Z coordinate
+Legend: Reference point 8 Z
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Z_RP9 (m)
+Full Name: Global Z, reference point 9
+Type: Global Z coordinate
+Legend: Reference point 9 Z
+Component: Custom Forces and Reference Points
+Where calculated: Kin
+
+Z_Rw_Lp (m)
+Full Name: Z coord., Wheel lower chain
+Type: Global Z coordinate
+Legend: Wheel lower chain
+Component: Powertrain
+Where calculated: Kin
+
+Z_Rw_Up (m)
+Full Name: Z coord., wheel upper chain
+Type: Global Z coordinate
+Legend: Wheel upper chain
+Component: Powertrain
+Where calculated: Kin
+
+Z_Shol_L (m)
+Full Name: Z coord., left shol.
+Type: Global Z coordinate
+Legend: Left shoulder
+Component: Rider motion
+Where calculated: Kin
+
+Z_Shol_R (m)
+Full Name: Z coord., right shol.
+Type: Global Z coordinate
+Legend: Right shoulder
+Component: Rider motion
+Where calculated: Kin
+
+Z_Spk_Lp (m)
+Full Name: Z coord., sprocket lower chain
+Type: Global Z coordinate
+Legend: Sprocket lower chain
+Component: Powertrain
+Where calculated: Kin
+
+Z_Spk_Up (m)
+Full Name: Z coord., sprocket upper chain
+Type: Global Z coordinate
+Legend: Sprocket upper chain
+Component: Powertrain
+Where calculated: Kin
+
+Z_Step_L (m)
+Full Name: Z coord., left step
+Type: Global Z coordinate
+Legend: Left step
+Component: Rider motion
+Where calculated: Kin
+
+Z_Step_R (m)
+Full Name: Z coord., right step
+Type: Global Z coordinate
+Legend: Right step
+Component: Rider motion
+Where calculated: Kin
+
+Z_Str (m)
+Full Name: Z coord., steer head
+Type: Global Z coordinate
+Legend: Front frame steer body
+Component: Steering
+Where calculated: Kin
+
+Z_v_aero (m)
+Full Name: Z coord., aero. vel. ref. pt.
+Type: Global Z coordinate
+Legend: Aerodynamics vel. ref. point
+Component: Aerodynamics
+Where calculated: Kin
+
+Z_WC1 (m)
+Full Name: Z coord., Tire 1 whl. center
+Type: Global Z coordinate
+Legend: Front Wheel
+Component: Wheels
+Where calculated: Kin
+
+Z_WC2 (m)
+Full Name: Z coord., Tire 2 whl. center
+Type: Global Z coordinate
+Legend: Rear Wheel
+Component: Wheels
+Where calculated: Kin
+

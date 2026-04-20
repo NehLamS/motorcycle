@@ -1,0 +1,2571 @@
+PARSFILE
+
+! EXPANDED_PARSFILE for Math models and animator
+
+! This is an expansion of the Parsfile: "Runs\Run_d45457b6-5edf-47cc-9dae-b64407019c64.par"
+! It contains the contents of that file plus the contents of any files linked
+! with the "PARSFILE" keyword.
+
+! File created by BikeSim 2025.0
+
+PRODUCT_NAME BikeSim
+MODEL_LAYOUT variable_caster
+
+tstep 0.0005
+iprint 50
+
+ENTER_PARSFILE Runs\Run_d45457b6-5edf-47cc-9dae-b64407019c64.par
+#FullDataName BikeSim Run Control`Electric Shaft Drv.: O-L, Regen. Brk.`Powertrain: Electric
+*VEHICLE_CODE variable_caster
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+ENTER_PARSFILE Animator\Cameras\Camera_bc65a1c7-b789-41d4-a64f-6a98c1c466f9.par
+#FullDataName Animator: Camera Setup`90 Azm, 5 El, 15 m`Bike Reference
+SET_CAMERA_REFERENCE_FRAME Frame_1f91caf9-9c5d-4c2c-90f6-dc2b686a3df1
+ENTER_PARSFILE Animator\Frames\Frame_1f91caf9-9c5d-4c2c-90f6-dc2b686a3df1.par
+#FullDataName Animator: Reference Frame`Bike X-Y-Z`Bike Tracking
+ADD_REFERENCE_FRAME Frame_1f91caf9-9c5d-4c2c-90f6-dc2b686a3df1
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME X_rdr
+SET_Y_NAME Y_rdr
+SET_Z_NAME Z_rdr
+SET_YAW_NAME Yaw
+WRT_X_rdr
+ANI_X_rdr
+WRT_Y_rdr
+ANI_Y_rdr
+WRT_Z_rdr
+ANI_Z_rdr
+WRT_Yaw
+ANI_Yaw
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { Bike Tracking } Bike X-Y-Z
+EXIT_PARSFILE Animator\Frames\Frame_1f91caf9-9c5d-4c2c-90f6-dc2b686a3df1.par
+
+SET_LOOKPOINT_REFERENCE_FRAME Frame_1f91caf9-9c5d-4c2c-90f6-dc2b686a3df1
+SET_LOOKPOINT_X 0.5
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0
+SET_AZIMUTH 90
+SET_ELEVATION 5
+SET_DISTANCE 15
+SET_CAMERAMAN_NAME External camera
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 15
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Bike Reference } 90 Azm, 5 El, 15 m
+EXIT_PARSFILE Animator\Cameras\Camera_bc65a1c7-b789-41d4-a64f-6a98c1c466f9.par
+
+SET_RUN_COLOR 1 0.8 0
+RT_WINDOW_CLOSE off
+LIVE_SERVER_MAX_CONNECTIONS 0
+ENTER_PARSFILE Vehicles\Assembly\Vehicle_33837942-5be8-4180-a5a7-a328caba23e9.par
+#FullDataName Vehicle: Assembly`Sport Tour, WB: Shaft Drv., Batt. Electric`Electrified
+INSTALL_SPEED_CONTROLLER
+iaxle 1
+ENTER_PARSFILE Suspensions\Fork\Fork_3748714f-33cb-494c-887d-051953131714.par
+#FullDataName Suspension: Fork`Sport Touring: Wishbone`Touring Bikes
+MFORK 7.25
+LZ_CG_FORK 345.5
+X_CG_FORK 3.63
+flag_old_fork_data 0
+CMP_STRUT_LEVER_COEFFICIENT 1.307
+ENTER_PARSFILE Suspensions\Shocks\Shock_04498e08-10a3-4c47-a231-c121c88c750e.par
+#FullDataName Suspension: Shock Absorber`Linear Coef: 2.0 N-s/mm`Linear Constant
+FD_COEFFICIENT 2
+LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { Linear Constant } Linear Coef: 2.0 N-s/mm
+EXIT_PARSFILE Suspensions\Shocks\Shock_04498e08-10a3-4c47-a231-c121c88c750e.par
+
+ENTER_PARSFILE Suspensions\Springs\Spring_26b22e79-0190-49b6-ad5c-85741f1460d5.par
+#FullDataName Suspension: Spring`25 N/mm, Strk. 120 mm, Preload 933 N`
+FS_COMP_TABLE LINEAR
+-90, -3042
+-80, -1042
+0, 958
+60, 2458
+70, 4458
+ENDTABLE
+FS_EXT_TABLE LINEAR
+-90, -3092
+-80, -1092
+0, 908
+60, 2408
+70, 4408
+ENDTABLE
+SPRING_COMP_BETA 2
+SPRING_EXT_BETA 2
+LOG_ENTRY Used Dataset: Suspension: Spring; 25 N/mm, Strk. 120 mm, Preload 933 N
+EXIT_PARSFILE Suspensions\Springs\Spring_26b22e79-0190-49b6-ad5c-85741f1460d5.par
+
+ENTER_PARSFILE Suspensions\Dive\Dive_bfea1f0b-28fe-44d9-9010-da0e6e2950c1.par
+#FullDataName Suspension: Dive Angle (Caster Change)`Spline: Zero at Zero mm`
+SUSP_DIVE_TABLE SPLINE
+-30, -2.48512
+-28, -1.929
+-26, -1.51669
+-24, -1.19548
+-22, -0.93866
+-20, -0.729993
+-18, -0.559303
+-16, -0.419588
+-14, -0.305448
+-12, -0.213744
+-10, -0.141231
+-8, -0.0856146
+-6, -0.0450596
+-4, -0.0180737
+-2, -0.00342959
+0, -0.000107429
+2, -0.00725289
+4, -0.0241454
+6, -0.0501738
+8, -0.0848179
+10, -0.127633
+12, -0.178239
+14, -0.236311
+16, -0.301569
+18, -0.373775
+20, -0.452729
+22, -0.538257
+24, -0.630216
+26, -0.728486
+28, -0.832971
+30, -0.94359
+32, -1.06028
+34, -1.18301
+36, -1.31173
+38, -1.44643
+40, -1.58711
+42, -1.73377
+44, -1.88643
+46, -2.0451
+48, -2.20982
+50, -2.38062
+52, -2.55756
+54, -2.74068
+56, -2.93003
+58, -3.12568
+60, -3.32768
+62, -3.5361
+64, -3.751
+66, -3.97245
+68, -4.20052
+70, -4.43525
+ENDTABLE
+LOG_ENTRY Used Dataset: Suspension: Dive Angle (Caster Change); Spline: Zero at Zero mm
+EXIT_PARSFILE Suspensions\Dive\Dive_bfea1f0b-28fe-44d9-9010-da0e6e2950c1.par
+
+ENTER_PARSFILE Suspensions\Longitudinal\SusX_3eff2340-afee-4c1e-9a47-ac72c9f829d9.par
+#FullDataName Suspension: Longitudinal Movement`Spline: -7.7 mm at -24 mm`
+SUSP_X_TABLE SPLINE
+-30, -5.51051
+-28, -6.83489
+-26, -7.47926
+-24, -7.70724
+-22, -7.65204
+-20, -7.39445
+-18, -6.98476
+-16, -6.45732
+-14, -5.83859
+-12, -5.14325
+-10, -4.38697
+-8, -3.58052
+-6, -2.73237
+-4, -1.84932
+-2, -0.936846
+0, 0.000598997
+2, 0.959366
+4, 1.93646
+6, 2.92941
+8, 3.9362
+10, 4.95515
+12, 5.98491
+14, 7.02437
+16, 8.07267
+18, 9.12911
+20, 10.1932
+22, 11.2645
+24, 12.3428
+26, 13.428
+28, 14.5201
+30, 15.619
+32, 16.725
+34, 17.8383
+36, 18.9592
+38, 20.088
+40, 21.2251
+42, 22.371
+44, 23.5263
+46, 24.6914
+48, 25.8671
+50, 27.0539
+52, 28.2525
+54, 29.4636
+56, 30.688
+58, 31.9265
+60, 33.1798
+62, 34.4488
+64, 35.7343
+66, 37.0371
+68, 38.3581
+70, 39.6981
+ENDTABLE
+LOG_ENTRY Used Dataset: Suspension: Longitudinal Movement; Spline: -7.7 mm at -24 mm
+EXIT_PARSFILE Suspensions\Longitudinal\SusX_3eff2340-afee-4c1e-9a47-ac72c9f829d9.par
+
+ENTER_PARSFILE Suspensions\K_Long\K_Long_e520de62-3815-4d76-9453-083826ee858f.par
+#FullDataName Suspension: Longitudinal Stiffness`2D Linear: 250 N at 1mm`
+F_AXLE_X_CARPET 2D_LINEAR
+0, -200, 0, 200
+-1, -250, -274, -298
+0, 0, 0, 0
+1, 250, 274, 298
+ENDTABLE
+LOG_ENTRY Used Dataset: Suspension: Longitudinal Stiffness; 2D Linear: 250 N at 1mm
+EXIT_PARSFILE Suspensions\K_Long\K_Long_e520de62-3815-4d76-9453-083826ee858f.par
+
+ENTER_PARSFILE Suspensions\B_Long\B_Long_2b72b5d7-cd2c-48ba-bcff-d80603503715.par
+#FullDataName Suspension: Longitudinal Damping`2D Linear: 0.8 N at 1 mm/sec`
+F_AXLE_VX_CARPET 2D_LINEAR
+0, -200, 0, 200
+-1, -0.8, -1, -1.2
+0, 0, 0, 0
+1, 0.8, 1, 1.2
+ENDTABLE
+LOG_ENTRY Used Dataset: Suspension: Longitudinal Damping; 2D Linear: 0.8 N at 1 mm/sec
+EXIT_PARSFILE Suspensions\B_Long\B_Long_2b72b5d7-cd2c-48ba-bcff-d80603503715.par
+
+M_FORK 7.25
+LOG_ENTRY Used Dataset: Suspension: Fork; { Touring Bikes } Sport Touring: Wishbone
+EXIT_PARSFILE Suspensions\Fork\Fork_3748714f-33cb-494c-887d-051953131714.par
+
+add_reference_frame Wheel 1
+set_euler_angles yaw_roll_pitch
+set_x_name X_WC1
+WRT_X_WC1
+ANI_X_WC1
+set_y_name Y_WC1
+WRT_Y_WC1
+ANI_Y_WC1
+set_z_name Z_WC1
+WRT_Z_WC1
+ANI_Z_WC1
+set_yaw_name YAW_W1
+WRT_YAW_W1
+ANI_YAW_W1
+set_pitch_name ROT_W1
+WRT_ROT_W1
+ANI_ROT_W1
+set_roll_name ROLL_W1
+WRT_ROLL_W1
+ANI_ROLL_W1
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Tires\Tire\Tire_375dc327-0005-43d2-91ff-314d86ba70c8.par
+#FullDataName Tire`Sport Touring: Front`Touring Bikes
+X_LENGTH 300
+Z_LENGTH 300
+Y_LENGTH 120
+OPT_TIRE_MODEL 1
+ENTER_PARSFILE Animator\shape_links\Shape_189db432-c18e-4977-8a3b-90a6e5499583.par
+#FullDataName Animator: Shape File Link`Sport Touring: Wheel (Front)`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\front_wheel.obj
+SET_COLOR 1 1 1
+X_REF_LENGTH 297
+Y_REF_LENGTH 135
+Z_REF_LENGTH 297
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+translucent_fix on
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Wheel (Front)
+EXIT_PARSFILE Animator\shape_links\Shape_189db432-c18e-4977-8a3b-90a6e5499583.par
+
+WRITE_WHEEL_OFFSET
+SET_OFFSET_Y 0
+SET_THICKNESS_SGUI 120
+RRE 300
+KT 130
+FZ_MAX 7000
+RAD_TC 50
+MWHL 7
+M_WHL 7
+IYY_WHL 0.4
+L_RELAX_X_CONSTANT 25
+L_RELAX_Y_CONSTANT 200
+VLOW_ALPHA 5
+RR_C 0.002
+RR_V 0.000015
+ENTER_PARSFILE Generic\External\GenExt_89113fc9-ea30-484a-850d-9308fda016b2.par
+#FullDataName External Parsfile`Front Tire (v.1.02)`
+ENTER_PARSFILE Generic\Example_Front_v102.par
+BEGIN_PAC_BIKE_DATA
+P_BIKE_FZ0           1100.0
+P_BIKE_PCX1          1.6064
+P_BIKE_PDX1          1.3806
+P_BIKE_PDX2          -0.041429
+P_BIKE_PEX1          0.0263
+P_BIKE_PEX2          0.27056
+P_BIKE_PEX3          -0.076882
+P_BIKE_PKX1          25.939
+P_BIKE_PKX2          -4.2327
+P_BIKE_PKX3          0.33686
+P_BIKE_RBX1          13.476
+P_BIKE_RBX2          11.354
+P_BIKE_RCX1          1.1231
+P_BIKE_PCY1          0.83266
+P_BIKE_PCY2          0.86765
+P_BIKE_PDY1          1.3
+P_BIKE_PDY2          0.0
+P_BIKE_PDY3          0.0
+P_BIKE_PEY1          -1.2556
+P_BIKE_PEY2          -3.2068
+P_BIKE_PEY4          -3.9975
+P_BIKE_PEY5          -15.815
+P_BIKE_PKY1          -22.841
+P_BIKE_PKY2          2.1578
+P_BIKE_PKY3          2.5058
+P_BIKE_PKY4          -0.08088
+P_BIKE_PKY5          -0.22882
+P_BIKE_PKY6          -0.69677
+P_BIKE_PKY7          0.03077
+P_BIKE_RBY1          7.7856
+P_BIKE_RBY2          8.1697
+P_BIKE_RBY3          -0.059138
+P_BIKE_RCY1          1.0533
+P_BIKE_QBZ1          10.486
+P_BIKE_QBZ2          -0.0011536
+P_BIKE_QBZ5          -0.68973
+P_BIKE_QBZ6          1.0411
+P_BIKE_QBZ9          27.445
+P_BIKE_QBZ10          1.0792
+P_BIKE_QCZ1          1.0917
+P_BIKE_QDZ1          0.19796
+P_BIKE_QDZ2          0.065629
+P_BIKE_QDZ3          0.2199
+P_BIKE_QDZ4          0.21866
+P_BIKE_QDZ8          -0.3682
+P_BIKE_QDZ9          -0.1218
+P_BIKE_QDZ10         -0.25439
+P_BIKE_QDZ11          0.17873
+P_BIKE_QEZ1          -0.91586
+P_BIKE_QEZ2          0.11625
+P_BIKE_QEZ5          -1.4387
+P_BIKE_QHZ1          -0.0075232
+P_BIKE_QHZ2          0.002695
+P_BIKE_QHZ3          0.0037886
+P_BIKE_QHZ4          0.01557
+P_BIKE_MU_REF_X      1.0
+P_BIKE_MU_REF_Y      1.0
+END_PAC_BIKE_DATA
+EXIT_PARSFILE Generic\Example_Front_v102.par
+
+LOG_ENTRY Used Dataset: External Parsfile; Front Tire (v.1.02)
+EXIT_PARSFILE Generic\External\GenExt_89113fc9-ea30-484a-850d-9308fda016b2.par
+
+FZ_TIRE_COEFFICIENT 130
+LOG_ENTRY Used Dataset: Tire; { Touring Bikes } Sport Touring: Front
+EXIT_PARSFILE Tires\Tire\Tire_375dc327-0005-43d2-91ff-314d86ba70c8.par
+
+iaxle 2
+ENTER_PARSFILE Suspensions\Swing_Arm\SwArm_50364ee6-0e54-42c9-b065-9bdc63c97db5.par
+#FullDataName Suspension: Swing Arm`Sport Touring: Parallel Link`Touring Bikes
+MSA 8
+Z_CG_SA -21.4732
+X_CG_SA 149.114
+Y_CG_SA 0
+flag_old_swing_arm_data 0
+ENTER_PARSFILE Suspensions\LeverRr\LeverRr_63c578b0-7177-4730-801a-49e0d6979c43.par
+#FullDataName Suspension: Lever Compression`Initial Lever Ratio = 0.54`
+CMP_STRUT_LEVER_TABLE SPLINE
+-20, 0
+0, 10.7423
+20, 21.6048
+40, 32.5975
+60, 43.7315
+80, 55.0188
+100, 66.4723
+120, 78.106
+140, 89.9347
+160, 101.9743
+180, 114.2416
+200, 126.7543
+ENDTABLE
+flag_old_lever_ratio_data 0
+LOG_ENTRY Used Dataset: Suspension: Lever Compression; Initial Lever Ratio = 0.54
+EXIT_PARSFILE Suspensions\LeverRr\LeverRr_63c578b0-7177-4730-801a-49e0d6979c43.par
+
+ENTER_PARSFILE Suspensions\Shocks\Shock_645fe5ee-2e30-4c7a-ba41-1d1dcffdd90a.par
+#FullDataName Suspension: Shock Absorber`Linear Coef: 10 N-s/mm`Linear Constant
+FD_COEFFICIENT 10
+LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { Linear Constant } Linear Coef: 10 N-s/mm
+EXIT_PARSFILE Suspensions\Shocks\Shock_645fe5ee-2e30-4c7a-ba41-1d1dcffdd90a.par
+
+ENTER_PARSFILE Suspensions\Springs\Spring_024286bd-f7a6-4960-9391-948aab62ed63.par
+#FullDataName Suspension: Spring`40 N/mm, Strk. 200 mm, Preload 1182 N`
+FS_COMP_TABLE LINEAR
+-110, -6793
+-100, -2793
+0, 1207
+98, 5127
+104, 6207
+110, 11207
+ENDTABLE
+FS_EXT_TABLE LINEAR
+-110, -6843
+-100, -2843
+0, 1157
+98, 5077
+104, 6157
+110, 11157
+ENDTABLE
+SPRING_COMP_BETA 2
+SPRING_EXT_BETA 2
+LOG_ENTRY Used Dataset: Suspension: Spring; 40 N/mm, Strk. 200 mm, Preload 1182 N
+EXIT_PARSFILE Suspensions\Springs\Spring_024286bd-f7a6-4960-9391-948aab62ed63.par
+
+ENTER_PARSFILE Suspensions\Dive\Dive_3c785443-cf3c-4c5e-8eb2-ba72f0b94d39.par
+#FullDataName Suspension: Dive Angle (Caster Change)`Spline: 2.15 deg at 160 mm`
+SUSP_DIVE_TABLE SPLINE
+-250, -10.78
+-240, -10.0662
+-230, -9.39036
+-220, -8.74917
+-210, -8.13982
+-200, -7.55981
+-190, -7.00706
+-180, -6.47938
+-170, -5.97539
+-160, -5.49328
+-150, -5.03193
+-140, -4.58992
+-130, -4.16634
+-120, -3.76005
+-110, -3.37033
+-100, -2.99625
+-90, -2.63724
+-80, -2.29262
+-70, -1.96177
+-60, -1.64432
+-50, -1.33979
+-40, -1.04777
+-30, -0.768034
+-20, -0.500289
+-10, -0.244311
+0, -1.97e-06
+10, 0.232742
+20, 0.453952
+30, 0.663591
+40, 0.861552
+50, 1.04764
+60, 1.22165
+70, 1.3832
+80, 1.53179
+90, 1.66697
+100, 1.7879
+110, 1.89384
+120, 1.98355
+130, 2.05591
+140, 2.10904
+150, 2.14124
+160, 2.14963
+170, 2.13135
+180, 2.08228
+190, 1.99722
+200, 1.86928
+210, 1.68911
+220, 1.44361
+230, 1.11357
+240, 0.669171
+250, 0.060041
+ENDTABLE
+LOG_ENTRY Used Dataset: Suspension: Dive Angle (Caster Change); Spline: 2.15 deg at 160 mm
+EXIT_PARSFILE Suspensions\Dive\Dive_3c785443-cf3c-4c5e-8eb2-ba72f0b94d39.par
+
+ENTER_PARSFILE Suspensions\Longitudinal\SusX_88ab295e-134e-47de-a8a0-a1825356c891.par
+#FullDataName Suspension: Longitudinal Movement`Spline: -1 mm at 30 mm`Rear Link Suspension
+SUSP_X_TABLE SPLINE
+-250, 104.792
+-240, 96.4588
+-230, 88.5885
+-220, 81.155
+-210, 74.1348
+-200, 67.5074
+-190, 61.2552
+-180, 55.361
+-170, 49.8121
+-160, 44.5946
+-150, 39.6982
+-140, 35.1122
+-130, 30.8283
+-120, 26.8379
+-110, 23.1345
+-100, 19.7113
+-90, 16.5633
+-80, 13.6854
+-70, 11.0731
+-60, 8.72334
+-50, 6.63282
+-40, 4.79891
+-30, 3.21996
+-20, 1.89437
+-10, 0.821137
+0, 2.35e-05
+10, -0.568974
+20, -0.885256
+30, -0.947572
+40, -0.754232
+50, -0.302856
+60, 0.409508
+70, 1.38656
+80, 2.63288
+90, 4.15359
+100, 5.9552
+110, 8.04484
+120, 10.4315
+130, 13.1249
+140, 16.1375
+150, 19.4827
+160, 23.178
+170, 27.2427
+180, 31.7013
+190, 36.5836
+200, 41.927
+210, 47.7796
+220, 54.2051
+230, 61.2918
+240, 69.1693
+250, 78.0445
+ENDTABLE
+LOG_ENTRY Used Dataset: Suspension: Longitudinal Movement; { Rear Link Suspension } Spline: -1 mm at 30 mm
+EXIT_PARSFILE Suspensions\Longitudinal\SusX_88ab295e-134e-47de-a8a0-a1825356c891.par
+
+M_HUB 8
+X_CG_HUB 149.114
+Y_CG_HUB 0
+Z_CG_HUB -21.4732
+LOG_ENTRY Used Dataset: Suspension: Swing Arm; { Touring Bikes } Sport Touring: Parallel Link
+EXIT_PARSFILE Suspensions\Swing_Arm\SwArm_50364ee6-0e54-42c9-b065-9bdc63c97db5.par
+
+add_reference_frame Wheel 2
+set_euler_angles yaw_roll_pitch
+set_x_name X_WC2
+WRT_X_WC2
+ANI_X_WC2
+set_y_name Y_WC2
+WRT_Y_WC2
+ANI_Y_WC2
+set_z_name Z_WC2
+WRT_Z_WC2
+ANI_Z_WC2
+set_yaw_name YAW_W2
+WRT_YAW_W2
+ANI_YAW_W2
+set_pitch_name ROT_W2
+WRT_ROT_W2
+ANI_ROT_W2
+set_roll_name ROLL_W2
+WRT_ROLL_W2
+ANI_ROLL_W2
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Tires\Tire\Tire_6efd187a-f44f-43b0-8381-21bc6808643c.par
+#FullDataName Tire`Sport Touring: Rear`Touring Bikes
+X_LENGTH 311
+Z_LENGTH 311
+Y_LENGTH 190
+OPT_TIRE_MODEL 1
+ENTER_PARSFILE Animator\shape_links\Shape_c4217efe-eb68-4188-b3ad-09f0677637ed.par
+#FullDataName Animator: Shape File Link`Sport Touring: Wheel (Rear)`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\rear_wheel.obj
+SET_COLOR 1 1 1
+X_REF_LENGTH 324
+Y_REF_LENGTH 200
+Z_REF_LENGTH 324
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+translucent_fix on
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Wheel (Rear)
+EXIT_PARSFILE Animator\shape_links\Shape_c4217efe-eb68-4188-b3ad-09f0677637ed.par
+
+WRITE_WHEEL_OFFSET
+SET_OFFSET_Y 0
+SET_THICKNESS_SGUI 190
+RRE 311
+KT 141
+FZ_MAX 10000
+RAD_TC 70
+MWHL 14.7
+M_WHL 14.7
+IYY_WHL 0.6
+L_RELAX_X_CONSTANT 25
+L_RELAX_Y_CONSTANT 200
+VLOW_ALPHA 5
+RR_C 0.004
+RR_V 0.000025
+ENTER_PARSFILE Generic\External\GenExt_f82e776f-a0fb-4b42-bb26-719aa185d7e2.par
+#FullDataName External Parsfile`Rear Tire (v.1.02)`
+ENTER_PARSFILE Generic\Example_Rear_v102.par
+BEGIN_PAC_BIKE_DATA
+P_BIKE_FZ0           1600.0
+P_BIKE_PCX1          1.6064
+P_BIKE_PDX1          1.3548
+P_BIKE_PDX2          -0.060295
+P_BIKE_PEX1          0.0263
+P_BIKE_PEX2          0.27056
+P_BIKE_PEX3          -0.076882
+P_BIKE_PKX1          25.939
+P_BIKE_PKX2          -4.2327
+P_BIKE_PKX3          0.33686
+P_BIKE_RBX1          13.476
+P_BIKE_RBX2          11.354
+P_BIKE_RCX1          1.1231
+P_BIKE_PCY1          0.9
+P_BIKE_PCY2          0.61397
+P_BIKE_PDY1          1.3
+P_BIKE_PDY2          0.0
+P_BIKE_PDY3          0.0
+P_BIKE_PEY1          -2.2227
+P_BIKE_PEY2          -1.669
+P_BIKE_PEY4          -4.288
+P_BIKE_PEY5          -19.99
+P_BIKE_PKY1          -15.791
+P_BIKE_PKY2          1.6935
+P_BIKE_PKY3          1.4604
+P_BIKE_PKY4          0.669
+P_BIKE_PKY5          0.18708
+P_BIKE_PKY6          -0.45512
+P_BIKE_PKY7          -0.013293
+P_BIKE_RBY1          7.7856
+P_BIKE_RBY2          8.1697
+P_BIKE_RBY3          -0.059138
+P_BIKE_RCY1          1.0533
+P_BIKE_QBZ1          10.041
+P_BIKE_QBZ2          -1.6e-8
+P_BIKE_QBZ5          -0.76784
+P_BIKE_QBZ6          0.73422
+P_BIKE_QBZ9          16.39
+P_BIKE_QBZ10          0.35549
+P_BIKE_QCZ1          1.3153
+P_BIKE_QDZ1          0.26331
+P_BIKE_QDZ2          0.030987
+P_BIKE_QDZ3          -0.62013
+P_BIKE_QDZ4          0.98524
+P_BIKE_QDZ8          -0.50453
+P_BIKE_QDZ9          -0.36312
+P_BIKE_QDZ10          0.19167
+P_BIKE_QDZ11          0.40709
+P_BIKE_QEZ1          -0.19924
+P_BIKE_QEZ2          -0.017638
+P_BIKE_QEZ5          -3.6511
+P_BIKE_QHZ1          0.017538
+P_BIKE_QHZ2          -0.010759
+P_BIKE_QHZ3          0.028448
+P_BIKE_QHZ4          0.0098618
+P_BIKE_MU_REF_X      1.0
+P_BIKE_MU_REF_Y      1.0
+END_PAC_BIKE_DATA
+EXIT_PARSFILE Generic\Example_Rear_v102.par
+
+LOG_ENTRY Used Dataset: External Parsfile; Rear Tire (v.1.02)
+EXIT_PARSFILE Generic\External\GenExt_f82e776f-a0fb-4b42-bb26-719aa185d7e2.par
+
+FZ_TIRE_COEFFICIENT 141
+LOG_ENTRY Used Dataset: Tire; { Touring Bikes } Sport Touring: Rear
+EXIT_PARSFILE Tires\Tire\Tire_6efd187a-f44f-43b0-8381-21bc6808643c.par
+
+add_reference_frame Bike frame
+set_euler_angles yaw_pitch_roll
+set_x_name Xo
+WRT_Xo
+ANI_Xo
+set_y_name Yo
+WRT_Yo
+ANI_Yo
+set_z_name Zo
+WRT_Zo
+ANI_Zo
+set_yaw_name YAW
+WRT_YAW
+ANI_YAW
+set_pitch_name PITCH
+WRT_PITCH
+ANI_PITCH
+set_roll_name ROLL_E
+WRT_ROLL_E
+ANI_ROLL_E
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Vehicles\Sprung_Mass\SprMass_d1feed42-9b72-4349-8435-f469f01c2a0f.par
+#FullDataName Vehicle: Sprung Mass`Sport Touring`Touring Bikes
+H_CG_MAIN 500
+LX_CG_MAIN 600
+MMAIN 200
+IXX_MAIN 12.5
+IYY_MAIN 25.9
+IZZ_MAIN 16.8
+IXZ_MAIN -3
+RX_SGUI 0.250
+RY_SGUI 0.360
+RZ_SGUI 0.290
+Y_CG_MAIN 0
+Z_LENGTH 847
+Y_LENGTH 564
+A_FALL_STOP 75
+K_FALL_STOP 5000
+iaxle 1
+LX_AXLE 0.0
+H_WC 300
+iaxle 2
+X_LENGTH 1540
+LX_AXLE 1540
+H_WC 311
+L_REF_AERO 1540
+X_REF_AERO -770
+M_MAIN 200
+LOG_ENTRY Used Dataset: Vehicle: Sprung Mass; { Touring Bikes } Sport Touring
+EXIT_PARSFILE Vehicles\Sprung_Mass\SprMass_d1feed42-9b72-4349-8435-f469f01c2a0f.par
+
+ENTER_PARSFILE Animator\bikes\AniBike_d01d8922-02af-4819-849f-400331cd4d15.par
+#FullDataName Animator: Bike Shape Assembly`Sport Touring (Link Sus., Electrified)`Sports Bikes
+OBJ_X_LENGTH 1540
+OBJ_Y_LENGTH 564
+OBJ_Z_LENGTH 847
+DZ_OBJECT 0
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+ADD_REFERENCE_FRAME Sprung mass
+SET_EULER_ANGLES YAW_PITCH_ROLL
+SET_X_NAME Xo
+WRT_Xo
+ANI_Xo
+SET_Y_NAME Yo
+WRT_Yo
+ANI_Yo
+SET_Z_NAME Zo
+WRT_Zo
+ANI_Zo
+SET_YAW_NAME Yaw
+WRT_Yaw
+ANI_Yaw
+SET_PITCH_NAME Pitch
+WRT_Pitch
+ANI_Pitch
+SET_ROLL_NAME Roll_E
+WRT_Roll_E
+ANI_Roll_E
+SET_SCALE_X 1.05
+SET_SCALE_Y 1.05
+SET_SCALE_Z 1.05
+SET_OFFSET_Z 0.3
+SET_OFFSET_X 0
+SET_SCALE_X 1.05
+SET_SCALE_Y 1.05
+SET_SCALE_Z 1.05
+SET_OFFSET_X -1.54
+SET_OFFSET_Z 0.311
+DZ_OBJECT 0
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+ADD_REFERENCE_FRAME Sprung mass
+SET_EULER_ANGLES YAW_PITCH_ROLL
+SET_X_NAME Xo
+WRT_Xo
+ANI_Xo
+SET_Y_NAME Yo
+WRT_Yo
+ANI_Yo
+SET_Z_NAME Zo
+WRT_Zo
+ANI_Zo
+SET_YAW_NAME Yaw
+WRT_Yaw
+ANI_Yaw
+SET_PITCH_NAME Pitch
+WRT_Pitch
+ANI_Pitch
+SET_ROLL_NAME Roll_E
+WRT_Roll_E
+ANI_Roll_E
+ENTER_PARSFILE Animator\Assemblies\ShpGrp_1a1f1299-ca61-4b2f-a45e-58b85f4c621e.par
+#FullDataName Animator: Shape Assembly`Sport Touring: Body (Electrified)`Sport Touring
+ENTER_PARSFILE Animator\shape_links\Shape_ba8831d3-6436-41df-9882-57bbbe3af905.par
+#FullDataName Animator: Shape File Link`Sport Touring: Body`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\body.obj
+SET_COLOR 0.6 0 0
+SET_SCALE_X 1
+SET_SCALE_Y 1
+SET_SCALE_Z 0.97
+SET_OFFSET_X -0.04
+SET_OFFSET_Y 0
+SET_OFFSET_Z -0.025
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+SET_COLOR 1 0.8 0
+SET_SPECULAR 0.7 0.7 0.7
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Body
+EXIT_PARSFILE Animator\shape_links\Shape_ba8831d3-6436-41df-9882-57bbbe3af905.par
+
+set_angle_x 0
+set_angle_y 2
+set_angle_z 0
+ENTER_PARSFILE Animator\shape_links\Shape_9eb2e879-1981-4c07-911c-fe08528cde47.par
+#FullDataName Animator: Shape File Link`Sport Touring: Details (Electric)`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\body_details_EV.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 1
+SET_SCALE_Y 1
+SET_SCALE_Z 0.97
+SET_OFFSET_X -0.04
+SET_OFFSET_Y 0
+SET_OFFSET_Z -0.025
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.7 0.7 0.7
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Details (Electric)
+EXIT_PARSFILE Animator\shape_links\Shape_9eb2e879-1981-4c07-911c-fe08528cde47.par
+
+set_angle_x 0
+set_angle_y 2
+set_angle_z 0
+ENTER_PARSFILE Animator\shape_links\Shape_ea247ceb-40ec-40bc-8ac6-2067d81dd06b.par
+#FullDataName Animator: Shape File Link`Sport Touring: Windshield`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\windshield.obj
+SET_COLOR 0 0 0
+SET_SCALE_X 1
+SET_SCALE_Y 1
+SET_SCALE_Z 0.97
+SET_OFFSET_X -0.04
+SET_OFFSET_Y 0
+SET_OFFSET_Z -0.025
+set_lighting on
+set_fogging on
+set_transparency 0.5
+SET_SPECULAR 0.7 0.7 0.7
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Windshield
+EXIT_PARSFILE Animator\shape_links\Shape_ea247ceb-40ec-40bc-8ac6-2067d81dd06b.par
+
+set_angle_x 0
+set_angle_y 2
+set_angle_z 0
+x_ref_length 1680
+y_ref_length 564
+z_ref_length 847
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Sport Touring } Sport Touring: Body (Electrified)
+EXIT_PARSFILE Animator\Assemblies\ShpGrp_1a1f1299-ca61-4b2f-a45e-58b85f4c621e.par
+
+WRITE_REFERENCE_FRAME_SIZE
+X_LENGTH 1540
+Y_LENGTH 564
+Z_LENGTH 847
+X_UPFORK_PREVIEW -0.262023
+Z_UPFORK_PREVIEW 0.861911
+A_STR_PREVIEW -25
+WRITE_ADD_REFERENCE_FRAME_UPPER_FORK
+add_reference_frame Bike upper fork 
+set_euler_angles yaw_pitch_roll
+set_x_name X_Frk
+WRT_X_Frk
+ANI_X_Frk
+set_y_name Y_FORK
+WRT_Y_FORK
+ANI_Y_FORK
+set_z_name Z_FORK
+WRT_Z_FORK
+ANI_Z_FORK
+set_yaw_name Yaw_Frk
+WRT_Yaw_Frk
+ANI_Yaw_Frk
+set_pitch_name Pitch_Fr
+WRT_Pitch_Fr
+ANI_Pitch_Fr
+set_roll_name Roll_Frk
+WRT_Roll_Frk
+ANI_Roll_Frk
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+X_LENGTH 471
+Y_LENGTH 253
+Z_LENGTH 538
+X_LWFORK_PREVIEW 0
+Z_LWFORK_PREVIEW 0.3
+WRITE_ADD_REFERENCE_FRAME_LOWER_FORK
+add_reference_frame Bike lower fork 
+set_euler_angles yaw_pitch_roll
+set_x_name X_WC1
+WRT_X_WC1
+ANI_X_WC1
+set_y_name Y_WC1
+WRT_Y_WC1
+ANI_Y_WC1
+set_z_name Z_WC1
+WRT_Z_WC1
+ANI_Z_WC1
+set_yaw_name Yaw_Lfr
+WRT_Yaw_Lfr
+ANI_Yaw_Lfr
+set_pitch_name Ptch_Lfr
+WRT_Ptch_Lfr
+ANI_Ptch_Lfr
+set_roll_name Roll_Lfr
+WRT_Roll_Lfr
+ANI_Roll_Lfr
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\Assemblies\ShpGrp_b82619f2-a182-46a9-b520-349f43878137.par
+#FullDataName Animator: Shape Assembly`Sport Touring: Fork`Sport Touring
+ENTER_PARSFILE Animator\shape_links\Shape_f5af2bb6-c9ff-450d-bb35-ac26a00d2b6a.par
+#FullDataName Animator: Shape File Link`Sport Touring: Fork`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\fork.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 0.92
+SET_SCALE_Y 0.92
+SET_SCALE_Z 0.92
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z -0.03
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Fork
+EXIT_PARSFILE Animator\shape_links\Shape_f5af2bb6-c9ff-450d-bb35-ac26a00d2b6a.par
+
+ENTER_PARSFILE Animator\shape_links\Shape_79734409-22bc-402d-9dfe-63b9210d3bcf.par
+#FullDataName Animator: Shape File Link`Sport Touring: Front Fender`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\fender.obj
+SET_COLOR 0.6 0 0
+SET_SCALE_X 0.92
+SET_SCALE_Y 0.92
+SET_SCALE_Z 0.92
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+SET_COLOR 1 0.8 0
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Front Fender
+EXIT_PARSFILE Animator\shape_links\Shape_79734409-22bc-402d-9dfe-63b9210d3bcf.par
+
+x_ref_length 471
+y_ref_length 253
+z_ref_length 538
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Sport Touring } Sport Touring: Fork
+EXIT_PARSFILE Animator\Assemblies\ShpGrp_b82619f2-a182-46a9-b520-349f43878137.par
+
+WRITE_REFERENCE_FRAME_SIZE
+X_LENGTH 471
+Y_LENGTH 253
+Z_LENGTH 538
+X_STR_PREVIEW -0.295557
+Z_STR_PREVIEW 0.846274
+WRITE_ADD_REFERENCE_FRAME_STEER
+add_reference_frame Bike steer 
+set_euler_angles yaw_pitch_roll
+set_x_name X_STR
+WRT_X_STR
+ANI_X_STR
+set_y_name Y_STR
+WRT_Y_STR
+ANI_Y_STR
+set_z_name Z_STR
+WRT_Z_STR
+ANI_Z_STR
+set_yaw_name Yaw_Str
+WRT_Yaw_Str
+ANI_Yaw_Str
+set_pitch_name Pitch_St
+WRT_Pitch_St
+ANI_Pitch_St
+set_roll_name Roll_Str
+WRT_Roll_Str
+ANI_Roll_Str
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_a6fcbed4-0d4e-4be0-a2a2-106fba2667d4.par
+#FullDataName Animator: Shape File Link`Sport Touring: Handle Bars`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\handle_bars.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 1
+SET_SCALE_Y 0.84
+SET_SCALE_Z 0.95
+X_REF_LENGTH 200
+Y_REF_LENGTH 520
+Z_REF_LENGTH 180
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Handle Bars
+EXIT_PARSFILE Animator\shape_links\Shape_a6fcbed4-0d4e-4be0-a2a2-106fba2667d4.par
+
+X_LENGTH 200
+Y_LENGTH 520
+Z_LENGTH 180
+LY_GRIP 520
+X_SWA_PREVIEW -1.54
+Z_SWA_PREVIEW 0.3
+A_SWA_PREVIEW 0.5
+WRITE_ADD_REFERENCE_FRAME_SWA
+add_reference_frame Bike swing arm 
+set_euler_angles yaw_pitch_roll
+set_x_name X_WC2
+WRT_X_WC2
+ANI_X_WC2
+set_y_name Y_WC2
+WRT_Y_WC2
+ANI_Y_WC2
+set_z_name Z_WC2
+WRT_Z_WC2
+ANI_Z_WC2
+set_yaw_name Yaw_hub
+WRT_Yaw_hub
+ANI_Yaw_hub
+set_pitch_name Pitch_hb
+WRT_Pitch_hb
+ANI_Pitch_hb
+set_roll_name Roll_hub
+WRT_Roll_hub
+ANI_Roll_hub
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_4e416c72-7280-4126-a75a-1bc6c2b50bc3.par
+#FullDataName Animator: Shape File Link`Sport Touring: Rear Wheel Hub`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\rear_wheel_hub.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 0.95
+SET_SCALE_Y 1
+SET_SCALE_Z 0.95
+SET_OFFSET_X 0.17
+SET_OFFSET_Y 0.01
+SET_OFFSET_Z 0
+X_REF_LENGTH 175
+Y_REF_LENGTH 153
+Z_REF_LENGTH 179
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Rear Wheel Hub
+EXIT_PARSFILE Animator\shape_links\Shape_4e416c72-7280-4126-a75a-1bc6c2b50bc3.par
+
+X_LENGTH 175
+Y_LENGTH 153
+Z_LENGTH 179
+define_variable L_SWA 320; units = mm ! length of swing arm (parameter)
+define_variable L_HUB 175; units = mm ! length of rear wheel hub (parameter)
+define_output ptch_swa =  PITCH/cos(ROLL_W2) -0.079 + (JOUNCE2-sin((PITCH_2-PITCH)/cos(ROLL_W2))*L_HUB) / L_SWA; units = deg
+set_output_long_name ptch_swa Pitch angle of swing arm
+set_output_generic ptch_swa angle
+set_output_component ptch_swa Swing arm
+ENTER_PARSFILE Animator\Groups\Group_01e7f1dd-c661-4feb-ab75-a0aa7b1756c3.par
+#FullDataName Animator: Group`Multi-Link Swing Arm`Suspension Linkage
+ENTER_PARSFILE Output\Points\RefPt_cc9df613-a516-4fcb-9e77-193d3cc24a07.par
+#FullDataName Custom Forces and Reference Points`Sport Tour: SWA Attachment (Pt. 10)`Sport Touring
+IREF_PT 10
+DEFINE_REFERENCE_POINTS 1 + IREF_PT -1 -NREF_PT
+OPT_RP_BODY_TYPE 1
+OPT_RP_FORCE_N 0
+X_RP -1050
+Y_RP 0
+Z_RP 350
+SET_DESCRIPTION REFERENCE_POINT_NAME Sport Tour: SWA Attachment (Pt. 10)
+LOG_ENTRY Used Dataset: Custom Forces and Reference Points; { Sport Touring } Sport Tour: SWA Attachment (Pt. 10)
+EXIT_PARSFILE Output\Points\RefPt_cc9df613-a516-4fcb-9e77-193d3cc24a07.par
+
+ENTER_PARSFILE Animator\Frames\Frame_3013d3b0-2269-441f-bf52-5cb1256c6f9b.par
+#FullDataName Animator: Reference Frame`Ref. Pt. 10: Rear SWA Attachment`Suspension Linkage
+ADD_REFERENCE_FRAME Frame_3013d3b0-2269-441f-bf52-5cb1256c6f9b
+SET_EULER_ANGLES yaw_roll_pitch
+SET_X_NAME x_rp10
+SET_Y_NAME y_rp10
+SET_Z_NAME z_rp10
+SET_ROLL_NAME Roll_W2
+SET_PITCH_NAME ptch_swa
+SET_YAW_NAME Yaw_W2
+WRT_x_rp10
+ANI_x_rp10
+WRT_y_rp10
+ANI_y_rp10
+WRT_z_rp10
+ANI_z_rp10
+WRT_Roll_W2
+ANI_Roll_W2
+WRT_ptch_swa
+ANI_ptch_swa
+WRT_Yaw_W2
+ANI_Yaw_W2
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { Suspension Linkage } Ref. Pt. 10: Rear SWA Attachment
+EXIT_PARSFILE Animator\Frames\Frame_3013d3b0-2269-441f-bf52-5cb1256c6f9b.par
+
+ENTER_PARSFILE Animator\shape_links\Shape_a8795562-c5f8-42c4-abad-d9995f46feb1.par
+#FullDataName Animator: Shape File Link`Sport Touring: Mid Arm`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\mid_arm.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 0.95
+SET_SCALE_Y 1
+SET_SCALE_Z 0.95
+SET_ANGLE_Z 0
+SET_ANGLE_Y -1.5
+SET_ANGLE_X 0
+SET_OFFSET_X 0.005
+SET_OFFSET_Y 0.01
+SET_OFFSET_Z -0.005
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring: Mid Arm
+EXIT_PARSFILE Animator\shape_links\Shape_a8795562-c5f8-42c4-abad-d9995f46feb1.par
+
+LOG_ENTRY Used Dataset: Animator: Group; { Suspension Linkage } Multi-Link Swing Arm
+EXIT_PARSFILE Animator\Groups\Group_01e7f1dd-c661-4feb-ab75-a0aa7b1756c3.par
+
+ENTER_PARSFILE Generic\Group\GenGrp_fbd41be8-ff66-4fd6-b419-8a3a0dbb3764.par
+#FullDataName Generic Data Group`VsV Rearview Camera: Sport Touring`Manual Camera Setup
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+ADD_REFERENCE_FRAME Sprung mass
+SET_EULER_ANGLES YAW_PITCH_ROLL
+SET_X_NAME Xo
+WRT_Xo
+ANI_Xo
+SET_Y_NAME Yo
+WRT_Yo
+ANI_Yo
+SET_Z_NAME Zo
+WRT_Zo
+ANI_Zo
+SET_YAW_NAME Yaw
+WRT_Yaw
+ANI_Yaw
+SET_PITCH_NAME Pitch
+WRT_Pitch
+ANI_Pitch
+SET_ROLL_NAME Roll_E
+WRT_Roll_E
+ANI_Roll_E
+ENTER_PARSFILE Generic\GroupMore\GenGrpM_b0220d39-5644-495a-a018-3a1dff65bf90.par
+#FullDataName Generic Data Group (More)`Rearview Mirror: Sport Touring (Left)`Manual Reference Frames
+ADD_ENTITY Transform rear view mirror left
+  TRANSLATE_X -0.3
+  TRANSLATE_Y 0.5
+  TRANSLATE_Z 1.1
+  ROTATE_PITCH 0
+  ROTATE_ROLL 0
+  ROTATE_YAW 180
+END_ENTITY Transform rear view mirror left
+LOG_ENTRY Used Dataset: Generic Data Group (More); { Manual Reference Frames } Rearview Mirror: Sport Touring (Left)
+EXIT_PARSFILE Generic\GroupMore\GenGrpM_b0220d39-5644-495a-a018-3a1dff65bf90.par
+
+ENTER_PARSFILE Generic\GroupMore\GenGrpM_9d4d549a-317d-4933-a836-29eb5d3df61b.par
+#FullDataName Generic Data Group (More)`Rearview Mirror: Sport Touring (Right)`Manual Reference Frames
+ADD_ENTITY Transform rear view mirror right
+  TRANSLATE_X -0.3
+  TRANSLATE_Y -0.5
+  TRANSLATE_Z 1.1
+  ROTATE_PITCH 0
+  ROTATE_ROLL 0
+  ROTATE_YAW 180
+END_ENTITY Transform rear view mirror right
+LOG_ENTRY Used Dataset: Generic Data Group (More); { Manual Reference Frames } Rearview Mirror: Sport Touring (Right)
+EXIT_PARSFILE Generic\GroupMore\GenGrpM_9d4d549a-317d-4933-a836-29eb5d3df61b.par
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Manual Camera Setup } VsV Rearview Camera: Sport Touring
+EXIT_PARSFILE Generic\Group\GenGrp_fbd41be8-ff66-4fd6-b419-8a3a0dbb3764.par
+
+LOG_ENTRY Used Dataset: Animator: Bike Shape Assembly; { Sports Bikes } Sport Touring (Link Sus., Electrified)
+EXIT_PARSFILE Animator\bikes\AniBike_d01d8922-02af-4819-849f-400331cd4d15.par
+
+ENTER_PARSFILE Vehicles\Rider_Mass\RdrMass_96c8eaa7-f21c-4307-979f-2afa456b53fa.par
+#FullDataName Vehicle: Rider Body Mass`Sport Touring`Touring Bikes
+H_CG_RDR 100
+MRDR 43.52
+IXX_RDR 1.428
+IYY_RDR 1.347
+IZZ_RDR 0.916
+IXZ_RDR 0.433
+RX_SGUI 0.181
+RY_SGUI 0.176
+RZ_SGUI 0.145
+H_SEAT 820
+LX_SEAT 1100
+KRDR 6.63
+BRDR 0.59
+LX_CG_RLGS 859
+H_CG_RLGS 700
+A_RD_BACK 44
+MRLGS 25.84
+IXX_RLGS 0.5
+IYY_RLGS 0.5
+IZZ_RLGS 0.5
+IXZ_RLGS 0
+RX_SGUI2 0.139
+RY_SGUI2 0.139
+RZ_SGUI2 0.139
+K_RIDER_Y 10
+D_RIDER_Y 1
+A_RIDER_BACK 44
+D_RIDER_ROT 0.59
+K_RIDER_ROT 6.63
+H_CG_RIDER_BODY 100
+M_RIDER_BODY 43.52
+M_RIDER_LEGS 25.84
+IXX_RIDER_BODY 1.428
+IYY_RIDER_BODY 1.347
+IZZ_RIDER_BODY 0.916
+IXZ_RIDER_BODY 0.433
+LX_CG_RIDER_LEGS 859
+H_CG_RIDER_LEGS 700
+IXX_RIDER_LEGS 0.5
+IYY_RIDER_LEGS 0.5
+IZZ_RIDER_LEGS 0.5
+IXZ_RIDER_LEGS 0
+ENTER_PARSFILE Animator\RiderShp\ShpRdr_01fe4fc5-c377-44ff-a52b-e93c06ef341c.par
+#FullDataName Animator: Rider Shape Assembly`Sport Touring: Rider`Touring Bikes
+LX_STEP 950
+LY_STEP 420
+H_STEP 300
+H_REF_RLGS 100
+H_REF_RIDER_LEGS 100
+add_reference_frame Rider
+set_euler_angles yaw_pitch_roll
+set_x_name X_RDR
+WRT_X_RDR
+ANI_X_RDR
+set_y_name Y_RDR
+WRT_Y_RDR
+ANI_Y_RDR
+set_z_name Z_RDR
+WRT_Z_RDR
+ANI_Z_RDR
+set_yaw_name Yaw_RDR
+WRT_Yaw_RDR
+ANI_Yaw_RDR
+set_pitch_name Pitch_RD
+WRT_Pitch_RD
+ANI_Pitch_RD
+set_roll_name RollE_RD
+WRT_RollE_RD
+ANI_RollE_RD
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_bba047dd-4c46-4d74-9f47-4360522b62f8.par
+#FullDataName Animator: Shape File Link`Sport Touring (Rider): Body`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\Riders\Caucasian_Male_Rider\CM_upper_body.obj
+SET_COLOR 1 1 1
+SET_OFFSET_X -0.105
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.1
+X_REF_LENGTH 230
+Y_REF_LENGTH 340
+Z_REF_LENGTH 568
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring (Rider): Body
+EXIT_PARSFILE Animator\shape_links\Shape_bba047dd-4c46-4d74-9f47-4360522b62f8.par
+
+X_LENGTH 230
+Y_LENGTH 340
+Z_LENGTH 568
+H_SHOULDER 568
+add_reference_frame Bike rider arm (right)
+set_euler_angles yaw_pitch_roll
+set_x_name X_SHOL_R
+WRT_X_SHOL_R
+ANI_X_SHOL_R
+set_y_name Y_SHOL_R
+WRT_Y_SHOL_R
+ANI_Y_SHOL_R
+set_z_name Z_SHOL_R
+WRT_Z_SHOL_R
+ANI_Z_SHOL_R
+set_yaw_name Yaw_ArmR
+WRT_Yaw_ArmR
+ANI_Yaw_ArmR
+set_pitch_name Pit_ArmR
+WRT_Pit_ArmR
+ANI_Pit_ArmR
+set_roll_name Rol_ArmR
+WRT_Rol_ArmR
+ANI_Rol_ArmR
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_ab5846f6-a4f1-43d2-8a63-4e5c75928d32.par
+#FullDataName Animator: Shape File Link`Sport Touring (Rider): Right Arm`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\Riders\Caucasian_Male_Rider\CM_arm_right.obj
+SET_COLOR 1 1 1
+SET_ANGLE_Z 3
+SET_ANGLE_Y -3
+SET_ANGLE_X 0
+SET_OFFSET_X -0.05
+SET_OFFSET_Y -0.025
+SET_OFFSET_Z -0.03
+X_REF_LENGTH 532
+Y_REF_LENGTH 180
+Z_REF_LENGTH 180
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring (Rider): Right Arm
+EXIT_PARSFILE Animator\shape_links\Shape_ab5846f6-a4f1-43d2-8a63-4e5c75928d32.par
+
+X_LENGTH 505
+Y_LENGTH 180
+Z_LENGTH 180
+add_reference_frame Bike rider arm (left)
+set_euler_angles yaw_pitch_roll
+set_x_name X_SHOL_L
+WRT_X_SHOL_L
+ANI_X_SHOL_L
+set_y_name Y_SHOL_L
+WRT_Y_SHOL_L
+ANI_Y_SHOL_L
+set_z_name Z_SHOL_L
+WRT_Z_SHOL_L
+ANI_Z_SHOL_L
+set_yaw_name Yaw_ArmL
+WRT_Yaw_ArmL
+ANI_Yaw_ArmL
+set_pitch_name Pit_ArmL
+WRT_Pit_ArmL
+ANI_Pit_ArmL
+set_roll_name Rol_ArmL
+WRT_Rol_ArmL
+ANI_Rol_ArmL
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_51ddc1aa-be3e-4f6a-b172-a5ffd62b970b.par
+#FullDataName Animator: Shape File Link`Sport Touring (Rider): Left Arm`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\Riders\Caucasian_Male_Rider\CM_arm_left.obj
+SET_COLOR 1 1 1
+SET_ANGLE_Z -3
+SET_ANGLE_Y -3
+SET_ANGLE_X 0
+SET_OFFSET_X -0.05
+SET_OFFSET_Y 0.025
+SET_OFFSET_Z -0.03
+X_REF_LENGTH 532
+Y_REF_LENGTH 180
+Z_REF_LENGTH 180
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring (Rider): Left Arm
+EXIT_PARSFILE Animator\shape_links\Shape_51ddc1aa-be3e-4f6a-b172-a5ffd62b970b.par
+
+X_LENGTH 505
+Y_LENGTH 180
+Z_LENGTH 180
+add_reference_frame Bike rider leg (right)
+set_euler_angles yaw_pitch_roll
+set_x_name X_HIP_R
+WRT_X_HIP_R
+ANI_X_HIP_R
+set_y_name Y_HIP_R
+WRT_Y_HIP_R
+ANI_Y_HIP_R
+set_z_name Z_HIP_R
+WRT_Z_HIP_R
+ANI_Z_HIP_R
+set_yaw_name Yaw_LegR
+WRT_Yaw_LegR
+ANI_Yaw_LegR
+set_pitch_name Pit_LegR
+WRT_Pit_LegR
+ANI_Pit_LegR
+set_roll_name Rol_LegR
+WRT_Rol_LegR
+ANI_Rol_LegR
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_a61b31a8-65da-4b41-be50-507e6156ee72.par
+#FullDataName Animator: Shape File Link`Sport Touring (Rider): Right Leg`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\Riders\Caucasian_Male_Rider\CM_leg_right.obj
+SET_COLOR 1 1 1
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.05
+X_REF_LENGTH 170
+Y_REF_LENGTH 180
+Z_REF_LENGTH 700
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring (Rider): Right Leg
+EXIT_PARSFILE Animator\shape_links\Shape_a61b31a8-65da-4b41-be50-507e6156ee72.par
+
+X_LENGTH 170
+Y_LENGTH 180
+Z_LENGTH 690
+add_reference_frame Bike rider leg (left)
+set_euler_angles yaw_pitch_roll
+set_x_name X_HIP_L
+WRT_X_HIP_L
+ANI_X_HIP_L
+set_y_name Y_HIP_L
+WRT_Y_HIP_L
+ANI_Y_HIP_L
+set_z_name Z_HIP_L
+WRT_Z_HIP_L
+ANI_Z_HIP_L
+set_yaw_name Yaw_LegL
+WRT_Yaw_LegL
+ANI_Yaw_LegL
+set_pitch_name Pit_LegL
+WRT_Pit_LegL
+ANI_Pit_LegL
+set_roll_name Rol_LegL
+WRT_Rol_LegL
+ANI_Rol_LegL
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_dd89f7fc-23d9-47c2-977e-756fd9908997.par
+#FullDataName Animator: Shape File Link`Sport Touring (Rider): Left Leg`Motorcycles: Touring
+add_obj Animator\3D_Shape_Files\Motorcycles\Sport_Touring\Riders\Caucasian_Male_Rider\CM_leg_left.obj
+SET_COLOR 1 1 1
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.05
+X_REF_LENGTH 170
+Y_REF_LENGTH 180
+Z_REF_LENGTH 700
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Touring } Sport Touring (Rider): Left Leg
+EXIT_PARSFILE Animator\shape_links\Shape_dd89f7fc-23d9-47c2-977e-756fd9908997.par
+
+X_LENGTH 170
+Y_LENGTH 180
+Z_LENGTH 690
+LOG_ENTRY Used Dataset: Animator: Rider Shape Assembly; { Touring Bikes } Sport Touring: Rider
+EXIT_PARSFILE Animator\RiderShp\ShpRdr_01fe4fc5-c377-44ff-a52b-e93c06ef341c.par
+
+LOG_ENTRY Used Dataset: Vehicle: Rider Body Mass; { Touring Bikes } Sport Touring
+EXIT_PARSFILE Vehicles\Rider_Mass\RdrMass_96c8eaa7-f21c-4307-979f-2afa456b53fa.par
+
+ENTER_PARSFILE Brakes\System\BrkSys_3a18b914-1fb0-4e25-a26c-873f8ba1c478.par
+#FullDataName Brake System`No Rear Brake`
+A_MC(1) 198.5
+A_MC(2) 198.5
+A_SC(1) 2050
+A_SC(2) 2300
+MU_BK(1) 0.4
+MU_BK(2) 0.4
+RAD_D(1) 148
+RAD_D(2) 98
+R_BK(1) 6
+R_BK(2) 3
+TC_BK(1) 0.061
+TC_BK(2) 0.061
+AREA_MC(1) 198.5
+AREA_MC(2) 198.5
+AREA_WC(1) 2050
+AREA_WC(2) 2300
+iaxle 1
+ENTER_PARSFILE Brakes\Proportioning\BrkProp_c518928e-0004-47e3-9f7e-21c78b668ecd.par
+#FullDataName Brakes: Proportioning / Limiting Valve`Linear: 1.00 MPa / MPa`
+PBK_DL_COMBINE ADD
+PBK_DL_COEFFICIENT 1.00
+PBK_DL_FZ_CONSTANT 0
+LOG_ENTRY Used Dataset: Brakes: Proportioning / Limiting Valve; Linear: 1.00 MPa / MPa
+EXIT_PARSFILE Brakes\Proportioning\BrkProp_c518928e-0004-47e3-9f7e-21c78b668ecd.par
+
+iaxle 2
+ENTER_PARSFILE Brakes\Proportioning\BrkProp_d7654e69-d8f4-42d1-bbcc-47ac90a50f27.par
+#FullDataName Brakes: Proportioning / Limiting Valve`No brake`
+PBK_DL_COMBINE ADD
+PBK_DL_COEFFICIENT 0
+PBK_DL_FZ_CONSTANT 0
+LOG_ENTRY Used Dataset: Brakes: Proportioning / Limiting Valve; No brake
+EXIT_PARSFILE Brakes\Proportioning\BrkProp_d7654e69-d8f4-42d1-bbcc-47ac90a50f27.par
+
+WRITE_ADD_DUPLICATED_STARBOARD_BRAKE
+LOG_ENTRY Used Dataset: Brake System; No Rear Brake
+EXIT_PARSFILE Brakes\System\BrkSys_3a18b914-1fb0-4e25-a26c-873f8ba1c478.par
+
+ENTER_PARSFILE Steering\System\StrSys_8779e744-7eeb-4d05-a14a-d4f12618bc47.par
+#FullDataName Steering System`Sport Touring`Touring Bikes
+M_STR_MAX 200
+A_STEER 25
+BSTR 0.2212
+BTWST 1.7452
+KTWST 1745.2
+MSTR 4
+Z_CG_STR 50
+LZ_FORK 620
+X_CG_STR 40
+X_FORK 37.4
+IXX_STR 0.4
+IYY_STR 0.6
+IZZ_STR 0.2
+IXZ_STR 0
+RX_SGUI 0.316
+RY_SGUI 0.387
+RZ_SGUI 0.224
+DGC -50
+DGS 0.6
+IGC -250
+IGS 1.875
+PGC -140
+PGS -0.6875
+PGD 0
+X_GRIP -50.5
+Z_GRIP 120
+flag_old_steer_data 0
+ENTER_PARSFILE Steering\Stiffness\StrStiff_d4c4b01e-d809-4dba-b6a2-6a70f851ee2a.par
+#FullDataName Steering Stiffness`Steer Stiffness (60 deg. Limit)`
+MZ_STR_TABLE LINEAR
+-31, -100
+-30, 0
+30, 0
+31, 100
+ENDTABLE
+LOG_ENTRY Used Dataset: Steering Stiffness; Steer Stiffness (60 deg. Limit)
+EXIT_PARSFILE Steering\Stiffness\StrStiff_d4c4b01e-d809-4dba-b6a2-6a70f851ee2a.par
+
+D_STR 0.2212
+D_FRAME_TWIST 1.7452
+K_FRAME_TWIST 1745.2
+M_STR 4
+SC_DG -50
+SC_DG_SD 0.6
+SC_IG -250
+SC_IG_SD 1.875
+SC_PG -140
+SC_PG_SD -0.6875
+SC_PG_SD2 0
+LOG_ENTRY Used Dataset: Steering System; { Touring Bikes } Sport Touring
+EXIT_PARSFILE Steering\System\StrSys_8779e744-7eeb-4d05-a14a-d4f12618bc47.par
+
+ENTER_PARSFILE Powertrain\ShaftDr\ShaftDr_673282e2-911a-44c5-ac8f-0c211d66be2a.par
+#FullDataName Powertrain: Shaft Drive`Electric 40 kW, 1.53/2.5`Electrified Powertrain
+INSTALL_POWERTRAIN 1
+OPT_ENGINE_INTERNAL 0
+OPT_FINAL_DRIVE_INTERNAL 1
+ENTER_PARSFILE Powertrain\HEV\HEV_fee39384-1789-4075-b186-1cb5a58dca2c.par
+#FullDataName Powertrain: Hybrid/Electric System`Full Electric Powertrain Assembly`
+OPT_HEV 2
+OPT_MOTOR_ON_AXLE 0
+IDIFF 1
+ISIDE 1
+N_BATTERY 60
+T_BATTERY_INIT 40
+BATTERY_CHARGE_INIT 0.6
+V_MOTOR_MIN 60
+V_BATTERY_MIN 6
+V_BATTERY_MAX 9
+ITC_INPUT_SHAFT 0
+ITC_OUTPUT_SHAFT 0
+INSTALL_ELECTRIC_DRIVE_MOTORS
+OPT_THROTTLE_DELAY 1
+TC_TH_APP 0.12
+TC_TH_RELEASE 0.05
+ENTER_PARSFILE Powertrain\Motor\MMotor_06af7445-5ea5-4e66-94f4-317667f31f1f.par
+#FullDataName Powertrain: Electric Motor Torque`Max. Output 200 N-m`
+MMOTOR_MAX_TABLE LINEAR_FLAT
+0, 200
+762.5, 200
+1525, 189.79
+2287.5, 126.03
+3050, 94.341
+3812.5, 75.354
+4575, 62.721
+5337.5, 53.716
+6100, 47.026
+6862.5, 42.448
+9150, 31.279
+ENDTABLE
+TC_MOTOR 0.05
+IMOTOR 0.0226
+MMOTOR_MAX_GAIN 1.525
+SPIN_SCALE_M_MOTOR_MAX 1/1.525
+I_MOTOR 0.0226*1.525*1.525
+ENTER_PARSFILE Generic\tables\GenTab_fd391bc8-d2be-41f5-ad29-c86d75d3fe90.par
+#FullDataName Generic Table`Motor efficiency`Powertrain (HEV / EV)
+r_eff_motor_CARPET 2D_LINEAR
+0, -305, -275, -245, -215, -185, -155, -125, -95, -65, -35, -5, 0, 5, 35, 65, 95, 125, 155, 185, 215, 245, 275, 305
+0, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975
+500, 0.532, 0.5605, 0.589, 0.6175, 0.646, 0.684, 0.722, 0.76, 0.8075, 0.855, 0.8265, 0.85975, 0.8265, 0.855, 0.8075, 0.76, 0.722, 0.684, 0.646, 0.6175, 0.589, 0.5605, 0.532
+1000, 0.684, 0.703, 0.722, 0.741, 0.7695, 0.7885, 0.817, 0.8455, 0.8645, 0.893, 0.8075, 0.85975, 0.8075, 0.893, 0.8645, 0.8455, 0.817, 0.7885, 0.7695, 0.741, 0.722, 0.703, 0.684
+1500, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.855, 0.874, 0.8835, 0.893, 0.7885, 0.85975, 0.7885, 0.893, 0.8835, 0.874, 0.855, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+2000, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.8835, 0.9025, 0.9025, 0.779, 0.85975, 0.779, 0.9025, 0.9025, 0.8835, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+2500, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.893, 0.9025, 0.9025, 0.7695, 0.85975, 0.7695, 0.9025, 0.9025, 0.893, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+3000, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.912, 0.9025, 0.7695, 0.85975, 0.7695, 0.9025, 0.912, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+3500, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.912, 0.9025, 0.76, 0.85975, 0.76, 0.9025, 0.912, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+4000, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.76, 0.85975, 0.76, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+4500, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.7505, 0.85975, 0.7505, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+6000, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.7505, 0.85975, 0.7505, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ENDTABLE
+LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV / EV) } Motor efficiency
+EXIT_PARSFILE Generic\tables\GenTab_fd391bc8-d2be-41f5-ad29-c86d75d3fe90.par
+
+LOG_ENTRY Used Dataset: Powertrain: Electric Motor Torque; Max. Output 200 N-m
+EXIT_PARSFILE Powertrain\Motor\MMotor_06af7445-5ea5-4e66-94f4-317667f31f1f.par
+
+ENTER_PARSFILE Generic\tables\GenTab_b8250707-5e01-482b-831f-ba467902ab80.par
+#FullDataName Generic Table`Batt. charged resis. (15 milliohms)`Powertrain (HEV / EV)
+R_CHRG_BATTERY_CARPET 2D_SPLINE
+0, 0, 25, 45
+0, 0.03525, 0.017625, 0.017625
+0.2, 0.03075, 0.015375, 0.015375
+0.6, 0.0297, 0.01485, 0.01485
+1, 0.0306, 0.0153, 0.0153
+ENDTABLE
+LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV / EV) } Batt. charged resis. (15 milliohms)
+EXIT_PARSFILE Generic\tables\GenTab_b8250707-5e01-482b-831f-ba467902ab80.par
+
+ENTER_PARSFILE Generic\tables\GenTab_a74df35c-ffa2-4e37-be5e-e6d47aa019fa.par
+#FullDataName Generic Table`Batt. discharged resis. (18 milliohms)`Powertrain (HEV / EV)
+R_DIS_BATTERY_CARPET 2D_SPLINE
+0, 0, 25, 45
+0, 0.050267, 0.025133, 0.025133
+0.2, 0.04, 0.02, 0.02
+0.6, 0.035867, 0.017933, 0.017933
+1, 0.0416, 0.0208, 0.0208
+ENDTABLE
+LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV / EV) } Batt. discharged resis. (18 milliohms)
+EXIT_PARSFILE Generic\tables\GenTab_a74df35c-ffa2-4e37-be5e-e6d47aa019fa.par
+
+ENTER_PARSFILE Generic\tables\GenTab_366b8224-2bfb-41c4-918b-7474b312a5e7.par
+#FullDataName Generic Table`Battery Open-Circuit Voltage`Powertrain (HEV / EV)
+VOC_BATTERY_CARPET 2D_LINEAR
+0, 0, 25
+0, 7.237, 7.237
+0.1, 7.4047, 7.4047
+0.2, 7.5106, 7.5106
+0.3, 7.5873, 7.5873
+0.4, 7.6459, 7.6459
+0.5, 7.6909, 7.6909
+0.6, 7.7294, 7.7294
+0.7, 7.7666, 7.7666
+0.8, 7.8078, 7.8078
+0.9, 7.9143, 7.9143
+1, 8.3645, 8.3645
+ENDTABLE
+LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV / EV) } Battery Open-Circuit Voltage
+EXIT_PARSFILE Generic\tables\GenTab_366b8224-2bfb-41c4-918b-7474b312a5e7.par
+
+ENTER_PARSFILE Generic\tables\GenTab_aa98d550-f7f7-4b45-a9fa-b3a68d451582.par
+#FullDataName Generic Table`Battery Max Capacity (34 A-h)`Powertrain (HEV / EV)
+CAP_BATTERY_MAX_CONSTANT 34
+LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV / EV) } Battery Max Capacity (34 A-h)
+EXIT_PARSFILE Generic\tables\GenTab_aa98d550-f7f7-4b45-a9fa-b3a68d451582.par
+
+LOG_ENTRY Used Dataset: Powertrain: Hybrid/Electric System; Full Electric Powertrain Assembly
+EXIT_PARSFILE Powertrain\HEV\HEV_fee39384-1789-4075-b186-1cb5a58dca2c.par
+
+ENTER_PARSFILE Powertrain\HEV_PMC\PMC_f72dfd3c-449a-48ea-bc10-0db9a0ff6be6.par
+#FullDataName Powertrain: Hybrid/Electric Power Management Control`Electric Power Manage.: Full Load 90 kW`
+OPT_REGEN_OFF_THRT 0
+PWR_HEV_DRV_MAX 90
+TC_PWR_HYBRID_AV 0.8
+KPW_PBK_HEV 4.2
+PWR_EV_MODE 25
+REGEN_BRK_OFF 0.8
+ENTER_PARSFILE Generic\tables\GenTab_fa84eafb-e1dc-4af9-857d-326cec700695.par
+#FullDataName Generic Table`Driver Demand Power: Full Load 90 kW`Powertrain (HEV / EV)
+PWR_DRV_THROTTLE_COEFFICIENT 90
+LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV / EV) } Driver Demand Power: Full Load 90 kW
+EXIT_PARSFILE Generic\tables\GenTab_fa84eafb-e1dc-4af9-857d-326cec700695.par
+
+LOG_ENTRY Used Dataset: Powertrain: Hybrid/Electric Power Management Control; Electric Power Manage.: Full Load 90 kW
+EXIT_PARSFILE Powertrain\HEV_PMC\PMC_f72dfd3c-449a-48ea-bc10-0db9a0ff6be6.par
+
+R_GEAR_FINAL 2.5
+R_EFF_F_FINAL 1
+R_EFF_R_FINAL 0.9
+IDS_R 0.02
+K_SHAFT_FINAL 8.4
+B_SHAFT_FINAL 0.42
+A_BACKLASH_FINAL 0
+M_SHAFT_ROT_COEFFICIENT 8.4
+M_SHAFT_AV_COEFFICIENT 0.42
+LOG_ENTRY Used Dataset: Powertrain: Shaft Drive; { Electrified Powertrain } Electric 40 kW, 1.53/2.5
+EXIT_PARSFILE Powertrain\ShaftDr\ShaftDr_673282e2-911a-44c5-ac8f-0c211d66be2a.par
+
+R_REAR_DRIVE_SC 1
+PMAX_SC 120
+AREA_AERO 0.6
+CD 0.52
+CL 0.085
+CP 0.205
+FX_AERO_SHAPING_CONSTANT 0.52
+FZ_AERO_SHAPING_CONSTANT 0.085
+MY_AERO_SHAPING_CONSTANT 0.205
+FY_AERO_SHAPING_CONSTANT 0
+MX_AERO_SHAPING_CONSTANT 0
+MZ_AERO_SHAPING_CONSTANT 0
+D_AIR 1.206
+H_REF_AERO 0
+Y_REF_AERO 0
+C_AERO_D 0.52
+C_AERO_L 0.085
+C_AERO_P 0.205
+LOG_ENTRY Used Dataset: Vehicle: Assembly; { Electrified } Sport Tour, WB: Shaft Drv., Batt. Electric
+EXIT_PARSFILE Vehicles\Assembly\Vehicle_33837942-5be8-4180-a5a7-a328caba23e9.par
+
+ENTER_PARSFILE Procedures\Proc_ef3e24c5-5692-489f-9d7f-3aa3cfb91e84.par
+#FullDataName Procedures`0 - 100 - 0 km/h w/ Brake Control`Accel. and Brake Testing
+OPT_INIT_PATH 1
+OPT_STOP 0
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 30
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+OPT_SC 2
+ENTER_PARSFILE Control\Rider\Rider_93a11a04-0d02-4efc-b847-24160e388ab9.par
+#FullDataName Control: Steering by the Closed-loop Rider Model`No Offset @  Variable Preview Time`Constant Position
+SET_ILTARG_FOR_ID 0
+set_description LTARG_ID No Offset @  Variable Preview Time
+LTARG_CONSTANT 0
+SET_PATH_WIDTH 0.05
+SET_PATH_DASH_INTERVAL 0.5
+SET_PATH_VERTEX_INTERVAL 1
+SET_PATH_DZ 0.01
+SET_PATH_COLOR 0 0 1
+LTARG_ID_DM LTARG_ID
+OPT_RIDER_MODEL 1
+OPT_STEER_CONTROL 1
+CREATE_PATH_OBJ off
+AV_LEAN_MAX 300
+TLAG_RIDER 0
+A_LEAN_MAX 60
+RIDER_KP 7
+ENTER_PARSFILE Control\Preview\Preview_c565a173-2df9-48fc-b164-5a9be6f2e652.par
+#FullDataName Control: Steering Preview Time for the Rider Model`Ramp: 0.5 sec to 1.5 sec over 144 km/h`
+TPREV_TABLE LINEAR_FLAT
+0, 0.5
+36, 0.5
+180, 1.5
+200, 1.5
+ENDTABLE
+LOG_ENTRY Used Dataset: Control: Steering Preview Time for the Rider Model; Ramp: 0.5 sec to 1.5 sec over 144 km/h
+EXIT_PARSFILE Control\Preview\Preview_c565a173-2df9-48fc-b164-5a9be6f2e652.par
+
+LOG_ENTRY Used Dataset: Control: Steering by the Closed-loop Rider Model; { Constant Position } No Offset @  Variable Preview Time
+EXIT_PARSFILE Control\Rider\Rider_93a11a04-0d02-4efc-b847-24160e388ab9.par
+
+ENTER_PARSFILE Control\Brake_lever\ConBkLev_c864b348-14b0-4056-881f-4db34e2a312b.par
+#FullDataName Control: Braking Lever Force (Open Loop)`Constant: Zero`Constant
+VLOW_STOP -1
+iaxle 1
+FBK_CON_CONSTANT 0
+iaxle 2
+FBK_CON_CONSTANT 0
+LOG_ENTRY Used Dataset: Control: Braking Lever Force (Open Loop); { Constant } Constant: Zero
+EXIT_PARSFILE Control\Brake_lever\ConBkLev_c864b348-14b0-4056-881f-4db34e2a312b.par
+
+ENTER_PARSFILE Control\Gear_at\GearCL_410b2a79-1c12-4212-991d-bfb8345c0ffd.par
+#FullDataName Control: Shifting (Closed Loop)`AT 7th mode`
+MODE_TRANS_CONSTANT 7
+LOG_ENTRY Used Dataset: Control: Shifting (Closed Loop); AT 7th mode
+EXIT_PARSFILE Control\Gear_at\GearCL_410b2a79-1c12-4212-991d-bfb8345c0ffd.par
+
+ENTER_PARSFILE Control\Speed_t\SpdTime_cde1027c-51ce-4142-a762-a00675e9f94d.par
+#FullDataName Control: Speed (Closed Loop) Using Target Speed`Ramp: 0 to 100 to 0`Ramp
+SET_ISPEED_FOR_ID 0
+set_description SPEED_TARGET_ID Ramp: 0 to 100 to 0
+SPEED_TARGET_COMBINE ADD
+INSTALL_SPEED_CONTROLLER
+OPT_SC 1
+SPEED_ID_SC SPEED_TARGET_ID
+OPT_BK_SC 1
+OPT_SC_ENGINE_BRAKING 0
+OPT_SC_2018 0
+SPEED_KI 0.2
+SPEED_KP 0.141
+VLOW_STOP -1
+BK_PERF_SC 0.5
+PBK_CON_MAX_SC 5
+SPEED_TARGET_TABLE LINEAR_FLAT
+0, 0
+10, 100
+20, 100
+30, 0
+ENDTABLE
+SPEED_TARGET_S_CONSTANT 0
+LOG_ENTRY Used Dataset: Control: Speed (Closed Loop) Using Target Speed; { Ramp } Ramp: 0 to 100 to 0
+EXIT_PARSFILE Control\Speed_t\SpdTime_cde1027c-51ce-4142-a762-a00675e9f94d.par
+
+ENTER_PARSFILE Roads\3D_Road\Road_ae678752-0753-44f7-8e73-0c0c6cd8a03b.par
+#FullDataName Road: 3D Surface (All Properties)`Flat and Long (Mu = 1.0)`Straight
+SET_IROAD_FOR_ID 0
+CURRENT_ROAD_ID = ROAD_ID
+set_description road_id Flat and Long (Mu = 1.0)
+ENTER_PARSFILE Roads\Center_XY\PathXY_00f0a7eb-e9ab-41cc-b29b-7c71476aa337.par
+#FullDataName Path: X-Y Coordinates`Straight`Straight
+SET_IPATH_FOR_ID 0
+DEFINE_XY_TABLES 1
+ITAB_XY = NTAB_XY
+XY_TABLE_ID = ITAB_XY
+SET_DESCRIPTION PATH_ID Straight
+SET_DESCRIPTION XY_TABLE_ID Straight
+IPATHSEG = 1
+PATH_ID_DM = PATH_ID
+SEGMENT_TYPE = 1
+XY_SEGMENT_ID = XY_TABLE_ID
+OPT_PATH_LOOP 0
+SPATH_START 0
+SEGMENT_XY_TABLE
+0.0000, 0.0000, 0.0000
+100.0000, 0.0000, 100.0000
+ENDTABLE
+LOG_ENTRY Used Dataset: Path: X-Y Coordinates; { Straight } Straight
+EXIT_PARSFILE Roads\Center_XY\PathXY_00f0a7eb-e9ab-41cc-b29b-7c71476aa337.par
+
+ROAD_PATH_ID = PATH_ID
+set_description road_path_id PATH_ID for: Straight
+ENTER_PARSFILE Roads\Friction\RdMu_57379104-49f4-4603-982b-e0dea6063846.par
+#FullDataName Road: Friction Map, S-L Grid`Constant: 1.0`Constant Mu
+MU_ROAD_CARPET 2D_LINEAR
+0, 0, 1
+0, 1, 1
+1, 1, 1
+ENDTABLE
+LOG_ENTRY Used Dataset: Road: Friction Map, S-L Grid; { Constant Mu } Constant: 1.0
+EXIT_PARSFILE Roads\Friction\RdMu_57379104-49f4-4603-982b-e0dea6063846.par
+
+ENTER_PARSFILE Roads\Shapes\RdShape_3dc6096f-9959-4eb6-afda-21470c22dbc7.par
+#FullDataName Road: Animator Surface Shapes`1200 m w/ Stripe, 200 m Light Grass`Roads
+NLANES 5
+OPTTHRESHOLD 1
+MIRROR 0
+COLOR(1) 1 1 1
+MATERIAL(1) Road (Medium)
+SPECULAR(1) 1
+SCALE(1) 20
+LTILES(1) 1
+LIN(1) -4
+LINUNITS(1) m
+LOUT(1) 4
+LOUTUNITS(1) m
+S_START(1) -100
+S_STOP(1) 1200
+SINT(1) 5
+AUTODETAIL(1) Road
+COLOR(2) 1 1 1
+MATERIAL(2) Road Transition (Light)
+SPECULAR(2) 1
+SCALE(2) 10
+LTILES(2) 1
+LIN(2) 4
+LINUNITS(2) m
+LOUT(2) 7.1
+LOUTUNITS(2) m
+S_START(2) -100
+S_STOP(2) 1200
+SINT(2) 5
+AUTODETAIL(2) Foliage
+COLOR(3) 1 1 1
+MATERIAL(3) Grass (Light)
+SPECULAR(3) 1
+SCALE(3) 10
+LTILES(3) 9
+LIN(3) -7.1
+LINUNITS(3) m
+LOUT(3) -100
+LOUTUNITS(3) m
+S_START(3) -100
+S_STOP(3) 1200
+SINT(3) 5
+AUTODETAIL(3) Foliage
+COLOR(4) 1 1 1
+MATERIAL(4) Grass (Light)
+SPECULAR(4) 1
+SCALE(4) 10
+LTILES(4) 9
+LIN(4) 7.1
+LINUNITS(4) m
+LOUT(4) 100
+LOUTUNITS(4) m
+S_START(4) -100
+S_STOP(4) 1200
+SINT(4) 5
+AUTODETAIL(4) Foliage
+COLOR(5) 1 1 1
+MATERIAL(5) Road Transition (Light)
+SPECULAR(5) 1
+SCALE(5) 10
+LTILES(5) -0.969
+LIN(5) -4
+LINUNITS(5) m
+LOUT(5) -7.1
+LOUTUNITS(5) m
+S_START(5) -100
+S_STOP(5) 1200
+SINT(5) 5
+AUTODETAIL(5) Foliage
+MTL_FILE Animator/Road_Materials/road.mtl
+LOG_ENTRY Used Dataset: Road: Animator Surface Shapes; { Roads } 1200 m w/ Stripe, 200 m Light Grass
+EXIT_PARSFILE Roads\Shapes\RdShape_3dc6096f-9959-4eb6-afda-21470c22dbc7.par
+
+RR_SURF_CONSTANT 1.0
+L_CAMERA_FRONT 0.5
+L_CAMERA_REAR 0.5
+add_reference_frame road_stuff_6_Partly_Cloudy_Sky_with_Light_Grass
+reference_frame_ghosts off
+ENTER_PARSFILE Animator\Groups\Group_4ca8da7e-4354-4ff1-906e-7799e75accaf.par
+#FullDataName Animator: Group`Partly Cloudy Sky with Light Grass`Environment Spheres
+ENTER_PARSFILE Animator\Frames\Frame_d8f565c1-503c-42eb-8ddd-a99303b404d3.par
+#FullDataName Animator: Reference Frame`Skybox (Vehicle Reference)`Tracking: Vehicle
+ADD_REFERENCE_FRAME Frame_d8f565c1-503c-42eb-8ddd-a99303b404d3
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xo
+SET_Y_NAME Yo
+SET_Z_NAME Zo
+WRT_Xo
+ANI_Xo
+WRT_Yo
+ANI_Yo
+WRT_Zo
+ANI_Zo
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle Reference)
+EXIT_PARSFILE Animator\Frames\Frame_d8f565c1-503c-42eb-8ddd-a99303b404d3.par
+
+ENTER_PARSFILE Animator\shape_links\Shape_c530b1e5-9348-4448-bfe2-ffe759ef90e5.par
+#FullDataName Animator: Shape File Link`Partly Cloudy Sky`Environment: Sky Boxes
+add_obj Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\Sky_Partly_Cloudy.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 15
+SET_SCALE_Y 15
+SET_SCALE_Z 5
+SET_ANGLE_Z 180
+set_lighting off
+set_fogging on
+SUN_POSITION 250 -250 600
+cam_global_ambient .6 .6 .6 1
+cam_global_diffuse .9 .9 .9 1
+cam_global_specular .7 .7 .7 1
+ENV_MAP_XPOS Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\cubeXPos.tga
+ENV_MAP_XNEG Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\cubeXNeg.tga
+ENV_MAP_YPOS Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\cubeYPos.tga
+ENV_MAP_YNEG Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\cubeYNeg.tga
+ENV_MAP_ZPOS Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\cubeZPos.tga
+ENV_MAP_ZNEG Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\cubeZNeg.tga
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+EXIT_PARSFILE Animator\shape_links\Shape_c530b1e5-9348-4448-bfe2-ffe759ef90e5.par
+
+ENTER_PARSFILE Animator\shape_links\Shape_0945f15e-386d-43f4-81cc-6a49252ee672.par
+#FullDataName Animator: Shape File Link`Light Grass`Environment: Land Bowls
+add_obj Animator\3D_Shape_Files\Environment\Land_Bowls\Light_Grass\Land_Bowl_Light_Grass.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 15
+SET_SCALE_Y 15
+SET_SCALE_Z 1
+set_lighting off
+set_fogging off
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
+EXIT_PARSFILE Animator\shape_links\Shape_0945f15e-386d-43f4-81cc-6a49252ee672.par
+
+LOG_ENTRY Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
+EXIT_PARSFILE Animator\Groups\Group_4ca8da7e-4354-4ff1-906e-7799e75accaf.par
+
+ENTER_PARSFILE Roads\3D_Road\Road_ae678752-0753-44f7-8e73-0c0c6cd8a03b.ani
+add_reference_frame The Road
+reference_frame_ghosts off
+add_obj Roads\3D_Road\Road_ae678752-0753-44f7-8e73-0c0c6cd8a03b_1.obj
+set_color 1 1 1
+show_front on
+show_back off
+compute_normals on
+set_specular 1 1 1
+set_auto_detail_type Road
+add_obj Roads\3D_Road\Road_ae678752-0753-44f7-8e73-0c0c6cd8a03b_2.obj
+set_color 1 1 1
+show_front on
+show_back off
+compute_normals on
+set_specular 1 1 1
+set_auto_detail_type Foliage
+add_obj Roads\3D_Road\Road_ae678752-0753-44f7-8e73-0c0c6cd8a03b_3.obj
+set_color 1 1 1
+show_front on
+show_back off
+compute_normals on
+set_specular 1 1 1
+set_auto_detail_type Foliage
+add_obj Roads\3D_Road\Road_ae678752-0753-44f7-8e73-0c0c6cd8a03b_4.obj
+set_color 1 1 1
+show_front on
+show_back off
+compute_normals on
+set_specular 1 1 1
+set_auto_detail_type Foliage
+add_obj Roads\3D_Road\Road_ae678752-0753-44f7-8e73-0c0c6cd8a03b_5.obj
+set_color 1 1 1
+show_front on
+show_back off
+compute_normals on
+set_specular 1 1 1
+set_auto_detail_type Foliage
+EXIT_PARSFILE Roads\3D_Road\Road_ae678752-0753-44f7-8e73-0c0c6cd8a03b.ani
+
+LOG_ENTRY Used Dataset: Road: 3D Surface (All Properties); { Straight } Flat and Long (Mu = 1.0)
+EXIT_PARSFILE Roads\3D_Road\Road_ae678752-0753-44f7-8e73-0c0c6cd8a03b.par
+
+ENTER_PARSFILE Plot\Setup\Plot_354e9110-e80f-449d-bc05-b56fe9505e0f.par
+#FullDataName Plot: Setup`Vx -- Longitudinal Speed`Bike Motion
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS Vx, Time
+WRT_VX
+PLOTCHANNELS VxTarget, Time
+WRT_VXTARGET
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Vx -- Longitudinal Speed
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Bike Motion } Vx -- Longitudinal Speed
+EXIT_PARSFILE Plot\Setup\Plot_354e9110-e80f-449d-bc05-b56fe9505e0f.par
+
+ENTER_PARSFILE Plot\Setup\Plot_5d23f0b1-8e4c-40b9-b20a-87c15a744845.par
+#FullDataName Plot: Setup`Suspension Deflections`Suspension
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS Jounce1, Time
+WRT_JOUNCE1
+PLOTCHANNELS Jounce2, Time
+WRT_JOUNCE2
+PLOTCHANNELS Jounce3, Time
+WRT_JOUNCE3
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Suspension Deflections
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Suspension } Suspension Deflections
+EXIT_PARSFILE Plot\Setup\Plot_5d23f0b1-8e4c-40b9-b20a-87c15a744845.par
+
+ENTER_PARSFILE Plot\Setup\Plot_2b4d9dbe-308e-4ffd-b6c8-66a0dd6279f5.par
+#FullDataName Plot: Setup`Pitch -- Sprung Masses`Bike Motion
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS Pitch, Time
+WRT_PITCH
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Pitch -- Sprung Masses
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Bike Motion } Pitch -- Sprung Masses
+EXIT_PARSFILE Plot\Setup\Plot_2b4d9dbe-308e-4ffd-b6c8-66a0dd6279f5.par
+
+ENTER_PARSFILE Plot\Setup\Plot_abca9912-25fa-4bd5-93a4-943b2dca09da.par
+#FullDataName Plot: Setup`Gear Selected at Transmission`Powertrain
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS GearStat, Time
+WRT_GEARSTAT
+PLOTCHANNELS Gear_Del, Time
+WRT_GEAR_DEL
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Gear Selected at Transmission
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Powertrain } Gear Selected at Transmission
+EXIT_PARSFILE Plot\Setup\Plot_abca9912-25fa-4bd5-93a4-943b2dca09da.par
+
+ENTER_PARSFILE Plot\Setup\Plot_7d3c8548-a8a7-4c0b-8ba0-fa85c9ea68e6.par
+#FullDataName Plot: Setup`Spin Rates in Powertrain`Powertrain
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS AV_Eng, Time
+WRT_AV_ENG
+PLOTCHANNELS AVTC_IN, Time
+WRT_AVTC_IN
+PLOTCHANNELS AVTC_OUT, Time
+WRT_AVTC_OUT
+PLOTCHANNELS AV_Trans, Time
+WRT_AV_TRANS
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Spin Rates in Powertrain
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Powertrain } Spin Rates in Powertrain
+EXIT_PARSFILE Plot\Setup\Plot_7d3c8548-a8a7-4c0b-8ba0-fa85c9ea68e6.par
+
+ENTER_PARSFILE Plot\Setup\Plot_efcb6d14-4dec-4394-8b68-e197205fc477.par
+#FullDataName Plot: Setup`Torques in Powertrain`Powertrain
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS M_EngOut, Time
+WRT_M_ENGOUT
+PLOTCHANNELS M_Eng_In, Time
+WRT_M_ENG_IN
+PLOTCHANNELS M_TC, Time
+WRT_M_TC
+PLOTCHANNELS M_TC_IN, Time
+WRT_M_TC_IN
+PLOTCHANNELS M_TC_OUT, Time
+WRT_M_TC_OUT
+PLOTCHANNELS M_Trans, Time
+WRT_M_TRANS
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Torques in Powertrain
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Powertrain } Torques in Powertrain
+EXIT_PARSFILE Plot\Setup\Plot_efcb6d14-4dec-4394-8b68-e197205fc477.par
+
+ENTER_PARSFILE Plot\Setup\Plot_0d085428-ad27-4f46-969e-0984daf51061.par
+#FullDataName Plot: Setup`Fuel Rate`Powertrain
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS Qfuel, Time
+WRT_QFUEL
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Fuel Rate
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Powertrain } Fuel Rate
+EXIT_PARSFILE Plot\Setup\Plot_0d085428-ad27-4f46-969e-0984daf51061.par
+
+ENTER_PARSFILE Plot\Setup\Plot_4abd3c15-fb23-4c29-b526-a4703244b245.par
+#FullDataName Plot: Setup`Fuel Consumed`Powertrain
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS Mfuel, Time
+WRT_MFUEL
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Fuel Consumed
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Powertrain } Fuel Consumed
+EXIT_PARSFILE Plot\Setup\Plot_4abd3c15-fb23-4c29-b526-a4703244b245.par
+
+LOG_ENTRY Used Dataset: Procedures; { Accel. and Brake Testing } 0 - 100 - 0 km/h w/ Brake Control
+EXIT_PARSFILE Procedures\Proc_ef3e24c5-5692-489f-9d7f-3aa3cfb91e84.par
+
+ENTER_PARSFILE Plot\Setup\Plot_e2818f80-b6d7-4ec6-a0bc-d43f68842499.par
+#FullDataName Plot: Setup`Wheel Speed (All)`Braking
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS Vx, Time
+WRT_VX
+PLOTCHANNELS Vx_1, Time
+WRT_VX_1
+PLOTCHANNELS Vx_2, Time
+WRT_VX_2
+PLOTCHANNELS Vx_3, Time
+WRT_VX_3
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Wheel Speed (All)
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Braking } Wheel Speed (All)
+EXIT_PARSFILE Plot\Setup\Plot_e2818f80-b6d7-4ec6-a0bc-d43f68842499.par
+
+ENTER_PARSFILE Plot\Setup\Plot_8a23b4af-ed47-42b0-afaf-a1e846f4059f.par
+#FullDataName Plot: Setup`Ax -- Long. Acceleration`Bike Motion
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS Ax_SM, Time
+WRT_AX_SM
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Ax -- Long. Acceleration
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Bike Motion } Ax -- Long. Acceleration
+EXIT_PARSFILE Plot\Setup\Plot_8a23b4af-ed47-42b0-afaf-a1e846f4059f.par
+
+ENTER_PARSFILE Plot\Setup\Plot_6c13f075-b5d6-45b4-9d5e-34563ca28bcb.par
+#FullDataName Plot: Setup`Drive Torque`Powertrain
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS My_DR_1, Time
+WRT_MY_DR_1
+PLOTCHANNELS My_DR_2, Time
+WRT_MY_DR_2
+PLOTCHANNELS My_DR_3, Time
+WRT_MY_DR_3
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Drive Torque
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Powertrain } Drive Torque
+EXIT_PARSFILE Plot\Setup\Plot_6c13f075-b5d6-45b4-9d5e-34563ca28bcb.par
+
+WRITE_SENSOR_DETECT
+Title Electric Shaft Drv.: O-L, Regen. Brk. <Powertrain: Electric>
+CATEGORY Powertrain: Electric
+DATASET_TITLE Electric Shaft Drv.: O-L, Regen. Brk.
+NUM_CACHED_RUNS 1
+LOG_ENTRY Used Dataset: BikeSim Run Control; { Powertrain: Electric } Electric Shaft Drv.: O-L, Regen. Brk.
+EXIT_PARSFILE Runs\Run_d45457b6-5edf-47cc-9dae-b64407019c64.par
+
+
+
+END
