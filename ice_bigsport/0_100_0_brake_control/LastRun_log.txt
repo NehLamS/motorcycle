@@ -1,0 +1,91 @@
+Run made by BikeSim 2025.0 at 18:11 on June 23, 2025.
+Revision 244248, January 16, 2025
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_fa5487e7-5323-4261-ba23-a08f00fc8362\Run_all.par"
+Installed keywords into VS Solver for MODEL_LAYOUT FIXED_CASTER
+Used Dataset: Animator: Reference Frame; { Bike Tracking } Bike X-Y-Z
+Used Dataset: Animator: Camera Setup; { Bike Reference } 180 Azm, 10 El, 5 m
+Used Dataset: Suspension: Shock Absorber; { Linear Constant } Linear Coef: 2.0 N-s/mm
+Used Dataset: Suspension: Spring; 25 N/mm, Strk. 120 mm, Preload 933 N
+Used Dataset: Suspension: Fork; { Sports Bikes } Sport, Big Fork
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Wheel (Front)
+Used Dataset: External Parsfile; Front Tire (v.1.02)
+Used Dataset: Tire; { Sports Bikes } Sports, Big: Front
+Used Dataset: Suspension: Lever Compression; Initial Lever Ratio = 0.54
+Used Dataset: Suspension: Shock Absorber; { Linear Constant } Linear Coef: 10 N-s/mm
+Used Dataset: Suspension: Spring; 40 N/mm, Strk. 200 mm, Preload 1182 N
+Used Dataset: Suspension: Swing Arm; { Sports Bikes } Sport, Big
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Wheel (Rear)
+Used Dataset: External Parsfile; Rear Tire (v.1.02)
+Used Dataset: Tire; { Sports Bikes } Sports, Big: Rear
+Used Dataset: Vehicle: Sprung Mass; { Sports Bikes } Sports, Big
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Details
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Body
+Used Dataset: Animator: Shape Assembly; { Sport Bikes } Big Sports: Body
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Brake Light
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Fork (Upper)
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Front Fender
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Fork (Lower)
+Used Dataset: Animator: Shape Assembly; { Sport Bikes } Big Sports: Lower Fork
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Handle Bars (Details)
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Swing Arm
+Used Dataset: Generic Data Group (More); { Manual Reference Frames } Rearview Mirror: Sport, Big (Left)
+Used Dataset: Generic Data Group (More); { Manual Reference Frames } Rearview Mirror: Sport, Big (Right)
+Used Dataset: Generic Data Group; { Manual Camera Setup } VsV Rearview Camera: Sport, Big
+Used Dataset: Animator: Bike Shape Assembly; { Sports Bikes } Sports, Big
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Body
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Right Arm
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Left Arm
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Right Leg
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Left Leg
+Used Dataset: Animator: Rider Shape Assembly; { Sports Bikes } Sports, Big: Rider
+Used Dataset: Vehicle: Rider Body Mass; { Sports Bikes } Sports, Big
+Used Dataset: Brakes: Proportioning / Limiting Valve; Linear: 1.00 MPa / MPa
+Used Dataset: Brakes: Proportioning / Limiting Valve; Linear: 1.00 MPa / MPa
+Used Dataset: Brake System; Brakes
+Used Dataset: Steering Stiffness; Steer Stiffness (60 deg. Limit)
+Used Dataset: Steering System; { Sports Bikes } Sport, Big
+Used Dataset: Vehicle: Assembly; { Sports Bikes } Sports, Big: Baseline
+Used Dataset: Control: Steering Preview Time for the Rider Model; Ramp: 0.5 sec to 1.5 sec over 144 km/h
+Used Dataset: Control: Steering by the Closed-loop Rider Model; { Constant Position } No Offset @  Variable Preview Time
+Used Dataset: Control: Braking Lever Force (Open Loop); { Constant } Constant: Zero
+Used Dataset: Control: Shifting (Closed Loop); AT 7th mode
+Used Dataset: Control: Speed (Closed Loop) Using Target Speed; { Ramp } Ramp: 0 to 100 to 0
+Used Dataset: Path: X-Y Coordinates; { Straight } Straight
+Used Dataset: Road: Friction Map, S-L Grid; { Constant Mu } Constant: 1.0
+Used Dataset: Road: Animator Surface Shapes; { Roads } 1200 m w/ Stripe, 200 m Light Grass
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle Reference)
+Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
+Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
+Used Dataset: Road: 3D Surface (All Properties); { Straight } Flat and Long (Mu = 1.0)
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Bike Motion } Vx -- Longitudinal Speed
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Suspension } Suspension Deflections
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Bike Motion } Pitch -- Sprung Masses
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain } Gear Selected at Transmission
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain } Spin Rates in Powertrain
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain } Torques in Powertrain
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain } Fuel Rate
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain } Fuel Consumed
+Used Dataset: Procedures; { Accel. and Brake Testing } 0 - 100 - 0 km/h w/ Brake Control
+ Accel in Turn - Const. Radius Curve <Handling and Stability Tests>
+Used Dataset: BikeSim Run Control; { Handling and Stability Tests } Accel in Turn - Const. Radius Curve
+
+Time to read input = 0.0354163
+Function MU_ROAD_CARPET(1) extrapolated (out of range LOW) for X = -1.37 m at T = 0
+
+Run started: CSV output file = Results\Run_fa5487e7-5323-4261-ba23-a08f00fc8362\LastRun.csv
+
+Run stopped at t = 30. Stop time reached.
+
+Computational time ratio: RTIME = 0.0271678 (real time)/(simulation time)
+

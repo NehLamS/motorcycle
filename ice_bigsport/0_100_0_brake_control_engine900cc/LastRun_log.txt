@@ -1,0 +1,158 @@
+Run made by BikeSim 2025.0 at 18:41 on June 23, 2025.
+Revision 244248, January 16, 2025
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_fa5487e7-5323-4261-ba23-a08f00fc8362\Run_all.par"
+Installed keywords into VS Solver for MODEL_LAYOUT FIXED_CASTER
+Used Dataset: Animator: Reference Frame; { Bike Tracking } Bike X-Y-Z
+Used Dataset: Animator: Camera Setup; { Bike Reference } 180 Azm, 10 El, 5 m
+Used Dataset: Suspension: Shock Absorber; { Linear Constant } Linear Coef: 2.0 N-s/mm
+Used Dataset: Suspension: Spring; 25 N/mm, Strk. 120 mm, Preload 933 N
+Used Dataset: Suspension: Fork; { Sports Bikes } Sport, Big Fork
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Wheel (Front)
+Used Dataset: External Parsfile; Front Tire (v.1.02)
+Used Dataset: Tire; { Sports Bikes } Sports, Big: Front
+Used Dataset: Suspension: Lever Compression; Initial Lever Ratio = 0.54
+Used Dataset: Suspension: Shock Absorber; { Linear Constant } Linear Coef: 10 N-s/mm
+Used Dataset: Suspension: Spring; 40 N/mm, Strk. 200 mm, Preload 1182 N
+Used Dataset: Suspension: Swing Arm; { Sports Bikes } Sport, Big
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Wheel (Rear)
+Used Dataset: External Parsfile; Rear Tire (v.1.02)
+Used Dataset: Tire; { Sports Bikes } Sports, Big: Rear
+Used Dataset: Vehicle: Sprung Mass; { Sports Bikes } Sports, Big
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Details
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Body
+Used Dataset: Animator: Shape Assembly; { Sport Bikes } Big Sports: Body
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Brake Light
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Fork (Upper)
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Front Fender
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Fork (Lower)
+Used Dataset: Animator: Shape Assembly; { Sport Bikes } Big Sports: Lower Fork
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Handle Bars (Details)
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Swing Arm
+Used Dataset: Generic Data Group (More); { Manual Reference Frames } Rearview Mirror: Sport, Big (Left)
+Used Dataset: Generic Data Group (More); { Manual Reference Frames } Rearview Mirror: Sport, Big (Right)
+Used Dataset: Generic Data Group; { Manual Camera Setup } VsV Rearview Camera: Sport, Big
+Used Dataset: Animator: Bike Shape Assembly; { Sports Bikes } Sports, Big
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Body
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Right Arm
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Left Arm
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Right Leg
+Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Left Leg
+Used Dataset: Animator: Rider Shape Assembly; { Sports Bikes } Sports, Big: Rider
+Used Dataset: Vehicle: Rider Body Mass; { Sports Bikes } Sports, Big
+Used Dataset: Brakes: Proportioning / Limiting Valve; Linear: 1.00 MPa / MPa
+Used Dataset: Brakes: Proportioning / Limiting Valve; Linear: 1.00 MPa / MPa
+Used Dataset: Brake System; Brakes
+Used Dataset: Steering Stiffness; Steer Stiffness (60 deg. Limit)
+Used Dataset: Steering System; { Sports Bikes } Sport, Big
+Used Dataset: Vehicle: Assembly; { Sports Bikes } Sports, Big: Baseline
+Used Dataset: Control: Steering Preview Time for the Rider Model; Ramp: 0.5 sec to 1.5 sec over 144 km/h
+Used Dataset: Control: Steering by the Closed-loop Rider Model; { Constant Position } No Offset @  Variable Preview Time
+Used Dataset: Control: Braking Lever Force (Open Loop); { Constant } Constant: Zero
+Used Dataset: Control: Shifting (Closed Loop); AT 7th mode
+Used Dataset: Control: Speed (Closed Loop) Using Target Speed; { Ramp } Ramp: 0 to 100 to 0
+Used Dataset: Path: X-Y Coordinates; { Straight } Straight
+Used Dataset: Road: Friction Map, S-L Grid; { Constant Mu } Constant: 1.0
+Used Dataset: Road: Animator Surface Shapes; { Roads } 1200 m w/ Stripe, 200 m Light Grass
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle Reference)
+Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
+Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
+Used Dataset: Road: 3D Surface (All Properties); { Straight } Flat and Long (Mu = 1.0)
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Bike Motion } Vx -- Longitudinal Speed
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Suspension } Suspension Deflections
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Bike Motion } Pitch -- Sprung Masses
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain } Gear Selected at Transmission
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain } Spin Rates in Powertrain
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain } Torques in Powertrain
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain } Fuel Rate
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain } Fuel Consumed
+Used Dataset: Procedures; { Accel. and Brake Testing } 0 - 100 - 0 km/h w/ Brake Control
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } Throttle (Coast)
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (2200 rpm), RPM
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (2200 rpm), Frequency
+Used Dataset: Animator: Sound Sample; { Engine Sounds } V-Twin Engine, 2200 rpm, Coast
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } Throttle (Power)
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (2200 rpm), RPM
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (2200 rpm), Frequency
+Used Dataset: Animator: Sound Sample; { Engine Sounds } V-Twin Engine, 2200 rpm, Power
+Used Dataset: Animator: Sound Modifier; { Wind Sound Modifiers } Wind Vol. 1
+Used Dataset: Animator: Sound Modifier; { Wind Sound Modifiers } Wind Frequency
+Used Dataset: Animator: Sound Sample; Wind Noise
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } Throttle (Coast)
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (4400 rpm), RPM
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (4400 rpm), Frequency
+Used Dataset: Animator: Sound Sample; { Engine Sounds } V-Twin Engine, 4400 rpm, Coast
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } Throttle (Power)
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (4400 rpm), RPM
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (4400 rpm), Frequency
+Used Dataset: Animator: Sound Sample; { Engine Sounds } V-Twin Engine, 4400 rpm, Power
+Used Dataset: Animator: Sound Set; V-Twin Engine
+Used Dataset: Powertrain: Engine; 900 cc - 41 kW (55 bhp) V-Twin
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } Throttle (Coast)
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (2200 rpm), RPM
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (2200 rpm), Frequency
+Used Dataset: Animator: Sound Sample; { Engine Sounds } V-Twin Engine, 2200 rpm, Coast
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } Throttle (Power)
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (2200 rpm), RPM
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (2200 rpm), Frequency
+Used Dataset: Animator: Sound Sample; { Engine Sounds } V-Twin Engine, 2200 rpm, Power
+Used Dataset: Animator: Sound Modifier; { Wind Sound Modifiers } Wind Vol. 1
+Used Dataset: Animator: Sound Modifier; { Wind Sound Modifiers } Wind Frequency
+Used Dataset: Animator: Sound Sample; Wind Noise
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } Throttle (Coast)
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (4400 rpm), RPM
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (4400 rpm), Frequency
+Used Dataset: Animator: Sound Sample; { Engine Sounds } V-Twin Engine, 4400 rpm, Coast
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } Throttle (Power)
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (4400 rpm), RPM
+Used Dataset: Animator: Sound Modifier; { Engine Sound Modifiers } V-Twin (4400 rpm), Frequency
+Used Dataset: Animator: Sound Sample; { Engine Sounds } V-Twin Engine, 4400 rpm, Power
+Used Dataset: Animator: Sound Set; V-Twin Engine
+Used Dataset: Powertrain: Engine; 900 cc - 41 kW (55 bhp) V-Twin
+Used Dataset: Powertrain: Clutch Torque; Maximum 200 N-m (Linear)
+Used Dataset: Powertrain: Upshift Schedule; 6-Speed for V-Twin (MT)
+Used Dataset: Powertrain: Downshift Schedule; 6-Speed for V-Twin (MT)
+Used Dataset: Powertrain: Transmission (7 Gears); 6 Speed for V-Twin
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Cone: Tail Origin (X-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Chain Force (Extension)
+Used Dataset: Animator: Reference Frame; { Chain Forces } Sprocket Upper Chain
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Cone: Tail Origin (X-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Chain Force (Extension)
+Used Dataset: Animator: Reference Frame; { Chain Forces } Sprocket Lower Chain
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Cone: Tail Origin (X-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Chain Force (Compression)
+Used Dataset: Animator: Reference Frame; { Chain Forces } Wheel Upper Chain
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Cone: Tail Origin (X-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Chain Force (Compression)
+Used Dataset: Animator: Reference Frame; { Chain Forces } Wheel Lower Chain
+Used Dataset: Animator: Group (More); Chain Force Arrows
+Used Dataset: Animator: Group; { Arrows } Chain Forces, Red Arrows
+Used Dataset: Powertrain: Chain Drive; 900 cc, V-Twin, 1.5/2.5
+Used Dataset: Powertrain: Upshift Schedule; 6-Speed (MT)
+Used Dataset: Powertrain: Downshift Schedule; 6-Speed (MT)
+Used Dataset: Powertrain: Transmission (7 Gears); Sports Bike, Big (6-Speed)
+ Accel in Turn - Const. Radius Curve <Handling and Stability Tests>
+Used Dataset: BikeSim Run Control; { Handling and Stability Tests } Accel in Turn - Const. Radius Curve
+
+Time to read input = 0.0396329
+Function MU_ROAD_CARPET(1) extrapolated (out of range LOW) for X = -1.37 m at T = 0
+
+Run started: CSV output file = Results\Run_fa5487e7-5323-4261-ba23-a08f00fc8362\LastRun.csv
+Function INV_CAP_TC_TABLE extrapolated (out of range HIGH) for X = 1.00411 - at T = 0.026
+Function MENGINE_CARPET extrapolated (out of range LOW) for X = 549.551 rpm at T = 0.0635
+Function CMP_STRUT_LEVER_TABLE(2) extrapolated (out of range LOW) for X = -20.0045 mm at T = 3.262
+
+Run stopped at t = 30. Stop time reached.
+
+Computational time ratio: RTIME = 0.0307623 (real time)/(simulation time)
+

@@ -1,0 +1,106 @@
+BikeSim 2025.0
+Vehicle Configuration: FIXED_CASTER
+MODEL_LAYOUT FIXED_CASTER
+
+DATASET_TITLE Baseline
+CATEGORY * * Quick Start Guide Example
+TITLE Baseline <* * Quick Start Guide Example>
+This file was generated 17:28 on June 24, 2025.
+
+For this run, the BikeSim 2025.0 math model has 53 ordinary differential equations
+(ODEs) and an additional 40 state variables (SVs), for a total of 93 state
+variables. If the SV has an output name, it is shown in {braces}.
+
+SV_AERO_ROAD_ID_1 (-) Road surface ID for tracked aero road point
+SV_AERO_ROAD_STA_1 (m) Road path station for tracked aero road point
+SV_AVX (deg/s) ODE: Angular vel. of main frame, local X axis {AVx}
+SV_AVX_FORK (deg/s) ODE: Relative angular vel., fork twist, X axis
+SV_AVX_RIDER_BODY (deg/s) ODE: Angular velocity, rider lean, relative
+SV_AVY (deg/s) ODE: Angular vel. of main frame, local Y axis {AVy}
+SV_AVY_1 (rpm) ODE: Spin of front wheel {AVy_W1}
+SV_AVY_2 (rpm) ODE: Spin of rear wheel {AVy_W2}
+SV_AVY_FORK (deg/s) ODE: Relative angular vel., fork bend, Y axis
+SV_AVY_OLD_1 (rpm) Spin of front wheel (previous time step)
+SV_AVY_OLD_2 (rpm) Spin of rear wheel (previous time step)
+SV_AVY_SPRKT (rpm) ODE: Spin of sprocket {AV_Spkt}
+SV_AVZ (deg/s) ODE: Angular vel. of main frame, local Z axis {AVz}
+SV_AV_CL (rpm) Clutch relative spin
+SV_AV_STEER (deg/s) ODE: Steer angular rate {AV_Steer}
+SV_AV_TC (rpm) ODE: Spin of torque coupling output shaft {AVTC_Out}
+SV_AV_TROUT (rpm) ODE: Spin of transmission output shaft
+SV_AX_SC (g) SC acceleration command when OPT_SC = 5
+SV_BEND_FORK (deg) ODE: Fork bend angle about Y axis {Rot_Bend}
+SV_CL_LOCKED (-) Clutch lockup state {Cl_Stat}
+SV_CMP_S_F (mm) Compression of front suspension spring, old
+SV_CMP_S_R (mm) Compression of rear suspension spring, old
+SV_CONTACT_ID_1 (-) Road surface ID for tire contact {RdID_1}
+SV_CONTACT_ID_2 (-) Road surface ID for tire contact {RdID_2}
+SV_CONTACT_STA_1 (m) Road path station for tire contact {S_Rd_1}
+SV_CONTACT_STA_2 (m) Road path station for tire contact {S_Rd_2}
+SV_DZDX_1 (-) Ground X slope under tire 1 {dZdX_1}
+SV_DZDX_2 (-) Ground X slope under tire 2 {dZdX_2}
+SV_DZDY_1 (-) Ground Y slope under tire 1 {dZdY_1}
+SV_DZDY_2 (-) Ground Y slope under tire 2 {dZdY_2}
+SV_FS_F (N) Force from front suspension spring, old
+SV_FS_R (N) Force from rear suspension spring, old
+SV_IVERR (m) ODE: Integral of SC speed error {Vx_IErr}
+SV_JNCR_1 (m/s) ODE: Jounce rate for front suspension {JncR_1}
+SV_JNCR_2 (m/s) ODE: Jounce rate for rear suspension {JncR_2}
+SV_JNC_1 (m) ODE: Jounce for front suspension {Jounce1}
+SV_JNC_2 (m) ODE: Jounce of rear suspension {Jounce2}
+SV_LEAN_RIDER_BODY (deg) ODE: Rider body lean {Roll_Rdr}
+SV_LK_WHL_1 (-) Boolean: 1 if wheel front wheel is locked by brake
+SV_LK_WHL_2 (-) Boolean: 1 if wheel rear wheel is locked by brake
+SV_M_SPRKT_REACT (N-m) Reaction torque to transmission sprocket (chain drive)
+SV_M_STR_CON_INTEGRAL (N-m) ODE: Integral ctl term, steering torque
+SV_N_START_CROSS (-) Count of start-crossings on looped driver path
+SV_OFF_GROUND (-) Boolean: 1 when front and rear tires are off the ground
+SV_PBK_1 (MPa) ODE: Hydraulic brake pressure for wheel 1 {PbkCh_1}
+SV_PBK_2 (MPa) ODE: Hydraulic brake pressure for wheel 2 {PbkCh_2}
+SV_PITCH (deg) ODE: Pitch of main frame {Pitch}
+SV_RIDER_LEAN (deg) Lean angle from internal rider model
+SV_RIDER_LEAN_OLD (deg) Lean angle from rider model, prev. time step
+SV_ROLL (deg) ODE: Euler roll of main frame {Roll_E}
+SV_ROT_1 (rev) ODE: Rotation of front wheel {Rot_W1}
+SV_ROT_2 (rev) ODE: Rotation of rear wheel {Rot_W2}
+SV_ROT_ENGINE_GYROSCOPIC (deg) ODE: X rot. of crankshaft rel. to engine
+SV_ROT_HUB_1 (deg) ODE: Relative pitch of Hub 1
+SV_ROT_HUB_2 (deg) ODE: Pitch of rear hub, relative
+SV_ROT_LK_1 (rev) Rotation reference of front wheel in "locked" mode
+SV_ROT_LK_2 (rev) Rotation reference of rear wheel in "locked" mode
+SV_ROT_SPRKT (rev) ODE: Rotation angle of sprocket {Rot_Spkt}
+SV_ROT_TC (rev) ODE: Rot. of torque coupling output shaft {RotTC_OT}
+SV_ROT_TROUT (rev) ODE: Rotation of transmission output shaft
+SV_R_1 (m) Deflected crown radius for tire 1
+SV_R_2 (m) Deflected crown radius for tire 2
+SV_R_GEAR_TOTAL_SC (-) Driveline total gear ratio for speed controller
+SV_SLIP_LAT_1 (-) ODE: Lagged tangent of lateral slip for tire 1
+SV_SLIP_LAT_2 (-) ODE: Lagged tangent of lateral slip for tire 2
+SV_SLIP_LONG_1 (-) ODE: Lagged longitudinal slip for tire 1
+SV_SLIP_LONG_2 (-) ODE: Lagged longitudinal slip for tire 2
+SV_SO_DIST (m) ODE: Distance used for "wandering profiles" {Sta_Prof}
+SV_SPEED_DVDS (-) dVdS derivative for speed control
+SV_SPEED_PREVIEW_SSTART (m) Start station in path preview array
+SV_SPEED_PREVIEW_V_TARGET (km/h) Initial target speed in preview array
+SV_STATION (m) Station of vehicle on rider path PATH_ID_DM {Station}
+SV_STA_ROAD (m) Vehicle station on road CURRENT_ROAD_ID {Sta_Road}
+SV_STEER (deg) ODE: Steer angle {Steer}
+SV_TWIST_FORK (deg) ODE: Fork twist angle about X axis {Rot_Twst}
+SV_VERR_OLD (km/h) Speed controller error at previous time step
+SV_VXS (km/h) ODE: Body X trans. speed of MAIN {VxBf_SM}
+SV_VYS (m/s) ODE: Body Y trans. speed of MAIN {VyBf_SM}
+SV_VY_RIDER_LEGS (m/s) ODE: Vy of RDR_LEGS0 rel. to MAIN
+SV_VY_RLGS_CG_OLD (mm/s) Rider legs CG lateral speed, old
+SV_VZS (m/s) ODE: Body Z trans. speed of MAIN {VzBf_SM}
+SV_VZ_RDR_OLD (mm/s) Rider upper body hinge vertical speed, old
+SV_VZ_RLGS_CG_OLD (mm/s) Rider legs CG vertical speed, old
+SV_XO (m) ODE: Global X coord. of sprung-mass origin {Xo}
+SV_X_HUB_1 (mm) ODE: Relative X movement of Hub 1
+SV_X_HUB_2 (mm) ODE: Longitudinal deflection of rear hub
+SV_YAW (deg) ODE: Yaw of main frame {Yaw}
+SV_YO (m) ODE: Global Y coord. of sprung-mass origin {Yo}
+SV_Y_RIDER_LEGS (m) ODE: Y trans. of RDR_LEGS0 rel. to P_SEAT
+SV_Y_RIDER_LEGS_CG (m) ODE: Y trans. of RLGS_MASS0 rel. to P_SEAT
+SV_ZO (m) ODE: Global Z coord. of sprung-mass origin {Zo}
+SV_Z_RIDER_LEGS (m) ODE: Z trans. of RDR_LEGS0 rel. to P_SEAT
+SV_Z_RIDER_LEGS_CG (m) ODE: Z trans. of RLGS_MASS0 rel. to P_SEAT

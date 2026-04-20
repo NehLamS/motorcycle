@@ -1,0 +1,2783 @@
+PARSFILE
+
+! EXPANDED_PARSFILE for Math models and animator
+
+! This is an expansion of the Parsfile: "Runs\Run_fa5487e7-5323-4261-ba23-a08f00fc8362.par"
+! It contains the contents of that file plus the contents of any files linked
+! with the "PARSFILE" keyword.
+
+! File created by BikeSim 2025.0
+
+PRODUCT_NAME BikeSim
+MODEL_LAYOUT fixed_caster
+
+tstep 0.0005
+iprint 50
+
+ENTER_PARSFILE Runs\Run_fa5487e7-5323-4261-ba23-a08f00fc8362.par
+#FullDataName BikeSim Run Control`Accel in Turn - Const. Radius Curve`Handling and Stability Tests
+*VEHICLE_CODE fixed_caster
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+ENTER_PARSFILE Animator\Cameras\Camera_e60dce99-fff6-4fe4-b7cf-09fa3d582bb3.par
+#FullDataName Animator: Camera Setup`180 Azm, 10 El, 5 m`Bike Reference
+SET_CAMERA_REFERENCE_FRAME Frame_1f91caf9-9c5d-4c2c-90f6-dc2b686a3df1
+ENTER_PARSFILE Animator\Frames\Frame_1f91caf9-9c5d-4c2c-90f6-dc2b686a3df1.par
+#FullDataName Animator: Reference Frame`Bike X-Y-Z`Bike Tracking
+ADD_REFERENCE_FRAME Frame_1f91caf9-9c5d-4c2c-90f6-dc2b686a3df1
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME X_rdr
+SET_Y_NAME Y_rdr
+SET_Z_NAME Z_rdr
+SET_YAW_NAME Yaw
+WRT_X_rdr
+ANI_X_rdr
+WRT_Y_rdr
+ANI_Y_rdr
+WRT_Z_rdr
+ANI_Z_rdr
+WRT_Yaw
+ANI_Yaw
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { Bike Tracking } Bike X-Y-Z
+EXIT_PARSFILE Animator\Frames\Frame_1f91caf9-9c5d-4c2c-90f6-dc2b686a3df1.par
+
+SET_LOOKPOINT_REFERENCE_FRAME Frame_1f91caf9-9c5d-4c2c-90f6-dc2b686a3df1
+SET_LOOKPOINT_X 0
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0
+SET_AZIMUTH 180
+SET_ELEVATION 10
+SET_DISTANCE 5
+SET_CAMERAMAN_NAME External camera
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 62.7
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Bike Reference } 180 Azm, 10 El, 5 m
+EXIT_PARSFILE Animator\Cameras\Camera_e60dce99-fff6-4fe4-b7cf-09fa3d582bb3.par
+
+RT_WINDOW_CLOSE off
+LIVE_SERVER_MAX_CONNECTIONS 0
+ENTER_PARSFILE Vehicles\Assembly\Vehicle_a7244f9d-4f92-4062-9039-127c9810ba3a.par
+#FullDataName Vehicle: Assembly`Sports, Big: Baseline`Sports Bikes
+iaxle 1
+ENTER_PARSFILE Suspensions\Fork\Fork_bf46f3fe-738c-42ba-9d6f-3e9c34e49dc0.par
+#FullDataName Suspension: Fork`Sport, Big Fork`Sports Bikes
+MFORK 7.25
+LZ_CG_FORK 263.848
+X_CG_FORK -3.08273
+flag_old_fork_data 0
+CMP_STRUT_LEVER_COEFFICIENT 1
+SUSP_X_COEFFICIENT 0
+SUSP_DIVE_CONSTANT 0
+ENTER_PARSFILE Suspensions\Shocks\Shock_04498e08-10a3-4c47-a231-c121c88c750e.par
+#FullDataName Suspension: Shock Absorber`Linear Coef: 2.0 N-s/mm`Linear Constant
+FD_COEFFICIENT 2
+LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { Linear Constant } Linear Coef: 2.0 N-s/mm
+EXIT_PARSFILE Suspensions\Shocks\Shock_04498e08-10a3-4c47-a231-c121c88c750e.par
+
+ENTER_PARSFILE Suspensions\Springs\Spring_26b22e79-0190-49b6-ad5c-85741f1460d5.par
+#FullDataName Suspension: Spring`25 N/mm, Strk. 120 mm, Preload 933 N`
+FS_COMP_TABLE LINEAR
+-90, -3042
+-80, -1042
+0, 958
+60, 2458
+70, 4458
+ENDTABLE
+FS_EXT_TABLE LINEAR
+-90, -3092
+-80, -1092
+0, 908
+60, 2408
+70, 4408
+ENDTABLE
+SPRING_COMP_BETA 2
+SPRING_EXT_BETA 2
+LOG_ENTRY Used Dataset: Suspension: Spring; 25 N/mm, Strk. 120 mm, Preload 933 N
+EXIT_PARSFILE Suspensions\Springs\Spring_26b22e79-0190-49b6-ad5c-85741f1460d5.par
+
+F_AXLE_X_COEFFICIENT 500
+F_AXLE_VX_COEFFICIENT 5
+M_FORK 7.25
+LOG_ENTRY Used Dataset: Suspension: Fork; { Sports Bikes } Sport, Big Fork
+EXIT_PARSFILE Suspensions\Fork\Fork_bf46f3fe-738c-42ba-9d6f-3e9c34e49dc0.par
+
+add_reference_frame Wheel 1
+set_euler_angles yaw_roll_pitch
+set_x_name X_WC1
+WRT_X_WC1
+ANI_X_WC1
+set_y_name Y_WC1
+WRT_Y_WC1
+ANI_Y_WC1
+set_z_name Z_WC1
+WRT_Z_WC1
+ANI_Z_WC1
+set_yaw_name YAW_W1
+WRT_YAW_W1
+ANI_YAW_W1
+set_pitch_name ROT_W1
+WRT_ROT_W1
+ANI_ROT_W1
+set_roll_name ROLL_W1
+WRT_ROLL_W1
+ANI_ROLL_W1
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Tires\Tire\Tire_374bb211-df93-40bd-bbc9-7b64c92aa42c.par
+#FullDataName Tire`Sports, Big: Front`Sports Bikes
+X_LENGTH 282
+Z_LENGTH 282
+Y_LENGTH 115
+OPT_TIRE_MODEL 1
+ENTER_PARSFILE Animator\shape_links\Shape_9ea61a26-7e78-43b4-8c6c-8fa4c9dab5f6.par
+#FullDataName Animator: Shape File Link`Big: Wheel (Front)`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\front_tire.obj
+SET_COLOR 1 1 1
+X_REF_LENGTH 282
+Y_REF_LENGTH 115
+Z_REF_LENGTH 282
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+mtl_ns_old off
+translucent_fix on
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Wheel (Front)
+EXIT_PARSFILE Animator\shape_links\Shape_9ea61a26-7e78-43b4-8c6c-8fa4c9dab5f6.par
+
+WRITE_WHEEL_OFFSET
+SET_OFFSET_Y 0
+SET_THICKNESS_SGUI 115
+RRE 282
+KT 130
+FZ_MAX 7000
+RAD_TC 50
+MWHL 7
+M_WHL 7
+IYY_WHL 0.484
+L_RELAX_X_CONSTANT 25
+L_RELAX_Y_CONSTANT 200
+VLOW_ALPHA 5
+RR_C 0.002
+RR_V 0.000015
+ENTER_PARSFILE Generic\External\GenExt_89113fc9-ea30-484a-850d-9308fda016b2.par
+#FullDataName External Parsfile`Front Tire (v.1.02)`
+ENTER_PARSFILE Generic\Example_Front_v102.par
+BEGIN_PAC_BIKE_DATA
+P_BIKE_FZ0           1100.0
+P_BIKE_PCX1          1.6064
+P_BIKE_PDX1          1.3806
+P_BIKE_PDX2          -0.041429
+P_BIKE_PEX1          0.0263
+P_BIKE_PEX2          0.27056
+P_BIKE_PEX3          -0.076882
+P_BIKE_PKX1          25.939
+P_BIKE_PKX2          -4.2327
+P_BIKE_PKX3          0.33686
+P_BIKE_RBX1          13.476
+P_BIKE_RBX2          11.354
+P_BIKE_RCX1          1.1231
+P_BIKE_PCY1          0.83266
+P_BIKE_PCY2          0.86765
+P_BIKE_PDY1          1.3
+P_BIKE_PDY2          0.0
+P_BIKE_PDY3          0.0
+P_BIKE_PEY1          -1.2556
+P_BIKE_PEY2          -3.2068
+P_BIKE_PEY4          -3.9975
+P_BIKE_PEY5          -15.815
+P_BIKE_PKY1          -22.841
+P_BIKE_PKY2          2.1578
+P_BIKE_PKY3          2.5058
+P_BIKE_PKY4          -0.08088
+P_BIKE_PKY5          -0.22882
+P_BIKE_PKY6          -0.69677
+P_BIKE_PKY7          0.03077
+P_BIKE_RBY1          7.7856
+P_BIKE_RBY2          8.1697
+P_BIKE_RBY3          -0.059138
+P_BIKE_RCY1          1.0533
+P_BIKE_QBZ1          10.486
+P_BIKE_QBZ2          -0.0011536
+P_BIKE_QBZ5          -0.68973
+P_BIKE_QBZ6          1.0411
+P_BIKE_QBZ9          27.445
+P_BIKE_QBZ10          1.0792
+P_BIKE_QCZ1          1.0917
+P_BIKE_QDZ1          0.19796
+P_BIKE_QDZ2          0.065629
+P_BIKE_QDZ3          0.2199
+P_BIKE_QDZ4          0.21866
+P_BIKE_QDZ8          -0.3682
+P_BIKE_QDZ9          -0.1218
+P_BIKE_QDZ10         -0.25439
+P_BIKE_QDZ11          0.17873
+P_BIKE_QEZ1          -0.91586
+P_BIKE_QEZ2          0.11625
+P_BIKE_QEZ5          -1.4387
+P_BIKE_QHZ1          -0.0075232
+P_BIKE_QHZ2          0.002695
+P_BIKE_QHZ3          0.0037886
+P_BIKE_QHZ4          0.01557
+P_BIKE_MU_REF_X      1.0
+P_BIKE_MU_REF_Y      1.0
+END_PAC_BIKE_DATA
+EXIT_PARSFILE Generic\Example_Front_v102.par
+
+LOG_ENTRY Used Dataset: External Parsfile; Front Tire (v.1.02)
+EXIT_PARSFILE Generic\External\GenExt_89113fc9-ea30-484a-850d-9308fda016b2.par
+
+FZ_TIRE_COEFFICIENT 130
+LOG_ENTRY Used Dataset: Tire; { Sports Bikes } Sports, Big: Front
+EXIT_PARSFILE Tires\Tire\Tire_374bb211-df93-40bd-bbc9-7b64c92aa42c.par
+
+iaxle 2
+ENTER_PARSFILE Suspensions\Swing_Arm\SwArm_361a8a39-d50b-4a3c-abf9-3284797570ba.par
+#FullDataName Suspension: Swing Arm`Sport, Big`Sports Bikes
+MSA 8
+Z_CG_SA 19.3374
+X_CG_SA 176.138
+Y_CG_SA 0
+H_SAP 365
+flag_old_swing_arm_data 0
+ENTER_PARSFILE Suspensions\LeverRr\LeverRr_63c578b0-7177-4730-801a-49e0d6979c43.par
+#FullDataName Suspension: Lever Compression`Initial Lever Ratio = 0.54`
+CMP_STRUT_LEVER_TABLE SPLINE
+-20, 0
+0, 10.7423
+20, 21.6048
+40, 32.5975
+60, 43.7315
+80, 55.0188
+100, 66.4723
+120, 78.106
+140, 89.9347
+160, 101.9743
+180, 114.2416
+200, 126.7543
+ENDTABLE
+flag_old_lever_ratio_data 0
+LOG_ENTRY Used Dataset: Suspension: Lever Compression; Initial Lever Ratio = 0.54
+EXIT_PARSFILE Suspensions\LeverRr\LeverRr_63c578b0-7177-4730-801a-49e0d6979c43.par
+
+ENTER_PARSFILE Suspensions\Shocks\Shock_645fe5ee-2e30-4c7a-ba41-1d1dcffdd90a.par
+#FullDataName Suspension: Shock Absorber`Linear Coef: 10 N-s/mm`Linear Constant
+FD_COEFFICIENT 10
+LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { Linear Constant } Linear Coef: 10 N-s/mm
+EXIT_PARSFILE Suspensions\Shocks\Shock_645fe5ee-2e30-4c7a-ba41-1d1dcffdd90a.par
+
+ENTER_PARSFILE Suspensions\Springs\Spring_024286bd-f7a6-4960-9391-948aab62ed63.par
+#FullDataName Suspension: Spring`40 N/mm, Strk. 200 mm, Preload 1182 N`
+FS_COMP_TABLE LINEAR
+-110, -6793
+-100, -2793
+0, 1207
+98, 5127
+104, 6207
+110, 11207
+ENDTABLE
+FS_EXT_TABLE LINEAR
+-110, -6843
+-100, -2843
+0, 1157
+98, 5077
+104, 6157
+110, 11157
+ENDTABLE
+SPRING_COMP_BETA 2
+SPRING_EXT_BETA 2
+LOG_ENTRY Used Dataset: Suspension: Spring; 40 N/mm, Strk. 200 mm, Preload 1182 N
+EXIT_PARSFILE Suspensions\Springs\Spring_024286bd-f7a6-4960-9391-948aab62ed63.par
+
+SUSP_X_TABLE
+-252.421596, 146.469483
+-199.949935, 93.768802
+-139.124059, 50.980372
+-71.792132, 19.404297
+0.000000, 0.000000
+74.070969, -6.642929
+148.170166, -0.322649
+220.046124, 18.768802
+287.514930, 50.051341
+ENDTABLE
+SUSP_DIVE_TABLE
+-252.421596, -50.124765
+-199.949935, -40.124765
+-139.124059, -30.124765
+-71.792132, -20.124765
+0.000000, -10.124765
+74.070969, -0.124765
+148.170166, 9.875235
+220.046124, 19.875235
+287.514930, 29.875235
+ENDTABLE
+M_HUB 8
+X_CG_HUB 176.138
+Y_CG_HUB 0
+Z_CG_HUB 19.3374
+LOG_ENTRY Used Dataset: Suspension: Swing Arm; { Sports Bikes } Sport, Big
+EXIT_PARSFILE Suspensions\Swing_Arm\SwArm_361a8a39-d50b-4a3c-abf9-3284797570ba.par
+
+add_reference_frame Wheel 2
+set_euler_angles yaw_roll_pitch
+set_x_name X_WC2
+WRT_X_WC2
+ANI_X_WC2
+set_y_name Y_WC2
+WRT_Y_WC2
+ANI_Y_WC2
+set_z_name Z_WC2
+WRT_Z_WC2
+ANI_Z_WC2
+set_yaw_name YAW_W2
+WRT_YAW_W2
+ANI_YAW_W2
+set_pitch_name ROT_W2
+WRT_ROT_W2
+ANI_ROT_W2
+set_roll_name ROLL_W2
+WRT_ROLL_W2
+ANI_ROLL_W2
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Tires\Tire\Tire_ffbcd9f8-75ce-479d-a81d-cfbc1d1dc46b.par
+#FullDataName Tire`Sports, Big: Rear`Sports Bikes
+X_LENGTH 297
+Z_LENGTH 297
+Y_LENGTH 165
+OPT_TIRE_MODEL 1
+ENTER_PARSFILE Animator\shape_links\Shape_fbd517b9-8d47-4477-8ff2-034eca4919f4.par
+#FullDataName Animator: Shape File Link`Big: Wheel (Rear)`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\rear_tire.obj
+SET_COLOR 1 1 1
+X_REF_LENGTH 298
+Y_REF_LENGTH 165
+Z_REF_LENGTH 298
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+mtl_ns_old off
+translucent_fix on
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Wheel (Rear)
+EXIT_PARSFILE Animator\shape_links\Shape_fbd517b9-8d47-4477-8ff2-034eca4919f4.par
+
+WRITE_WHEEL_OFFSET
+SET_OFFSET_Y 0
+SET_THICKNESS_SGUI 165
+RRE 297
+KT 141
+FZ_MAX 10000
+RAD_TC 70
+MWHL 14.7
+M_WHL 14.7
+IYY_WHL 0.638
+L_RELAX_X_CONSTANT 25
+L_RELAX_Y_CONSTANT 200
+VLOW_ALPHA 5
+RR_C 0.004
+RR_V 0.000025
+ENTER_PARSFILE Generic\External\GenExt_f82e776f-a0fb-4b42-bb26-719aa185d7e2.par
+#FullDataName External Parsfile`Rear Tire (v.1.02)`
+ENTER_PARSFILE Generic\Example_Rear_v102.par
+BEGIN_PAC_BIKE_DATA
+P_BIKE_FZ0           1600.0
+P_BIKE_PCX1          1.6064
+P_BIKE_PDX1          1.3548
+P_BIKE_PDX2          -0.060295
+P_BIKE_PEX1          0.0263
+P_BIKE_PEX2          0.27056
+P_BIKE_PEX3          -0.076882
+P_BIKE_PKX1          25.939
+P_BIKE_PKX2          -4.2327
+P_BIKE_PKX3          0.33686
+P_BIKE_RBX1          13.476
+P_BIKE_RBX2          11.354
+P_BIKE_RCX1          1.1231
+P_BIKE_PCY1          0.9
+P_BIKE_PCY2          0.61397
+P_BIKE_PDY1          1.3
+P_BIKE_PDY2          0.0
+P_BIKE_PDY3          0.0
+P_BIKE_PEY1          -2.2227
+P_BIKE_PEY2          -1.669
+P_BIKE_PEY4          -4.288
+P_BIKE_PEY5          -19.99
+P_BIKE_PKY1          -15.791
+P_BIKE_PKY2          1.6935
+P_BIKE_PKY3          1.4604
+P_BIKE_PKY4          0.669
+P_BIKE_PKY5          0.18708
+P_BIKE_PKY6          -0.45512
+P_BIKE_PKY7          -0.013293
+P_BIKE_RBY1          7.7856
+P_BIKE_RBY2          8.1697
+P_BIKE_RBY3          -0.059138
+P_BIKE_RCY1          1.0533
+P_BIKE_QBZ1          10.041
+P_BIKE_QBZ2          -1.6e-8
+P_BIKE_QBZ5          -0.76784
+P_BIKE_QBZ6          0.73422
+P_BIKE_QBZ9          16.39
+P_BIKE_QBZ10          0.35549
+P_BIKE_QCZ1          1.3153
+P_BIKE_QDZ1          0.26331
+P_BIKE_QDZ2          0.030987
+P_BIKE_QDZ3          -0.62013
+P_BIKE_QDZ4          0.98524
+P_BIKE_QDZ8          -0.50453
+P_BIKE_QDZ9          -0.36312
+P_BIKE_QDZ10          0.19167
+P_BIKE_QDZ11          0.40709
+P_BIKE_QEZ1          -0.19924
+P_BIKE_QEZ2          -0.017638
+P_BIKE_QEZ5          -3.6511
+P_BIKE_QHZ1          0.017538
+P_BIKE_QHZ2          -0.010759
+P_BIKE_QHZ3          0.028448
+P_BIKE_QHZ4          0.0098618
+P_BIKE_MU_REF_X      1.0
+P_BIKE_MU_REF_Y      1.0
+END_PAC_BIKE_DATA
+EXIT_PARSFILE Generic\Example_Rear_v102.par
+
+LOG_ENTRY Used Dataset: External Parsfile; Rear Tire (v.1.02)
+EXIT_PARSFILE Generic\External\GenExt_f82e776f-a0fb-4b42-bb26-719aa185d7e2.par
+
+FZ_TIRE_COEFFICIENT 141
+LOG_ENTRY Used Dataset: Tire; { Sports Bikes } Sports, Big: Rear
+EXIT_PARSFILE Tires\Tire\Tire_ffbcd9f8-75ce-479d-a81d-cfbc1d1dc46b.par
+
+add_reference_frame Bike frame
+set_euler_angles yaw_pitch_roll
+set_x_name Xo
+WRT_Xo
+ANI_Xo
+set_y_name Yo
+WRT_Yo
+ANI_Yo
+set_z_name Zo
+WRT_Zo
+ANI_Zo
+set_yaw_name YAW
+WRT_YAW
+ANI_YAW
+set_pitch_name PITCH
+WRT_PITCH
+ANI_PITCH
+set_roll_name ROLL_E
+WRT_ROLL_E
+ANI_ROLL_E
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Vehicles\Sprung_Mass\SprMass_d888c542-8ad4-4ca5-bf6f-a59c6f9fee67.par
+#FullDataName Vehicle: Sprung Mass`Sports, Big`Sports Bikes
+H_CG_MAIN 532
+LX_CG_MAIN 560
+MMAIN 165
+IXX_MAIN 11.0
+IYY_MAIN 22.0
+IZZ_MAIN 14.0
+IXZ_MAIN -3
+RX_SGUI 0.258
+RY_SGUI 0.365
+RZ_SGUI 0.291
+Y_CG_MAIN 0
+Z_LENGTH 905
+Y_LENGTH 525
+A_FALL_STOP 75
+K_FALL_STOP 5000
+iaxle 1
+LX_AXLE 0.0
+H_WC 282
+iaxle 2
+X_LENGTH 1370
+LX_AXLE 1370
+H_WC 297
+L_REF_AERO 1370
+X_REF_AERO -685
+M_MAIN 165
+LOG_ENTRY Used Dataset: Vehicle: Sprung Mass; { Sports Bikes } Sports, Big
+EXIT_PARSFILE Vehicles\Sprung_Mass\SprMass_d888c542-8ad4-4ca5-bf6f-a59c6f9fee67.par
+
+ENTER_PARSFILE Animator\bikes\AniBike_49aa2c56-cb51-4066-ba53-a10d6e60dd80.par
+#FullDataName Animator: Bike Shape Assembly`Sports, Big`Sports Bikes
+OBJ_X_LENGTH 1370
+OBJ_Y_LENGTH 525
+OBJ_Z_LENGTH 905
+DZ_OBJECT 0
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+ADD_REFERENCE_FRAME Sprung mass
+SET_EULER_ANGLES YAW_PITCH_ROLL
+SET_X_NAME Xo
+WRT_Xo
+ANI_Xo
+SET_Y_NAME Yo
+WRT_Yo
+ANI_Yo
+SET_Z_NAME Zo
+WRT_Zo
+ANI_Zo
+SET_YAW_NAME Yaw
+WRT_Yaw
+ANI_Yaw
+SET_PITCH_NAME Pitch
+WRT_Pitch
+ANI_Pitch
+SET_ROLL_NAME Roll_E
+WRT_Roll_E
+ANI_Roll_E
+SET_SCALE_X 1
+SET_SCALE_Y 1
+SET_SCALE_Z 1
+SET_OFFSET_Z 0.29
+SET_OFFSET_X 0
+SET_SCALE_X 0.95
+SET_SCALE_Y 0.95
+SET_SCALE_Z 0.95
+SET_OFFSET_X -1.37
+SET_OFFSET_Z 0.29
+DZ_OBJECT 0
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+ADD_REFERENCE_FRAME Sprung mass
+SET_EULER_ANGLES YAW_PITCH_ROLL
+SET_X_NAME Xo
+WRT_Xo
+ANI_Xo
+SET_Y_NAME Yo
+WRT_Yo
+ANI_Yo
+SET_Z_NAME Zo
+WRT_Zo
+ANI_Zo
+SET_YAW_NAME Yaw
+WRT_Yaw
+ANI_Yaw
+SET_PITCH_NAME Pitch
+WRT_Pitch
+ANI_Pitch
+SET_ROLL_NAME Roll_E
+WRT_Roll_E
+ANI_Roll_E
+ENTER_PARSFILE Animator\Assemblies\ShpGrp_7353b3be-0f7d-49af-82db-069dc16afe97.par
+#FullDataName Animator: Shape Assembly`Big Sports: Body`Sport Bikes
+ENTER_PARSFILE Animator\shape_links\Shape_79bbc62d-24bc-4ac1-b498-7b5d5fb6bb8a.par
+#FullDataName Animator: Shape File Link`Big: Details`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\base.obj
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.5 0.5 0.5
+vsv_enable_shadows_recursive
+mtl_ns_old off
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Details
+EXIT_PARSFILE Animator\shape_links\Shape_79bbc62d-24bc-4ac1-b498-7b5d5fb6bb8a.par
+
+set_offset_x 0.03
+set_offset_y 0
+set_offset_z 0.30
+ENTER_PARSFILE Animator\shape_links\Shape_133b5c16-d3a8-499f-a4a3-64fd512a45b0.par
+#FullDataName Animator: Shape File Link`Big: Body`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\body.obj
+SET_COLOR 0.8 0 0
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+mtl_ns_old off
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Body
+EXIT_PARSFILE Animator\shape_links\Shape_133b5c16-d3a8-499f-a4a3-64fd512a45b0.par
+
+set_offset_x 0.03
+set_offset_y 0
+set_offset_z 0.30
+x_ref_length 1300
+y_ref_length 525
+z_ref_length 905
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Sport Bikes } Big Sports: Body
+EXIT_PARSFILE Animator\Assemblies\ShpGrp_7353b3be-0f7d-49af-82db-069dc16afe97.par
+
+WRITE_REFERENCE_FRAME_SIZE
+X_LENGTH 1370
+Y_LENGTH 525
+Z_LENGTH 905
+WRITE_ADD_REFERENCE_FRAME_BRAKES
+ADD_REFERENCE_FRAME Brake Lights
+SET_EULER_ANGLES YAW_PITCH_ROLL
+SET_X_NAME Xo
+WRT_Xo
+ANI_Xo
+SET_Y_NAME Yo
+WRT_Yo
+ANI_Yo
+SET_Z_NAME Zo
+WRT_Zo
+ANI_Zo
+SET_YAW_NAME Yaw
+WRT_Yaw
+ANI_Yaw
+SET_PITCH_NAME Pitch
+WRT_Pitch
+ANI_Pitch
+SET_ROLL_NAME Roll_E
+WRT_Roll_E
+ANI_Roll_E
+SET_FRAME_VISIBLE_NAME Bk_Stat
+WRT_Bk_Stat
+ANI_Bk_Stat
+ENTER_PARSFILE Animator\shape_links\Shape_e761caa8-22d9-4662-adb3-71ecdbd32cec.par
+#FullDataName Animator: Shape File Link`Big: Brake Light`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\Brakes_ON.obj
+SET_COLOR 1 1 1
+SET_OFFSET_X 0.03
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.3
+X_REF_LENGTH 1300
+Y_REF_LENGTH 525
+Z_REF_LENGTH 905
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+mtl_ns_old off
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Brake Light
+EXIT_PARSFILE Animator\shape_links\Shape_e761caa8-22d9-4662-adb3-71ecdbd32cec.par
+
+WRITE_REFERENCE_FRAME_SIZE
+X_LENGTH 1370
+Y_LENGTH 525
+Z_LENGTH 905
+X_UPFORK_PREVIEW -0.248109
+Z_UPFORK_PREVIEW 0.847263
+A_STR_PREVIEW -24
+WRITE_ADD_REFERENCE_FRAME_UPPER_FORK
+add_reference_frame Bike upper fork 
+set_euler_angles yaw_pitch_roll
+set_x_name X_Frk
+WRT_X_Frk
+ANI_X_Frk
+set_y_name Y_FORK
+WRT_Y_FORK
+ANI_Y_FORK
+set_z_name Z_FORK
+WRT_Z_FORK
+ANI_Z_FORK
+set_yaw_name Yaw_Frk
+WRT_Yaw_Frk
+ANI_Yaw_Frk
+set_pitch_name Pitch_Fr
+WRT_Pitch_Fr
+ANI_Pitch_Fr
+set_roll_name Roll_Frk
+WRT_Roll_Frk
+ANI_Roll_Frk
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_f8a1facb-7d69-4614-a25f-314560a60f0b.par
+#FullDataName Animator: Shape File Link`Big: Fork (Upper)`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\fork_top.obj
+SET_COLOR 1 1 1
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0
+X_REF_LENGTH 512
+Y_REF_LENGTH 275
+Z_REF_LENGTH 650
+set_lighting on
+set_fogging on
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Fork (Upper)
+EXIT_PARSFILE Animator\shape_links\Shape_f8a1facb-7d69-4614-a25f-314560a60f0b.par
+
+X_LENGTH 512
+Y_LENGTH 275
+Z_LENGTH 585
+X_LWFORK_PREVIEW 0
+Z_LWFORK_PREVIEW 0.29
+WRITE_ADD_REFERENCE_FRAME_LOWER_FORK
+add_reference_frame Bike lower fork 
+set_euler_angles yaw_pitch_roll
+set_x_name X_WC1
+WRT_X_WC1
+ANI_X_WC1
+set_y_name Y_WC1
+WRT_Y_WC1
+ANI_Y_WC1
+set_z_name Z_WC1
+WRT_Z_WC1
+ANI_Z_WC1
+set_yaw_name Yaw_Lfr
+WRT_Yaw_Lfr
+ANI_Yaw_Lfr
+set_pitch_name Ptch_Lfr
+WRT_Ptch_Lfr
+ANI_Ptch_Lfr
+set_roll_name Roll_Lfr
+WRT_Roll_Lfr
+ANI_Roll_Lfr
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\Assemblies\ShpGrp_2533b41b-ecd6-4097-b23d-b82aeaa6a3ff.par
+#FullDataName Animator: Shape Assembly`Big Sports: Lower Fork`Sport Bikes
+ENTER_PARSFILE Animator\shape_links\Shape_b93eb268-a66d-481b-989a-1042b72d0012.par
+#FullDataName Animator: Shape File Link`Big: Front Fender`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\front_fender.obj
+SET_COLOR 0.8 0 0
+SET_ANGLE_Y 1.5
+SET_OFFSET_Z -.045
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+mtl_ns_old off
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Front Fender
+EXIT_PARSFILE Animator\shape_links\Shape_b93eb268-a66d-481b-989a-1042b72d0012.par
+
+ENTER_PARSFILE Animator\shape_links\Shape_497dcf0e-403a-4416-a888-ad0570e9309e.par
+#FullDataName Animator: Shape File Link`Big: Fork (Lower)`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\fork.obj
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+mtl_ns_old off
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Fork (Lower)
+EXIT_PARSFILE Animator\shape_links\Shape_497dcf0e-403a-4416-a888-ad0570e9309e.par
+
+x_ref_length 512
+y_ref_length 275
+z_ref_length 585
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Sport Bikes } Big Sports: Lower Fork
+EXIT_PARSFILE Animator\Assemblies\ShpGrp_2533b41b-ecd6-4097-b23d-b82aeaa6a3ff.par
+
+WRITE_REFERENCE_FRAME_SIZE
+X_LENGTH 512
+Y_LENGTH 275
+Z_LENGTH 585
+X_STR_PREVIEW -0.271862
+Z_STR_PREVIEW 0.836688
+WRITE_ADD_REFERENCE_FRAME_STEER
+add_reference_frame Bike steer 
+set_euler_angles yaw_pitch_roll
+set_x_name X_STR
+WRT_X_STR
+ANI_X_STR
+set_y_name Y_STR
+WRT_Y_STR
+ANI_Y_STR
+set_z_name Z_STR
+WRT_Z_STR
+ANI_Z_STR
+set_yaw_name Yaw_Str
+WRT_Yaw_Str
+ANI_Yaw_Str
+set_pitch_name Pitch_St
+WRT_Pitch_St
+ANI_Pitch_St
+set_roll_name Roll_Str
+WRT_Roll_Str
+ANI_Roll_Str
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_dcd0206b-bd72-41eb-bb3d-753cdca2c7c7.par
+#FullDataName Animator: Shape File Link`Big: Handle Bars (Details)`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\handlebars_no_arms.obj
+SET_COLOR 1 1 1
+SET_OFFSET_X 0.03
+SET_OFFSET_Z .05
+X_REF_LENGTH 153
+Y_REF_LENGTH 548
+Z_REF_LENGTH 169
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+mtl_ns_old off
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Handle Bars (Details)
+EXIT_PARSFILE Animator\shape_links\Shape_dcd0206b-bd72-41eb-bb3d-753cdca2c7c7.par
+
+X_LENGTH 153
+Y_LENGTH 548
+Z_LENGTH 169
+LY_GRIP 548
+X_SWA_PREVIEW -1.37
+Z_SWA_PREVIEW 0.29
+A_SWA_PREVIEW -10
+WRITE_ADD_REFERENCE_FRAME_SWA
+add_reference_frame Bike swing arm 
+set_euler_angles yaw_pitch_roll
+set_x_name X_WC2
+WRT_X_WC2
+ANI_X_WC2
+set_y_name Y_WC2
+WRT_Y_WC2
+ANI_Y_WC2
+set_z_name Z_WC2
+WRT_Z_WC2
+ANI_Z_WC2
+set_yaw_name Yaw_hub
+WRT_Yaw_hub
+ANI_Yaw_hub
+set_pitch_name Pitch_hb
+WRT_Pitch_hb
+ANI_Pitch_hb
+set_roll_name Roll_hub
+WRT_Roll_hub
+ANI_Roll_hub
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_a902f7d6-08ad-48aa-9003-bbd0edc49aa0.par
+#FullDataName Animator: Shape File Link`Big: Swing Arm`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\swing_arm.obj
+SET_COLOR 1 1 1
+SET_OFFSET_X 1.39
+SET_OFFSET_Y 0
+SET_OFFSET_Z -0.005
+X_REF_LENGTH 330
+Y_REF_LENGTH 283
+Z_REF_LENGTH 474
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+mtl_ns_old off
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big: Swing Arm
+EXIT_PARSFILE Animator\shape_links\Shape_a902f7d6-08ad-48aa-9003-bbd0edc49aa0.par
+
+X_LENGTH 320
+Y_LENGTH 283
+Z_LENGTH 474
+ENTER_PARSFILE Generic\Group\GenGrp_4b07f9bb-3bb0-4fc1-a4b5-1fd71656c723.par
+#FullDataName Generic Data Group`VsV Rearview Camera: Sport, Big`Manual Camera Setup
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+ADD_REFERENCE_FRAME Sprung mass
+SET_EULER_ANGLES YAW_PITCH_ROLL
+SET_X_NAME Xo
+WRT_Xo
+ANI_Xo
+SET_Y_NAME Yo
+WRT_Yo
+ANI_Yo
+SET_Z_NAME Zo
+WRT_Zo
+ANI_Zo
+SET_YAW_NAME Yaw
+WRT_Yaw
+ANI_Yaw
+SET_PITCH_NAME Pitch
+WRT_Pitch
+ANI_Pitch
+SET_ROLL_NAME Roll_E
+WRT_Roll_E
+ANI_Roll_E
+ENTER_PARSFILE Generic\GroupMore\GenGrpM_31edb48e-6d97-4c4f-8a5a-62f747902bab.par
+#FullDataName Generic Data Group (More)`Rearview Mirror: Sport, Big (Left)`Manual Reference Frames
+ADD_ENTITY Transform rear view mirror left
+  TRANSLATE_X -0.15
+  TRANSLATE_Y 0.5
+  TRANSLATE_Z 1.0
+  ROTATE_PITCH 0
+  ROTATE_ROLL 0
+  ROTATE_YAW 180
+END_ENTITY Transform rear view mirror left
+LOG_ENTRY Used Dataset: Generic Data Group (More); { Manual Reference Frames } Rearview Mirror: Sport, Big (Left)
+EXIT_PARSFILE Generic\GroupMore\GenGrpM_31edb48e-6d97-4c4f-8a5a-62f747902bab.par
+
+ENTER_PARSFILE Generic\GroupMore\GenGrpM_a04ea390-674a-49df-bcf8-a4246acada37.par
+#FullDataName Generic Data Group (More)`Rearview Mirror: Sport, Big (Right)`Manual Reference Frames
+ADD_ENTITY Transform rear view mirror right
+  TRANSLATE_X -0.15
+  TRANSLATE_Y -0.5
+  TRANSLATE_Z 1.0
+  ROTATE_PITCH 0
+  ROTATE_ROLL 0
+  ROTATE_YAW 180
+END_ENTITY Transform rear view mirror right
+LOG_ENTRY Used Dataset: Generic Data Group (More); { Manual Reference Frames } Rearview Mirror: Sport, Big (Right)
+EXIT_PARSFILE Generic\GroupMore\GenGrpM_a04ea390-674a-49df-bcf8-a4246acada37.par
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Manual Camera Setup } VsV Rearview Camera: Sport, Big
+EXIT_PARSFILE Generic\Group\GenGrp_4b07f9bb-3bb0-4fc1-a4b5-1fd71656c723.par
+
+LOG_ENTRY Used Dataset: Animator: Bike Shape Assembly; { Sports Bikes } Sports, Big
+EXIT_PARSFILE Animator\bikes\AniBike_49aa2c56-cb51-4066-ba53-a10d6e60dd80.par
+
+ENTER_PARSFILE Vehicles\Rider_Mass\RdrMass_d8d08710-950f-4a27-99ed-fd39d08e192c.par
+#FullDataName Vehicle: Rider Body Mass`Sports, Big`Sports Bikes
+H_CG_RDR 100
+MRDR 43.52
+IXX_RDR 1.428
+IYY_RDR 1.347
+IZZ_RDR 0.916
+IXZ_RDR 0.433
+RX_SGUI 0.181
+RY_SGUI 0.176
+RZ_SGUI 0.145
+H_SEAT 830
+LX_SEAT 1049
+KRDR 6.63
+BRDR 0.59
+LX_CG_RLGS 859
+H_CG_RLGS 532
+A_RD_BACK 45
+MRLGS 25.84
+IXX_RLGS 0.5
+IYY_RLGS 0.5
+IZZ_RLGS 0.5
+IXZ_RLGS 0
+RX_SGUI2 0.139
+RY_SGUI2 0.139
+RZ_SGUI2 0.139
+K_RIDER_Y 10
+D_RIDER_Y 1
+A_RIDER_BACK 45
+D_RIDER_ROT 0.59
+K_RIDER_ROT 6.63
+H_CG_RIDER_BODY 100
+M_RIDER_BODY 43.52
+M_RIDER_LEGS 25.84
+IXX_RIDER_BODY 1.428
+IYY_RIDER_BODY 1.347
+IZZ_RIDER_BODY 0.916
+IXZ_RIDER_BODY 0.433
+LX_CG_RIDER_LEGS 859
+H_CG_RIDER_LEGS 532
+IXX_RIDER_LEGS 0.5
+IYY_RIDER_LEGS 0.5
+IZZ_RIDER_LEGS 0.5
+IXZ_RIDER_LEGS 0
+ENTER_PARSFILE Animator\RiderShp\ShpRdr_2fa67e50-ed05-44fa-82c4-3047f1cd5148.par
+#FullDataName Animator: Rider Shape Assembly`Sports, Big: Rider`Sports Bikes
+LX_STEP 940
+LY_STEP 400
+H_STEP 400
+H_REF_RLGS 170
+H_REF_RIDER_LEGS 170
+add_reference_frame Rider
+set_euler_angles yaw_pitch_roll
+set_x_name X_RDR
+WRT_X_RDR
+ANI_X_RDR
+set_y_name Y_RDR
+WRT_Y_RDR
+ANI_Y_RDR
+set_z_name Z_RDR
+WRT_Z_RDR
+ANI_Z_RDR
+set_yaw_name Yaw_RDR
+WRT_Yaw_RDR
+ANI_Yaw_RDR
+set_pitch_name Pitch_RD
+WRT_Pitch_RD
+ANI_Pitch_RD
+set_roll_name RollE_RD
+WRT_RollE_RD
+ANI_RollE_RD
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_7f16dde3-fe4a-4d54-8938-c0720e0ce140.par
+#FullDataName Animator: Shape File Link`Big (Rider): Body`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\Riders\Caucasian_Male_Rider\CM_upper_body.obj
+SET_COLOR 1 1 1
+SET_OFFSET_X -0.085
+SET_OFFSET_Y 0
+SET_OFFSET_Z -0.085
+X_REF_LENGTH 296
+Y_REF_LENGTH 404
+Z_REF_LENGTH 500
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+mtl_ns_old off
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Body
+EXIT_PARSFILE Animator\shape_links\Shape_7f16dde3-fe4a-4d54-8938-c0720e0ce140.par
+
+X_LENGTH 296
+Y_LENGTH 404
+Z_LENGTH 500
+H_SHOULDER 500
+add_reference_frame Bike rider arm (right)
+set_euler_angles yaw_pitch_roll
+set_x_name X_SHOL_R
+WRT_X_SHOL_R
+ANI_X_SHOL_R
+set_y_name Y_SHOL_R
+WRT_Y_SHOL_R
+ANI_Y_SHOL_R
+set_z_name Z_SHOL_R
+WRT_Z_SHOL_R
+ANI_Z_SHOL_R
+set_yaw_name Yaw_ArmR
+WRT_Yaw_ArmR
+ANI_Yaw_ArmR
+set_pitch_name Pit_ArmR
+WRT_Pit_ArmR
+ANI_Pit_ArmR
+set_roll_name Rol_ArmR
+WRT_Rol_ArmR
+ANI_Rol_ArmR
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_356844df-9ed9-40cc-9763-cd13a61e6855.par
+#FullDataName Animator: Shape File Link`Big (Rider): Right Arm`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\Riders\Caucasian_Male_Rider\CM_right_arm.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 1.05
+SET_SCALE_Y 1
+SET_SCALE_Z 1
+SET_OFFSET_X -0.05
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.01
+X_REF_LENGTH 484
+Y_REF_LENGTH 180
+Z_REF_LENGTH 180
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+mtl_ns_old off
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Right Arm
+EXIT_PARSFILE Animator\shape_links\Shape_356844df-9ed9-40cc-9763-cd13a61e6855.par
+
+X_LENGTH 520
+Y_LENGTH 180
+Z_LENGTH 180
+add_reference_frame Bike rider arm (left)
+set_euler_angles yaw_pitch_roll
+set_x_name X_SHOL_L
+WRT_X_SHOL_L
+ANI_X_SHOL_L
+set_y_name Y_SHOL_L
+WRT_Y_SHOL_L
+ANI_Y_SHOL_L
+set_z_name Z_SHOL_L
+WRT_Z_SHOL_L
+ANI_Z_SHOL_L
+set_yaw_name Yaw_ArmL
+WRT_Yaw_ArmL
+ANI_Yaw_ArmL
+set_pitch_name Pit_ArmL
+WRT_Pit_ArmL
+ANI_Pit_ArmL
+set_roll_name Rol_ArmL
+WRT_Rol_ArmL
+ANI_Rol_ArmL
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_6d55c174-28e8-461b-8f47-c825e148f0e5.par
+#FullDataName Animator: Shape File Link`Big (Rider): Left Arm`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\Riders\Caucasian_Male_Rider\CM_left_arm.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 1.05
+SET_SCALE_Y 1
+SET_SCALE_Z 1
+SET_OFFSET_X -0.05
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.01
+X_REF_LENGTH 484
+Y_REF_LENGTH 180
+Z_REF_LENGTH 180
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+mtl_ns_old off
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Left Arm
+EXIT_PARSFILE Animator\shape_links\Shape_6d55c174-28e8-461b-8f47-c825e148f0e5.par
+
+X_LENGTH 520
+Y_LENGTH 180
+Z_LENGTH 180
+add_reference_frame Bike rider leg (right)
+set_euler_angles yaw_pitch_roll
+set_x_name X_HIP_R
+WRT_X_HIP_R
+ANI_X_HIP_R
+set_y_name Y_HIP_R
+WRT_Y_HIP_R
+ANI_Y_HIP_R
+set_z_name Z_HIP_R
+WRT_Z_HIP_R
+ANI_Z_HIP_R
+set_yaw_name Yaw_LegR
+WRT_Yaw_LegR
+ANI_Yaw_LegR
+set_pitch_name Pit_LegR
+WRT_Pit_LegR
+ANI_Pit_LegR
+set_roll_name Rol_LegR
+WRT_Rol_LegR
+ANI_Rol_LegR
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_8c00f7bd-a1c2-408b-b588-e080dbfeb7e4.par
+#FullDataName Animator: Shape File Link`Big (Rider): Right Leg`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\Riders\Caucasian_Male_Rider\CM_leg_right.obj
+SET_COLOR 1 1 1
+SET_ANGLE_Z -3
+SET_ANGLE_Y 6
+SET_OFFSET_X -0.02
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0
+X_REF_LENGTH 500
+Y_REF_LENGTH 180
+Z_REF_LENGTH 500
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+mtl_ns_old off
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Right Leg
+EXIT_PARSFILE Animator\shape_links\Shape_8c00f7bd-a1c2-408b-b588-e080dbfeb7e4.par
+
+X_LENGTH 500
+Y_LENGTH 180
+Z_LENGTH 500
+add_reference_frame Bike rider leg (left)
+set_euler_angles yaw_pitch_roll
+set_x_name X_HIP_L
+WRT_X_HIP_L
+ANI_X_HIP_L
+set_y_name Y_HIP_L
+WRT_Y_HIP_L
+ANI_Y_HIP_L
+set_z_name Z_HIP_L
+WRT_Z_HIP_L
+ANI_Z_HIP_L
+set_yaw_name Yaw_LegL
+WRT_Yaw_LegL
+ANI_Yaw_LegL
+set_pitch_name Pit_LegL
+WRT_Pit_LegL
+ANI_Pit_LegL
+set_roll_name Rol_LegL
+WRT_Rol_LegL
+ANI_Rol_LegL
+set_scale_var_pitch 1
+set_scale_var_yaw 1
+set_scale_var_roll 1
+x_ref_length 1
+y_ref_length 1
+z_ref_length 1
+x_length 1
+y_length 1
+z_length 1
+ENTER_PARSFILE Animator\shape_links\Shape_1ee486ba-5c9c-49a1-8205-1075069c6148.par
+#FullDataName Animator: Shape File Link`Big (Rider): Left Leg`Motorcycles: Sports
+add_obj Animator\3D_Shape_Files\Motorcycles\Big_Sports_v321\Riders\Caucasian_Male_Rider\CM_leg_left.obj
+SET_COLOR 1 1 1
+SET_ANGLE_Z 3
+SET_ANGLE_Y 6
+SET_OFFSET_X -0.02
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0
+X_REF_LENGTH 500
+Y_REF_LENGTH 180
+Z_REF_LENGTH 500
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+mtl_ns_old off
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Motorcycles: Sports } Big (Rider): Left Leg
+EXIT_PARSFILE Animator\shape_links\Shape_1ee486ba-5c9c-49a1-8205-1075069c6148.par
+
+X_LENGTH 500
+Y_LENGTH 180
+Z_LENGTH 500
+LOG_ENTRY Used Dataset: Animator: Rider Shape Assembly; { Sports Bikes } Sports, Big: Rider
+EXIT_PARSFILE Animator\RiderShp\ShpRdr_2fa67e50-ed05-44fa-82c4-3047f1cd5148.par
+
+LOG_ENTRY Used Dataset: Vehicle: Rider Body Mass; { Sports Bikes } Sports, Big
+EXIT_PARSFILE Vehicles\Rider_Mass\RdrMass_d8d08710-950f-4a27-99ed-fd39d08e192c.par
+
+ENTER_PARSFILE Brakes\System\BrkSys_db631c3c-c72f-4174-a0ba-1cc6402c65df.par
+#FullDataName Brake System`Brakes`
+A_MC(1) 198.5
+A_MC(2) 198.5
+A_SC(1) 2050
+A_SC(2) 2300
+MU_BK(1) 0.4
+MU_BK(2) 0.4
+RAD_D(1) 148
+RAD_D(2) 98
+R_BK(1) 6
+R_BK(2) 3
+TC_BK(1) 0.061
+TC_BK(2) 0.061
+AREA_MC(1) 198.5
+AREA_MC(2) 198.5
+AREA_WC(1) 2050
+AREA_WC(2) 2300
+iaxle 1
+ENTER_PARSFILE Brakes\Proportioning\BrkProp_c518928e-0004-47e3-9f7e-21c78b668ecd.par
+#FullDataName Brakes: Proportioning / Limiting Valve`Linear: 1.00 MPa / MPa`
+PBK_DL_COMBINE ADD
+PBK_DL_COEFFICIENT 1.00
+PBK_DL_FZ_CONSTANT 0
+LOG_ENTRY Used Dataset: Brakes: Proportioning / Limiting Valve; Linear: 1.00 MPa / MPa
+EXIT_PARSFILE Brakes\Proportioning\BrkProp_c518928e-0004-47e3-9f7e-21c78b668ecd.par
+
+iaxle 2
+ENTER_PARSFILE Brakes\Proportioning\BrkProp_c518928e-0004-47e3-9f7e-21c78b668ecd.par
+#FullDataName Brakes: Proportioning / Limiting Valve`Linear: 1.00 MPa / MPa`
+PBK_DL_COMBINE ADD
+PBK_DL_COEFFICIENT 1.00
+PBK_DL_FZ_CONSTANT 0
+LOG_ENTRY Used Dataset: Brakes: Proportioning / Limiting Valve; Linear: 1.00 MPa / MPa
+EXIT_PARSFILE Brakes\Proportioning\BrkProp_c518928e-0004-47e3-9f7e-21c78b668ecd.par
+
+WRITE_ADD_DUPLICATED_STARBOARD_BRAKE
+LOG_ENTRY Used Dataset: Brake System; Brakes
+EXIT_PARSFILE Brakes\System\BrkSys_db631c3c-c72f-4174-a0ba-1cc6402c65df.par
+
+ENTER_PARSFILE Steering\System\StrSys_7a4747dd-e534-4b5b-9a6b-2c082f9dc1ce.par
+#FullDataName Steering System`Sport, Big`Sports Bikes
+M_STR_MAX 200
+A_STEER 24
+BSTR 0.2212
+BTWST 1.7452
+KTWST 1745.2
+MSTR 9.99
+Z_CG_STR -200
+LZ_FORK 610
+X_CG_STR 45
+X_FORK 26.5
+IXX_STR 1.341
+IYY_STR 1.584
+IZZ_STR 0.4125
+IXZ_STR 0
+RX_SGUI 0.366
+RY_SGUI 0.398
+RZ_SGUI 0.203
+DGC -50
+DGS 0.6
+IGC -250
+IGS 1.875
+PGC -140
+PGS -0.6875
+PGD 0
+X_GRIP -47
+Z_GRIP 20
+flag_old_steer_data 0
+ENTER_PARSFILE Steering\Stiffness\StrStiff_d4c4b01e-d809-4dba-b6a2-6a70f851ee2a.par
+#FullDataName Steering Stiffness`Steer Stiffness (60 deg. Limit)`
+MZ_STR_TABLE LINEAR
+-31, -100
+-30, 0
+30, 0
+31, 100
+ENDTABLE
+LOG_ENTRY Used Dataset: Steering Stiffness; Steer Stiffness (60 deg. Limit)
+EXIT_PARSFILE Steering\Stiffness\StrStiff_d4c4b01e-d809-4dba-b6a2-6a70f851ee2a.par
+
+D_STR 0.2212
+D_FRAME_TWIST 1.7452
+K_FRAME_TWIST 1745.2
+M_STR 9.99
+SC_DG -50
+SC_DG_SD 0.6
+SC_IG -250
+SC_IG_SD 1.875
+SC_PG -140
+SC_PG_SD -0.6875
+SC_PG_SD2 0
+LOG_ENTRY Used Dataset: Steering System; { Sports Bikes } Sport, Big
+EXIT_PARSFILE Steering\System\StrSys_7a4747dd-e534-4b5b-9a6b-2c082f9dc1ce.par
+
+INSTALL_SPEED_CONTROLLER
+R_REAR_DRIVE_SC 1
+PMAX_SC 120
+AREA_AERO 0.6
+CD 0.52
+CL 0.085
+CP 0.205
+FX_AERO_SHAPING_CONSTANT 0.52
+FZ_AERO_SHAPING_CONSTANT 0.085
+MY_AERO_SHAPING_CONSTANT 0.205
+FY_AERO_SHAPING_CONSTANT 0
+MX_AERO_SHAPING_CONSTANT 0
+MZ_AERO_SHAPING_CONSTANT 0
+D_AIR 1.206
+H_REF_AERO 0
+Y_REF_AERO 0
+C_AERO_D 0.52
+C_AERO_L 0.085
+C_AERO_P 0.205
+LOG_ENTRY Used Dataset: Vehicle: Assembly; { Sports Bikes } Sports, Big: Baseline
+EXIT_PARSFILE Vehicles\Assembly\Vehicle_a7244f9d-4f92-4062-9039-127c9810ba3a.par
+
+ENTER_PARSFILE Procedures\Proc_a9c6e262-a9f6-4177-b98f-3a0e81bf0177.par
+#FullDataName Procedures`Step Steer @ 80 km/h`Handling Testing
+OPT_INIT_PATH 1
+OPT_STOP 0
+SSTART 0
+TSTART -3.5
+TSTART_WRITE = 0;
+TSTOP 15
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+INSTALL_SPEED_CONTROLLER
+OPT_SC 3
+SET_ISPEED_FOR_ID 0
+SPEED_ID_SC = SPEED_TARGET_ID
+SPEED_TARGET_COMBINE ADD
+SPEED_TARGET_S_CONSTANT 0
+set_description SPEED_TARGET_ID Procedure: Step Steer @ 80 km/h
+SPEED_TARGET_CONSTANT 80
+OPT_SC_ENGINE_BRAKING 0
+ENTER_PARSFILE Control\Lean_Bike\LnBike_62abf794-fe92-4a0a-af38-b8939dbcb2fc.par
+#FullDataName Control: Steering by the Closed-loop Lean Target`Ramp: 0 to 30 deg. at 5 sec.`Ramp
+OPT_RIDER_MODEL 0
+OPT_STEER_CONTROL 1
+BIKE_LEAN_TABLE LINEAR_FLAT
+0, 0
+5, 0
+6, 30
+10, 30
+ENDTABLE
+LOG_ENTRY Used Dataset: Control: Steering by the Closed-loop Lean Target; { Ramp } Ramp: 0 to 30 deg. at 5 sec.
+EXIT_PARSFILE Control\Lean_Bike\LnBike_62abf794-fe92-4a0a-af38-b8939dbcb2fc.par
+
+ENTER_PARSFILE Control\Brake_lever\ConBkLev_c864b348-14b0-4056-881f-4db34e2a312b.par
+#FullDataName Control: Braking Lever Force (Open Loop)`Constant: Zero`Constant
+VLOW_STOP -1
+iaxle 1
+FBK_CON_CONSTANT 0
+iaxle 2
+FBK_CON_CONSTANT 0
+LOG_ENTRY Used Dataset: Control: Braking Lever Force (Open Loop); { Constant } Constant: Zero
+EXIT_PARSFILE Control\Brake_lever\ConBkLev_c864b348-14b0-4056-881f-4db34e2a312b.par
+
+ENTER_PARSFILE Control\Gear_at\GearCL_869944eb-02fc-4e08-8446-ecde7eb38d8c.par
+#FullDataName Control: Shifting (Closed Loop)`Auto Shift and Auto Clutch (6-Speed)`
+MODE_TRANS_CONSTANT 6
+ENTER_PARSFILE Control\Int_Shift\ClTime_51722643-046a-4922-9960-d02e072861ba.par
+#FullDataName Control: Clutch Shifting Timelines (Closed Loop)`0.5 sec Total Shift Time`
+opt_clutch_mode 1
+T_CL_START 0
+T_CL_DISENGAGE 0.025
+T_CL_PRESS_TOTAL 0.125
+T_CL_HALF_HOLD 0.125
+T_CL_RE_ENGAGE 0.5
+T_TH_START 0
+T_TH_ZERO 0.025
+T_TH_ZERO_TOTAL 0.125
+T_TH_RETURNED 0.5
+T_GEAR_LAG 0.05
+VLOW_CLUTCH 5
+LOG_ENTRY Used Dataset: Control: Clutch Shifting Timelines (Closed Loop); 0.5 sec Total Shift Time
+EXIT_PARSFILE Control\Int_Shift\ClTime_51722643-046a-4922-9960-d02e072861ba.par
+
+LOG_ENTRY Used Dataset: Control: Shifting (Closed Loop); Auto Shift and Auto Clutch (6-Speed)
+EXIT_PARSFILE Control\Gear_at\GearCL_869944eb-02fc-4e08-8446-ecde7eb38d8c.par
+
+ENTER_PARSFILE Roads\3D_Road\Road_cd06cd15-cb16-4211-bdfb-f365917a0c1e.par
+#FullDataName Road: 3D Surface (All Properties)`1 km Square`3D Grid
+SET_IROAD_FOR_ID 0
+CURRENT_ROAD_ID = ROAD_ID
+set_description road_id 1 km Square
+ENTER_PARSFILE Roads\Center_XY\PathXY_00f0a7eb-e9ab-41cc-b29b-7c71476aa337.par
+#FullDataName Path: X-Y Coordinates`Straight`Straight
+SET_IPATH_FOR_ID 0
+DEFINE_XY_TABLES 1
+ITAB_XY = NTAB_XY
+XY_TABLE_ID = ITAB_XY
+SET_DESCRIPTION PATH_ID Straight
+SET_DESCRIPTION XY_TABLE_ID Straight
+IPATHSEG = 1
+PATH_ID_DM = PATH_ID
+SEGMENT_TYPE = 1
+XY_SEGMENT_ID = XY_TABLE_ID
+OPT_PATH_LOOP 0
+SPATH_START 0
+SEGMENT_XY_TABLE
+0.0000, 0.0000, 0.0000
+100.0000, 0.0000, 100.0000
+ENDTABLE
+LOG_ENTRY Used Dataset: Path: X-Y Coordinates; { Straight } Straight
+EXIT_PARSFILE Roads\Center_XY\PathXY_00f0a7eb-e9ab-41cc-b29b-7c71476aa337.par
+
+ROAD_PATH_ID = PATH_ID
+set_description road_path_id PATH_ID for: Straight
+ENTER_PARSFILE Roads\Friction\RdMu_312d04bf-875f-4d55-b2a5-eb43892940d9.par
+#FullDataName Road: Friction Map, S-L Grid`Constant: 0.85`Constant Mu
+MU_ROAD_COMBINE ADD
+MU_ROAD_CONSTANT 0.85
+MU_ROAD_L_CONSTANT 0
+LOG_ENTRY Used Dataset: Road: Friction Map, S-L Grid; { Constant Mu } Constant: 0.85
+EXIT_PARSFILE Roads\Friction\RdMu_312d04bf-875f-4d55-b2a5-eb43892940d9.par
+
+ENTER_PARSFILE Roads\Shapes\RdShape_7cf76fc3-62e5-4a12-a184-2220064d3e95.par
+#FullDataName Road: Animator Surface Shapes`1 km Square Checkerboard`3D Grid
+NLANES 4
+MIRROR 0
+COLOR(1) 1 1 1
+MATERIAL(1) Pavement
+SPECULAR(1) 1
+SCALE(1) 5
+LTILES(1) 200
+LIN(1) -500
+LINUNITS(1) m
+LOUT(1) 500
+LOUTUNITS(1) m
+LDIV(1) 99
+LIPRINT(1) 2
+S_START(1) -500
+S_STOP(1) 500
+SINT(1) 10
+IPRINT(1) 2
+DZ(1) 0
+AUTODETAIL(1) Random
+COLOR(2) 1 1 1
+MATERIAL(2) Pavement
+SPECULAR(2) 1
+SCALE(2) 5
+LTILES(2) 200
+LIN(2) -500
+LINUNITS(2) m
+LOUT(2) 490
+LOUTUNITS(2) m
+LDIV(2) 98
+LIPRINT(2) 2
+S_START(2) -490
+S_STOP(2) 500
+SINT(2) 10
+IPRINT(2) 2
+DZ(2) 0
+AUTODETAIL(2) Random
+COLOR(3) 0.7 0.7 0.7
+MATERIAL(3) Concrete
+SPECULAR(3) 1
+SCALE(3) 5
+LTILES(3) 200
+LIN(3) -490
+LINUNITS(3) m
+LOUT(3) 500
+LOUTUNITS(3) m
+LDIV(3) 98
+LIPRINT(3) 2
+S_START(3) -490
+S_STOP(3) 500
+SINT(3) 10
+IPRINT(3) 2
+DZ(3) 0
+AUTODETAIL(3) Random
+COLOR(4) 0.7 0.7 0.7
+MATERIAL(4) Concrete
+SPECULAR(4) 1
+SCALE(4) 5
+LTILES(4) 200
+LIN(4) -500
+LINUNITS(4) m
+LOUT(4) 490
+LOUTUNITS(4) m
+LDIV(4) 98
+LIPRINT(4) 2
+S_START(4) -500
+S_STOP(4) 500
+SINT(4) 10
+IPRINT(4) 2
+DZ(4) 0
+AUTODETAIL(4) Random
+MTL_FILE Animator/Road_Materials/road.mtl
+LOG_ENTRY Used Dataset: Road: Animator Surface Shapes; { 3D Grid } 1 km Square Checkerboard
+EXIT_PARSFILE Roads\Shapes\RdShape_7cf76fc3-62e5-4a12-a184-2220064d3e95.par
+
+RR_SURF_CONSTANT 1
+L_CAMERA_FRONT 0.5
+L_CAMERA_REAR 0.5
+add_reference_frame road_stuff_6_Partly_Cloudy_Sky_with_Light_Grass
+reference_frame_ghosts off
+ENTER_PARSFILE Animator\Groups\Group_4ca8da7e-4354-4ff1-906e-7799e75accaf.par
+#FullDataName Animator: Group`Partly Cloudy Sky with Light Grass`Environment Spheres
+ENTER_PARSFILE Animator\Frames\Frame_d8f565c1-503c-42eb-8ddd-a99303b404d3.par
+#FullDataName Animator: Reference Frame`Skybox (Vehicle Reference)`Tracking: Vehicle
+ADD_REFERENCE_FRAME Frame_d8f565c1-503c-42eb-8ddd-a99303b404d3
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xo
+SET_Y_NAME Yo
+SET_Z_NAME Zo
+WRT_Xo
+ANI_Xo
+WRT_Yo
+ANI_Yo
+WRT_Zo
+ANI_Zo
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle Reference)
+EXIT_PARSFILE Animator\Frames\Frame_d8f565c1-503c-42eb-8ddd-a99303b404d3.par
+
+ENTER_PARSFILE Animator\shape_links\Shape_c530b1e5-9348-4448-bfe2-ffe759ef90e5.par
+#FullDataName Animator: Shape File Link`Partly Cloudy Sky`Environment: Sky Boxes
+add_obj Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\Sky_Partly_Cloudy.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 15
+SET_SCALE_Y 15
+SET_SCALE_Z 5
+SET_ANGLE_Z 180
+set_lighting off
+set_fogging on
+SUN_POSITION 250 -250 600
+cam_global_ambient .6 .6 .6 1
+cam_global_diffuse .9 .9 .9 1
+cam_global_specular .7 .7 .7 1
+ENV_MAP_XPOS Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\cubeXPos.tga
+ENV_MAP_XNEG Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\cubeXNeg.tga
+ENV_MAP_YPOS Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\cubeYPos.tga
+ENV_MAP_YNEG Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\cubeYNeg.tga
+ENV_MAP_ZPOS Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\cubeZPos.tga
+ENV_MAP_ZNEG Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\cubeZNeg.tga
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+EXIT_PARSFILE Animator\shape_links\Shape_c530b1e5-9348-4448-bfe2-ffe759ef90e5.par
+
+ENTER_PARSFILE Animator\shape_links\Shape_0945f15e-386d-43f4-81cc-6a49252ee672.par
+#FullDataName Animator: Shape File Link`Light Grass`Environment: Land Bowls
+add_obj Animator\3D_Shape_Files\Environment\Land_Bowls\Light_Grass\Land_Bowl_Light_Grass.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 15
+SET_SCALE_Y 15
+SET_SCALE_Z 1
+set_lighting off
+set_fogging off
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
+EXIT_PARSFILE Animator\shape_links\Shape_0945f15e-386d-43f4-81cc-6a49252ee672.par
+
+LOG_ENTRY Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
+EXIT_PARSFILE Animator\Groups\Group_4ca8da7e-4354-4ff1-906e-7799e75accaf.par
+
+ENTER_PARSFILE Roads\3D_Road\Road_cd06cd15-cb16-4211-bdfb-f365917a0c1e.ani
+add_reference_frame The Road
+reference_frame_ghosts off
+add_obj Roads\3D_Road\Road_cd06cd15-cb16-4211-bdfb-f365917a0c1e_1.obj
+set_color 1 1 1
+show_front on
+show_back off
+compute_normals on
+set_specular 1 1 1
+set_auto_detail_type Random
+add_obj Roads\3D_Road\Road_cd06cd15-cb16-4211-bdfb-f365917a0c1e_2.obj
+set_color 1 1 1
+show_front on
+show_back off
+compute_normals on
+set_specular 1 1 1
+set_auto_detail_type Random
+add_obj Roads\3D_Road\Road_cd06cd15-cb16-4211-bdfb-f365917a0c1e_3.obj
+set_color 0.7 0.7 0.7
+show_front on
+show_back off
+compute_normals on
+set_specular 1 1 1
+set_auto_detail_type Random
+add_obj Roads\3D_Road\Road_cd06cd15-cb16-4211-bdfb-f365917a0c1e_4.obj
+set_color 0.7 0.7 0.7
+show_front on
+show_back off
+compute_normals on
+set_specular 1 1 1
+set_auto_detail_type Random
+EXIT_PARSFILE Roads\3D_Road\Road_cd06cd15-cb16-4211-bdfb-f365917a0c1e.ani
+
+LOG_ENTRY Used Dataset: Road: 3D Surface (All Properties); { 3D Grid } 1 km Square
+EXIT_PARSFILE Roads\3D_Road\Road_cd06cd15-cb16-4211-bdfb-f365917a0c1e.par
+
+ENTER_PARSFILE Generic\Group\GenGrp_85c47411-57b7-4ccd-b281-0b4dfede2351.par
+#FullDataName Generic Data Group`CGC - Fx, Fy, Fz`Tire Force Arrows
+ENTER_PARSFILE Animator\Arrows\Arrows_01907f6a-2978-4a41-8050-4ddc4ee73d24.par
+#FullDataName Animator: Wheel Arrows and Other Indicators`Fx - CGC Force Arrows`CGC Force Arrows
+ADD_REFERENCE_FRAME wheel 1 indicator: Fx - CGC Force Arrows
+ENTER_PARSFILE Animator\Assemblies\ShpGrp_8aa61041-d3fb-407c-9601-1aab4305fed3.par
+#FullDataName Animator: Shape Assembly`Fx Double (Tail Origin)`Arrows
+ENTER_PARSFILE Animator\shape_links\Shape_bdcb3162-46d9-4aeb-aa94-d7abababdaf4.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (X-Axis, XY-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X 0.5
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (X-Axis, XY-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_bdcb3162-46d9-4aeb-aa94-d7abababdaf4.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 2
+set_scale_y 1
+set_scale_z 1
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.03
+ENTER_PARSFILE Animator\shape_links\Shape_0a5fd9a1-a5ef-4d92-8afd-7819b48f4d02.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (X-Axis, XZ-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X -90
+SET_OFFSET_X 0.5
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (X-Axis, XZ-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_0a5fd9a1-a5ef-4d92-8afd-7819b48f4d02.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 2
+set_scale_y 1
+set_scale_z 1
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.03
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fx Double (Tail Origin)
+EXIT_PARSFILE Animator\Assemblies\ShpGrp_8aa61041-d3fb-407c-9601-1aab4305fed3.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xgnd_1
+WRT_Xgnd_1
+ANI_Xgnd_1
+SET_Y_NAME Ygnd_1
+WRT_Ygnd_1
+ANI_Ygnd_1
+SET_Z_NAME Zgnd_1
+WRT_Zgnd_1
+ANI_Zgnd_1
+SET_PITCH_NAME PitchG1
+WRT_PitchG1
+ANI_PitchG1
+SET_ROLL_NAME RollG1
+WRT_RollG1
+ANI_RollG1
+SET_YAW_NAME Yaw_W1
+WRT_Yaw_W1
+ANI_Yaw_W1
+SET_FRAME_SCALE_X_NAME Fx_1
+WRT_Fx_1
+ANI_Fx_1
+X_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel 2 indicator: Fx - CGC Force Arrows
+ENTER_PARSFILE Animator\Assemblies\ShpGrp_8aa61041-d3fb-407c-9601-1aab4305fed3.par
+#FullDataName Animator: Shape Assembly`Fx Double (Tail Origin)`Arrows
+ENTER_PARSFILE Animator\shape_links\Shape_bdcb3162-46d9-4aeb-aa94-d7abababdaf4.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (X-Axis, XY-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X 0.5
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (X-Axis, XY-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_bdcb3162-46d9-4aeb-aa94-d7abababdaf4.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 2
+set_scale_y 1
+set_scale_z 1
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.03
+ENTER_PARSFILE Animator\shape_links\Shape_0a5fd9a1-a5ef-4d92-8afd-7819b48f4d02.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (X-Axis, XZ-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X -90
+SET_OFFSET_X 0.5
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (X-Axis, XZ-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_0a5fd9a1-a5ef-4d92-8afd-7819b48f4d02.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 2
+set_scale_y 1
+set_scale_z 1
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.03
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fx Double (Tail Origin)
+EXIT_PARSFILE Animator\Assemblies\ShpGrp_8aa61041-d3fb-407c-9601-1aab4305fed3.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xgnd_2
+WRT_Xgnd_2
+ANI_Xgnd_2
+SET_Y_NAME Ygnd_2
+WRT_Ygnd_2
+ANI_Ygnd_2
+SET_Z_NAME Zgnd_2
+WRT_Zgnd_2
+ANI_Zgnd_2
+SET_PITCH_NAME PitchG2
+WRT_PitchG2
+ANI_PitchG2
+SET_ROLL_NAME RollG2
+WRT_RollG2
+ANI_RollG2
+SET_YAW_NAME Yaw_W2
+WRT_Yaw_W2
+ANI_Yaw_W2
+SET_FRAME_SCALE_X_NAME Fx_2
+WRT_Fx_2
+ANI_Fx_2
+X_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel 3 indicator: Fx - CGC Force Arrows
+ENTER_PARSFILE Animator\Assemblies\ShpGrp_8aa61041-d3fb-407c-9601-1aab4305fed3.par
+#FullDataName Animator: Shape Assembly`Fx Double (Tail Origin)`Arrows
+ENTER_PARSFILE Animator\shape_links\Shape_bdcb3162-46d9-4aeb-aa94-d7abababdaf4.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (X-Axis, XY-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X 0.5
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (X-Axis, XY-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_bdcb3162-46d9-4aeb-aa94-d7abababdaf4.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 2
+set_scale_y 1
+set_scale_z 1
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.03
+ENTER_PARSFILE Animator\shape_links\Shape_0a5fd9a1-a5ef-4d92-8afd-7819b48f4d02.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (X-Axis, XZ-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X -90
+SET_OFFSET_X 0.5
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (X-Axis, XZ-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_0a5fd9a1-a5ef-4d92-8afd-7819b48f4d02.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 2
+set_scale_y 1
+set_scale_z 1
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.03
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fx Double (Tail Origin)
+EXIT_PARSFILE Animator\Assemblies\ShpGrp_8aa61041-d3fb-407c-9601-1aab4305fed3.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xgnd_3
+WRT_Xgnd_3
+ANI_Xgnd_3
+SET_Y_NAME Ygnd_3
+WRT_Ygnd_3
+ANI_Ygnd_3
+SET_Z_NAME Zgnd_3
+WRT_Zgnd_3
+ANI_Zgnd_3
+SET_PITCH_NAME PitchG3
+WRT_PitchG3
+ANI_PitchG3
+SET_ROLL_NAME RollG3
+WRT_RollG3
+ANI_RollG3
+SET_YAW_NAME Yaw_W3
+WRT_Yaw_W3
+ANI_Yaw_W3
+SET_FRAME_SCALE_X_NAME Fx_3
+WRT_Fx_3
+ANI_Fx_3
+X_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+LOG_ENTRY Used Dataset: Animator: Wheel Arrows and Other Indicators; { CGC Force Arrows } Fx - CGC Force Arrows
+EXIT_PARSFILE Animator\Arrows\Arrows_01907f6a-2978-4a41-8050-4ddc4ee73d24.par
+
+ENTER_PARSFILE Animator\Arrows\Arrows_902f0032-ba3a-4ee8-b140-add05248f383.par
+#FullDataName Animator: Wheel Arrows and Other Indicators`Fy - CGC Force Arrows`CGC Force Arrows
+ADD_REFERENCE_FRAME wheel 1 indicator: Fy - CGC Force Arrows
+ENTER_PARSFILE Animator\Assemblies\ShpGrp_1b0213de-e745-416b-9fb5-084d5c7d611d.par
+#FullDataName Animator: Shape Assembly`Fy Double: (Tail Origin 2)`Arrows
+ENTER_PARSFILE Animator\shape_links\Shape_e595cb07-2e6c-412e-bb71-2e35246eea1c.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (Y-Axis, XY-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.5
+SET_OFFSET_Z 0
+Y_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Y-Axis, XY-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_e595cb07-2e6c-412e-bb71-2e35246eea1c.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 1
+set_scale_y 2
+set_scale_z 1
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.03
+ENTER_PARSFILE Animator\shape_links\Shape_02e357ac-3aff-4ece-a508-072a48636862.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (Y-Axis, YZ-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 0
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.5
+SET_OFFSET_Z 0
+Y_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Y-Axis, YZ-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_02e357ac-3aff-4ece-a508-072a48636862.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 1
+set_scale_y 2
+set_scale_z 1
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.03
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fy Double: (Tail Origin 2)
+EXIT_PARSFILE Animator\Assemblies\ShpGrp_1b0213de-e745-416b-9fb5-084d5c7d611d.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xgnd_1
+WRT_Xgnd_1
+ANI_Xgnd_1
+SET_Y_NAME Ygnd_1
+WRT_Ygnd_1
+ANI_Ygnd_1
+SET_Z_NAME Zgnd_1
+WRT_Zgnd_1
+ANI_Zgnd_1
+SET_PITCH_NAME PitchG1
+WRT_PitchG1
+ANI_PitchG1
+SET_ROLL_NAME RollG1
+WRT_RollG1
+ANI_RollG1
+SET_YAW_NAME Yaw_W1
+WRT_Yaw_W1
+ANI_Yaw_W1
+SET_FRAME_SCALE_Y_NAME Fy_1
+WRT_Fy_1
+ANI_Fy_1
+Y_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel 2 indicator: Fy - CGC Force Arrows
+ENTER_PARSFILE Animator\Assemblies\ShpGrp_1b0213de-e745-416b-9fb5-084d5c7d611d.par
+#FullDataName Animator: Shape Assembly`Fy Double: (Tail Origin 2)`Arrows
+ENTER_PARSFILE Animator\shape_links\Shape_e595cb07-2e6c-412e-bb71-2e35246eea1c.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (Y-Axis, XY-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.5
+SET_OFFSET_Z 0
+Y_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Y-Axis, XY-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_e595cb07-2e6c-412e-bb71-2e35246eea1c.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 1
+set_scale_y 2
+set_scale_z 1
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.03
+ENTER_PARSFILE Animator\shape_links\Shape_02e357ac-3aff-4ece-a508-072a48636862.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (Y-Axis, YZ-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 0
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.5
+SET_OFFSET_Z 0
+Y_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Y-Axis, YZ-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_02e357ac-3aff-4ece-a508-072a48636862.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 1
+set_scale_y 2
+set_scale_z 1
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.03
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fy Double: (Tail Origin 2)
+EXIT_PARSFILE Animator\Assemblies\ShpGrp_1b0213de-e745-416b-9fb5-084d5c7d611d.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xgnd_2
+WRT_Xgnd_2
+ANI_Xgnd_2
+SET_Y_NAME Ygnd_2
+WRT_Ygnd_2
+ANI_Ygnd_2
+SET_Z_NAME Zgnd_2
+WRT_Zgnd_2
+ANI_Zgnd_2
+SET_PITCH_NAME PitchG2
+WRT_PitchG2
+ANI_PitchG2
+SET_ROLL_NAME RollG2
+WRT_RollG2
+ANI_RollG2
+SET_YAW_NAME Yaw_W2
+WRT_Yaw_W2
+ANI_Yaw_W2
+SET_FRAME_SCALE_Y_NAME Fy_2
+WRT_Fy_2
+ANI_Fy_2
+Y_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel 3 indicator: Fy - CGC Force Arrows
+ENTER_PARSFILE Animator\Assemblies\ShpGrp_1b0213de-e745-416b-9fb5-084d5c7d611d.par
+#FullDataName Animator: Shape Assembly`Fy Double: (Tail Origin 2)`Arrows
+ENTER_PARSFILE Animator\shape_links\Shape_e595cb07-2e6c-412e-bb71-2e35246eea1c.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (Y-Axis, XY-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.5
+SET_OFFSET_Z 0
+Y_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Y-Axis, XY-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_e595cb07-2e6c-412e-bb71-2e35246eea1c.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 1
+set_scale_y 2
+set_scale_z 1
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.03
+ENTER_PARSFILE Animator\shape_links\Shape_02e357ac-3aff-4ece-a508-072a48636862.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (Y-Axis, YZ-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 0
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.5
+SET_OFFSET_Z 0
+Y_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Y-Axis, YZ-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_02e357ac-3aff-4ece-a508-072a48636862.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 1
+set_scale_y 2
+set_scale_z 1
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.03
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fy Double: (Tail Origin 2)
+EXIT_PARSFILE Animator\Assemblies\ShpGrp_1b0213de-e745-416b-9fb5-084d5c7d611d.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xgnd_3
+WRT_Xgnd_3
+ANI_Xgnd_3
+SET_Y_NAME Ygnd_3
+WRT_Ygnd_3
+ANI_Ygnd_3
+SET_Z_NAME Zgnd_3
+WRT_Zgnd_3
+ANI_Zgnd_3
+SET_PITCH_NAME PitchG3
+WRT_PitchG3
+ANI_PitchG3
+SET_ROLL_NAME RollG3
+WRT_RollG3
+ANI_RollG3
+SET_YAW_NAME Yaw_W3
+WRT_Yaw_W3
+ANI_Yaw_W3
+SET_FRAME_SCALE_Y_NAME Fy_3
+WRT_Fy_3
+ANI_Fy_3
+Y_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+LOG_ENTRY Used Dataset: Animator: Wheel Arrows and Other Indicators; { CGC Force Arrows } Fy - CGC Force Arrows
+EXIT_PARSFILE Animator\Arrows\Arrows_902f0032-ba3a-4ee8-b140-add05248f383.par
+
+ENTER_PARSFILE Animator\Arrows\Arrows_43156b86-e8fb-4b3a-9441-2e0859791d90.par
+#FullDataName Animator: Wheel Arrows and Other Indicators`Fz - CGC Force Arrows`CGC Force Arrows
+ADD_REFERENCE_FRAME wheel 1 indicator: Fz - CGC Force Arrows
+ENTER_PARSFILE Animator\Assemblies\ShpGrp_d5202e47-a118-4832-be00-51a3393dffdd.par
+#FullDataName Animator: Shape Assembly`Fz Double: (Tail Origin, F)`Arrows
+ENTER_PARSFILE Animator\shape_links\Shape_94a376a6-27c9-405d-94ec-2778b0939d35.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (Z-Axis, XZ-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 0.8 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 90
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.5
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Z-Axis, XZ-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_94a376a6-27c9-405d-94ec-2778b0939d35.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 1
+set_scale_y 1
+set_scale_z 2
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0
+ENTER_PARSFILE Animator\shape_links\Shape_045708eb-599b-4dfe-9343-f7fd28201ff7.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (Z-Axis, YZ-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 90
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.5
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Z-Axis, YZ-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_045708eb-599b-4dfe-9343-f7fd28201ff7.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 1
+set_scale_y 1
+set_scale_z 2
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fz Double: (Tail Origin, F)
+EXIT_PARSFILE Animator\Assemblies\ShpGrp_d5202e47-a118-4832-be00-51a3393dffdd.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xgnd_1
+WRT_Xgnd_1
+ANI_Xgnd_1
+SET_Y_NAME Ygnd_1
+WRT_Ygnd_1
+ANI_Ygnd_1
+SET_Z_NAME Zgnd_1
+WRT_Zgnd_1
+ANI_Zgnd_1
+SET_PITCH_NAME PitchG1
+WRT_PitchG1
+ANI_PitchG1
+SET_ROLL_NAME RollG1
+WRT_RollG1
+ANI_RollG1
+SET_YAW_NAME Yaw_W1
+WRT_Yaw_W1
+ANI_Yaw_W1
+SET_FRAME_SCALE_Z_NAME Fz_1
+WRT_Fz_1
+ANI_Fz_1
+Z_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel 2 indicator: Fz - CGC Force Arrows
+ENTER_PARSFILE Animator\Assemblies\ShpGrp_d5202e47-a118-4832-be00-51a3393dffdd.par
+#FullDataName Animator: Shape Assembly`Fz Double: (Tail Origin, F)`Arrows
+ENTER_PARSFILE Animator\shape_links\Shape_94a376a6-27c9-405d-94ec-2778b0939d35.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (Z-Axis, XZ-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 0.8 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 90
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.5
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Z-Axis, XZ-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_94a376a6-27c9-405d-94ec-2778b0939d35.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 1
+set_scale_y 1
+set_scale_z 2
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0
+ENTER_PARSFILE Animator\shape_links\Shape_045708eb-599b-4dfe-9343-f7fd28201ff7.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (Z-Axis, YZ-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 90
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.5
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Z-Axis, YZ-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_045708eb-599b-4dfe-9343-f7fd28201ff7.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 1
+set_scale_y 1
+set_scale_z 2
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fz Double: (Tail Origin, F)
+EXIT_PARSFILE Animator\Assemblies\ShpGrp_d5202e47-a118-4832-be00-51a3393dffdd.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xgnd_2
+WRT_Xgnd_2
+ANI_Xgnd_2
+SET_Y_NAME Ygnd_2
+WRT_Ygnd_2
+ANI_Ygnd_2
+SET_Z_NAME Zgnd_2
+WRT_Zgnd_2
+ANI_Zgnd_2
+SET_PITCH_NAME PitchG2
+WRT_PitchG2
+ANI_PitchG2
+SET_ROLL_NAME RollG2
+WRT_RollG2
+ANI_RollG2
+SET_YAW_NAME Yaw_W2
+WRT_Yaw_W2
+ANI_Yaw_W2
+SET_OFFSET_VAR_YAW 180
+SET_SCALE_VAR_ROLL -1
+SET_SCALE_VAR_PITCH -1
+SET_FRAME_SCALE_Z_NAME Fz_2
+WRT_Fz_2
+ANI_Fz_2
+Z_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel 3 indicator: Fz - CGC Force Arrows
+ENTER_PARSFILE Animator\Assemblies\ShpGrp_d5202e47-a118-4832-be00-51a3393dffdd.par
+#FullDataName Animator: Shape Assembly`Fz Double: (Tail Origin, F)`Arrows
+ENTER_PARSFILE Animator\shape_links\Shape_94a376a6-27c9-405d-94ec-2778b0939d35.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (Z-Axis, XZ-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 0.8 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 90
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.5
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Z-Axis, XZ-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_94a376a6-27c9-405d-94ec-2778b0939d35.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 1
+set_scale_y 1
+set_scale_z 2
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0
+ENTER_PARSFILE Animator\shape_links\Shape_045708eb-599b-4dfe-9343-f7fd28201ff7.par
+#FullDataName Animator: Shape File Link`2D: Tail Org (Z-Axis, YZ-Plane)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 0 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 90
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.5
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Z-Axis, YZ-Plane)
+EXIT_PARSFILE Animator\shape_links\Shape_045708eb-599b-4dfe-9343-f7fd28201ff7.par
+
+set_lighting off
+set_color 1 1 0
+USE_RUN_COLOR
+set_scale_x 1
+set_scale_y 1
+set_scale_z 2
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fz Double: (Tail Origin, F)
+EXIT_PARSFILE Animator\Assemblies\ShpGrp_d5202e47-a118-4832-be00-51a3393dffdd.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xgnd_3
+WRT_Xgnd_3
+ANI_Xgnd_3
+SET_Y_NAME Ygnd_3
+WRT_Ygnd_3
+ANI_Ygnd_3
+SET_Z_NAME Zgnd_3
+WRT_Zgnd_3
+ANI_Zgnd_3
+SET_PITCH_NAME PitchG3
+WRT_PitchG3
+ANI_PitchG3
+SET_ROLL_NAME RollG3
+WRT_RollG3
+ANI_RollG3
+SET_YAW_NAME Yaw_W3
+WRT_Yaw_W3
+ANI_Yaw_W3
+SET_FRAME_SCALE_Z_NAME Fz_3
+WRT_Fz_3
+ANI_Fz_3
+Z_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+LOG_ENTRY Used Dataset: Animator: Wheel Arrows and Other Indicators; { CGC Force Arrows } Fz - CGC Force Arrows
+EXIT_PARSFILE Animator\Arrows\Arrows_43156b86-e8fb-4b3a-9441-2e0859791d90.par
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Tire Force Arrows } CGC - Fx, Fy, Fz
+EXIT_PARSFILE Generic\Group\GenGrp_85c47411-57b7-4ccd-b281-0b4dfede2351.par
+
+ENTER_PARSFILE Plot\Setup\Plot_e28becfb-6e49-424c-8749-8083dab061c6.par
+#FullDataName Plot: Setup`Ay -- Lateral Acceleration`Bike Motion
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS Ay_SM, Time
+WRT_AY_SM
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Ay -- Lateral Acceleration
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Bike Motion } Ay -- Lateral Acceleration
+EXIT_PARSFILE Plot\Setup\Plot_e28becfb-6e49-424c-8749-8083dab061c6.par
+
+ENTER_PARSFILE Plot\Setup\Plot_0b6522fe-5118-4266-bf0a-c1b4f9707ecd.par
+#FullDataName Plot: Setup`Roll -- Sprung Masses`Bike Motion
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS Roll, Time
+WRT_ROLL
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Roll -- Sprung Masses
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Bike Motion } Roll -- Sprung Masses
+EXIT_PARSFILE Plot\Setup\Plot_0b6522fe-5118-4266-bf0a-c1b4f9707ecd.par
+
+ENTER_PARSFILE Plot\Setup\Plot_ec6d5371-cf98-4295-8e4a-dac6c93c5395.par
+#FullDataName Plot: Setup`Y vs. X -- Trajectory`Tracking
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS Yo, Xo
+WRT_YO
+WRT_XO
+PLOTCHANNELS Y_Design, X_Design
+WRT_Y_DESIGN
+WRT_X_DESIGN
+PLOTCHANNELS Y_Target, X_Target
+WRT_Y_TARGET
+WRT_X_TARGET
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Y vs. X -- Trajectory
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Tracking } Y vs. X -- Trajectory
+EXIT_PARSFILE Plot\Setup\Plot_ec6d5371-cf98-4295-8e4a-dac6c93c5395.par
+
+ENTER_PARSFILE Plot\Setup\Plot_2b4d9dbe-308e-4ffd-b6c8-66a0dd6279f5.par
+#FullDataName Plot: Setup`Pitch -- Sprung Masses`Bike Motion
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS Pitch, Time
+WRT_PITCH
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Pitch -- Sprung Masses
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Bike Motion } Pitch -- Sprung Masses
+EXIT_PARSFILE Plot\Setup\Plot_2b4d9dbe-308e-4ffd-b6c8-66a0dd6279f5.par
+
+ENTER_PARSFILE Plot\Setup\Plot_e2818f80-b6d7-4ec6-a0bc-d43f68842499.par
+#FullDataName Plot: Setup`Wheel Speed (All)`Braking
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS Vx, Time
+WRT_VX
+PLOTCHANNELS Vx_1, Time
+WRT_VX_1
+PLOTCHANNELS Vx_2, Time
+WRT_VX_2
+PLOTCHANNELS Vx_3, Time
+WRT_VX_3
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Wheel Speed (All)
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Braking } Wheel Speed (All)
+EXIT_PARSFILE Plot\Setup\Plot_e2818f80-b6d7-4ec6-a0bc-d43f68842499.par
+
+ENTER_PARSFILE Plot\Setup\Plot_b206f9bc-95cb-400b-89c1-552a48275178.par
+#FullDataName Plot: Setup`Steer Angle`Steering
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS Steer, Time
+WRT_STEER
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Steer Angle
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Steer Angle
+EXIT_PARSFILE Plot\Setup\Plot_b206f9bc-95cb-400b-89c1-552a48275178.par
+
+ENTER_PARSFILE Plot\Setup\Plot_8a23b4af-ed47-42b0-afaf-a1e846f4059f.par
+#FullDataName Plot: Setup`Ax -- Long. Acceleration`Bike Motion
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_36c41106-476a-4676-9807-1f7626998212.par
+
+PLOTCHANNELS Ax_SM, Time
+WRT_AX_SM
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Ax -- Long. Acceleration
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Bike Motion } Ax -- Long. Acceleration
+EXIT_PARSFILE Plot\Setup\Plot_8a23b4af-ed47-42b0-afaf-a1e846f4059f.par
+
+LOG_ENTRY Used Dataset: Procedures; { Handling Testing } Step Steer @ 80 km/h
+EXIT_PARSFILE Procedures\Proc_a9c6e262-a9f6-4177-b98f-3a0e81bf0177.par
+
+OPT_VS_FILETYPE 4
+OPT_ALL_WRITE 1
+WRITE_SENSOR_DETECT
+Title Accel in Turn - Const. Radius Curve <Handling and Stability Tests>
+CATEGORY Handling and Stability Tests
+DATASET_TITLE Accel in Turn - Const. Radius Curve
+NUM_CACHED_RUNS 1
+LOG_ENTRY Used Dataset: BikeSim Run Control; { Handling and Stability Tests } Accel in Turn - Const. Radius Curve
+EXIT_PARSFILE Runs\Run_fa5487e7-5323-4261-ba23-a08f00fc8362.par
+
+
+
+END
